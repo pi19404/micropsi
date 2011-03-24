@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.1"?>
+<plugin
+   id="org.micropsi.console"
+   name="Micropsi Basic console services"
+   version="0.6.13"
+   provider-name="The Micropsi Project"
+   class="org.micropsi.eclipse.console.ConsolePlugin">
+
+   <runtime>
+      <library name="console.jar" export="true">
+         <export name="*"/>
+      </library>
+   </runtime>
+   <requires>
+      <import plugin="org.micropsi.runtime" export="true"/>
+      <import plugin="org.eclipse.ui.ide" export="true"/>
+      <import plugin="org.eclipse.ui" export="true"/>
+      <import plugin="org.eclipse.jface" export="true"/>
+   </requires>
+
+   <extension-point id="consoles" name="Consoles" schema="schema/consoles.exsd"/>
+   <extension-point id="monitorProviders" name="Monitor providers for parameter view" schema="schema/monitorProviders.exsd"/>
+
+   <extension
+         point="org.micropsi.runtime.runtimeUsers">
+      <user
+            name="Console"
+            class="org.micropsi.eclipse.console.ConsoleRuntimeUser"
+            id="org.micropsi.eclipse.console.consoleruntimeuser">
+      </user>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="Admin"
+            icon="icons/console.gif"
+            class="org.micropsi.eclipse.console.adminperspective.AdminPerspective"
+            id="org.micropsi.eclipse.console.adminperspective.adminperspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Micropsi General Console"
+            id="org.micropsi.console">
+      </category>
+      <view
+            name="RawCommunication"
+            icon="icons/rawcom.gif"
+            category="org.micropsi.console"
+            class="org.micropsi.eclipse.console.adminperspective.RawComView"
+            id="org.micropsi.eclipse.console.adminperspective.rawcomview">
+      </view>
+      <view
+            name="Log"
+            icon="icons/logview.gif"
+            category="org.micropsi.console"
+            class="org.micropsi.eclipse.console.adminperspective.LogView"
+            id="org.micropsi.eclipse.console.adminperspective.logview">
+      </view>
+      <view
+            name="Parameters"
+            icon="icons/oscilloscope.gif"
+            category="org.micropsi.console"
+            class="org.micropsi.eclipse.console.adminperspective.ParameterView"
+            id="org.micropsi.eclipse.console.adminperspective.parameterview">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.viewActions">
+      <viewContribution
+            targetID="org.micropsi.eclipse.console.adminperspective.logview"
+            id="org.micropsi.eclipse.console.adminperspective.logview.actions">
+         <action
+               label="Watch"
+               icon="icons/watch.gif"
+               style="toggle"
+               state="true"
+               tooltip="Toggles log view updates"
+               class="org.micropsi.eclipse.console.adminperspective.ToggleWatchAction"
+               menubarPath="additions"
+               toolbarPath="additions"
+               id="package org.micropsi.eclipse.console.adminperspective.togglewatchaction">
+         </action>
+      </viewContribution>
+   </extension>
+</plugin>
