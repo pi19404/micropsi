@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.1"?>
+<plugin
+   id="org.micropsi.agentmanager"
+   name="Micropsi Agent Manager"
+   version="0.6.13"
+   provider-name="The Micropsi Project"
+   class="org.micropsi.eclipse.agentmanager.AgentManagerPlugin">
+   
+   <runtime>
+     	<library name="agentmanager.jar">
+	        <export name="*"/>
+     	</library>
+   </runtime>
+   
+   <requires>
+		<import plugin="org.micropsi.console" export="true"/>
+   </requires>
+   
+   <extension-point id="agentrelated" name="Agent related plugins" schema="schema/agentrelated.exsd"/>
+   
+   <extension
+   		point="org.micropsi.console.consoles">
+      <console
+        name="Agent Manager"
+        class="org.micropsi.eclipse.agentmanager.AgentManagerConsole"
+        id="org.micropsi.eclipse.agentmanager.agentmanagerconsole">
+      </console>
+   </extension>
+   
+   <extension 
+   	    point="org.eclipse.ui.actionSets"> 
+      <actionSet
+        id="org.micropsi.agentmanageractions" 
+        label="Agents"
+        visible="true"> 
+      <menu
+        id="org.micropsi.agentsmenu" 
+        label="Agents"
+        path="additions"> 
+        <separator name="agents"/>
+      </menu>
+      <action
+        id="org.micropsi.createagent" 
+        label="Create Agent"
+        menubarPath="org.micropsi.agentsmenu/agents" 
+        class="org.micropsi.eclipse.agentmanager.CreateAgentAction"> 
+      </action>
+      <action
+        id="org.micropsi.createagent" 
+        label="Remove Agent"
+        menubarPath="org.micropsi.agentsmenu/agents" 
+        class="org.micropsi.eclipse.agentmanager.RemoveAgentAction"> 
+      </action>
+      </actionSet>
+    </extension>
+    
+    <extension
+         point="org.eclipse.ui.actionSetPartAssociations">
+      <actionSetPartAssociation
+            targetID="org.micropsi.agentmanageractions">
+         <part id="*">
+         </part>
+      </actionSetPartAssociation>
+   </extension>
+    
+</plugin>
