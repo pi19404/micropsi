@@ -1,0 +1,139 @@
+<config>
+  <runner>
+    <components>
+      khepera,server,timer,kheperaTurtle5,console
+    </components>
+    <threadpool>
+      <maxthreads> 10 </maxthreads>
+      <minthreads> 5 </minthreads>
+      <maxidletime> 5000 </maxidletime>
+    </threadpool>
+    <log>
+      <file> $MICROPSI_HOME/console.log </file>
+      <level> ALL </level>
+    </log>
+  </runner>
+  
+  <component id="timer"> <!-- Kommentar: <steplength> = server clock in ms, value has to be the same as <cyclelength> = agent clock  -->
+    <class>
+      org.micropsi.comp.timer.TimerComponent
+    </class>
+    <data>
+      <steplength> 45 </steplength>
+      <autostart> true </autostart>
+      <syncmode> false </syncmode>
+      <servers>
+        <server id="s1">
+          <type> 0 </type>
+          <name> timeragentserver </name>
+        </server>
+      </servers>
+      <clients>
+        <client id="c1">
+          <type> 0 </type>
+          <name> timerserverclient </name>
+		  <connect-to> servertimerserver </connect-to>
+          <usethreadpool> false </usethreadpool>
+        </client>
+      </clients>	
+    </data>
+  </component>
+ 
+   <component id="khepera">
+    <class>
+      org.micropsi.comp.robot.RobotWorldComponent
+    </class>
+    <data>
+      <servers>
+        <server id="s1">
+          <type> 0 </type>
+          <name> worldserverserver </name>
+        </server>
+      </servers>
+      <clients>     
+      </clients>	
+      <executor> org.micropsi.comp.robot.khepera8.KheperaActionExecutor </executor>
+      <extractor> org.micropsi.comp.robot.khepera8.TestKheperaPerceptionExtractor </extractor>
+    </data>
+  </component>
+ 
+  <component id="console">
+    <class>
+      org.micropsi.comp.console.ConsoleComponent
+    </class>
+    <data>
+      <functionality>org.micropsi.eclipse.runtime.EclipseConsoleFunctionality</functionality>
+      <servers>
+      </servers>
+      <clients>
+        <client id="c1">
+          <type> 0 </type>
+          <name> consoleserverclient </name>
+		  <connect-to> serverconsoleserver </connect-to>
+          <usethreadpool> false </usethreadpool>
+        </client>
+      </clients>	
+    </data>
+  </component>
+
+  <component id="kheperaTurtle5">
+    <class>
+      org.micropsi.comp.agent.AgentFrameworkComponent
+    </class>
+    <data>
+      <agentclass> org.micropsi.comp.agent.micropsi.MicroPsiAgent</agentclass>
+      <worldadapters> org.micropsi.comp.agent.kheperaTurtle5.KheperaWorldAdapter</worldadapters>
+      <agenttype> (egal)unserRobi </agenttype>
+      <agentstates> $WORKSPACE/MicropsiAgentProject/kheperaTurtle5 </agentstates> 
+      <additionalcp> $WORKSPACE/MicropsiAgentProject/bin </additionalcp>
+      <initialstate> initial </initialstate>
+      <cyclelength> 45 </cyclelength>
+      <servers>
+      </servers>
+      <clients>
+        <client id="c1">
+          <type> 0 </type>
+          <name> agentserverclient </name>
+		  <connect-to> serveragentserver </connect-to>
+          <usethreadpool> false </usethreadpool>
+        </client>
+      </clients>	
+    </data>
+  </component>
+
+  <component id="server">
+    <class>
+      org.micropsi.comp.server.ServerComponent
+    </class>
+    <data>
+      <useworld> khepera </useworld>  
+      <servers>
+        <server id="s1">
+          <type> 0 </type>
+          <name> serverconsoleserver </name>
+        </server>
+        <server id="s2">
+          <type> 0 </type>
+          <name> serveragentserver </name>
+        </server>
+        <server id="s3">
+          <type> 0 </type>
+          <name> servertimerserver </name>
+        </server>
+        <server id="s4">
+          <type> 1 </type>
+          <name> serveragentserver </name>
+        </server>
+      </servers>
+      <clients>
+        <client id="c1">
+          <type> 0 </type>
+          <name> serverworldclient </name>
+		  <connect-to> worldserverserver </connect-to>
+          <usethreadpool> false </usethreadpool>
+        </client>      
+      </clients>	
+    </data>
+  </component>
+
+</config>

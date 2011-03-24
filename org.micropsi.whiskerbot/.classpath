@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="sources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/org.micropsi.robot.jar" sourcepath="C:/eclipse-SDK-3.0.1-win32/eclipse/plugins/org.micropsi.runtime_0.6.6/lib/components/org.mircopsi.coresrc-20050428.zip"/>
+	<classpathentry kind="lib" path="lib/org.micropsi.net.jar" sourcepath="C:/eclipse-SDK-3.0.1-win32/eclipse/plugins/org.micropsi.runtime_0.6.6/lib/components/org.mircopsi.coresrc-20050428.zip"/>
+	<classpathentry kind="lib" path="lib/org.micropsi.common.jar" sourcepath="C:/eclipse-SDK-3.0.1-win32/eclipse/plugins/org.micropsi.runtime_0.6.6/lib/components/org.mircopsi.coresrc-20050428.zip"/>
+	<classpathentry kind="lib" path="lib/org.micropsi.agentframework.jar" sourcepath="C:/eclipse-SDK-3.0.1-win32/eclipse/plugins/org.micropsi.runtime_0.6.6/lib/components/org.mircopsi.coresrc-20050428.zip"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/comm.jar"/>
+	<classpathentry kind="lib" path="lib/org.micropsi.mediaserver.jar" sourcepath="lib/org.micropsi.mediaserver.src.zip"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

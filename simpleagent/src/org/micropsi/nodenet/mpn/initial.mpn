@@ -1,0 +1,2971 @@
+
+<MicroPsiNet>
+  <Entities netstep="2015">
+    <Entity id="178-040916/001833" name="ShockpodBush" type="0" nodeType="50" dataType="percept_Shockpod bush">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="184-040916/001833" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="937-031220/025439" name="blocker" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.1" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="937-031220/025439" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="0-1044885535321" slot="3000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="4-031219/161819" name="wait-for-first-perception" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="0-1048957262170" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="10-1054238787374" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="56-040106/210808" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="22-1051901702966" name="null" type="2" impl="org.micropsi.nodenet.modules.CategoryLinker" parent="0-1051901702966" defiant="true">
+      <Slots>
+        <Slot key="16000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="16000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="4-1051901702966" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="16001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="5-1051901702966" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="55-031216/231451" name="plan" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="52-031216/231124" slot="21000" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="676-031220/021442" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="56-031216/231503" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="500"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="54-031216/231441" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="415-031218/221534" name="null" type="0" nodeType="41">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="13-1048905872029" name="CurrentReg" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+      </Gates>
+    </Entity>
+    <Entity id="1-1054313976864" name="eatwait" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="6-1049669180835" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="2-1054313976864" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="403-031220/000503" name="null" type="2" impl="org.micropsi.nodenet.modules.RegisterMonitor" parent="49-031216/230503" defiant="true">
+      <Slots>
+        <Slot key="5000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="5004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="51-031216/230535" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="11-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="1-1048971895481" name="ProtocolSituation" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+      </Gates>
+    </Entity>
+    <Entity id="17-031116/221635" name="SelectedMotive" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="15-031116/221635" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="0-1048945751939" name="null" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+      </Gates>
+    </Entity>
+    <Entity id="2-031116/221634" name="GoalList" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="0-1048948588738" name="act-nothing" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="10.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919">
+          <Link type="0" linked="0-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="132-031219/164734" name="reset" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="4-1049063243301" slot="14002" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="600-031218/223444" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="5-1046912383497" name="tae-check" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1761"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1761"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1761">
+          <Link type="1" linked="97-1046906565802" slot="0" weight="1.0020009999999997" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1761"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1761"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1761"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1761"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="2-1054313976864" name="reset" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="4-1049063243301" slot="14002" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="8-031116/221634" slot="18000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="1-1054313976864" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="404-031220/000611" name="null" type="2" impl="org.micropsi.nodenet.modules.ImmediateTrash" parent="49-031216/230503" defiant="true">
+      <Slots>
+        <Slot key="12000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="12000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="50-031216/230522" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="162-040916/001833" name="HyPercept" type="1" dissoconstant="1.0" learningconst="0.0" strengthconst="1.0" parent="0-1041642705496">
+      <Slots/>
+      <Gates/>
+      <Content>
+        <Contains id="163-040916/001833"/>
+        <Contains id="164-040916/001833"/>
+        <Contains id="165-040916/001833"/>
+        <Contains id="166-040916/001833"/>
+        <Contains id="167-040916/001833"/>
+        <Contains id="168-040916/001833"/>
+        <Contains id="169-040916/001833"/>
+        <Contains id="170-040916/001833"/>
+        <Contains id="171-040916/001833"/>
+        <Contains id="173-040916/001833"/>
+        <Contains id="190-040916/003638"/>
+        <Contains id="239-040916/004447"/>
+      </Content>
+    </Entity>
+    <Entity id="4-1049217022378" name="eat" type="0" nodeType="51" dataType="eat">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1759">
+          <Link type="0" linked="2-1049217022378" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="184-040916/001833" name="32-040903/180443" type="2" impl="org.micropsi.nodenet.modules.hypercept.SituationImporter" parent="161-040916/001833" defiant="true">
+      <Slots>
+        <Slot key="27000" act="0.0"/>
+        <Slot key="27001" act="0.0"/>
+        <Slot key="27004" act="0.0"/>
+        <Slot key="27002" act="0.0"/>
+        <Slot key="27003" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="27000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="0-1049818575430" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="7-1051901702966" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="1-031116/221634" name="UnspecificExploration" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="10.0" min="-10.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="4-031116/221634" slot="2002" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="10-031116/221635" slot="9000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+      </Gates>
+    </Entity>
+    <Entity id="6-1048905872029" name="ExecutionInstanceCreator" type="2" impl="org.micropsi.nodenet.modules.InstanceCreator" parent="5-1048905872029" defiant="true">
+      <Slots>
+        <Slot key="11000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="11000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="7-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="11001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="8-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="11002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="11-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="11003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="13-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="11004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="260-040110/150113" slot="20000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="138-031219/164900" name="check" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="137-031219/164900" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="500"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="135-031219/164900" slot="0" weight="1.0020009999999997" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="141-031219/164945" name="east" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="145-031219/164946" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="144-031219/164946" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="50"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="140-031219/164945" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="179-040916/001833" name="Tree" type="0" nodeType="50" dataType="percept_Tree">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="184-040916/001833" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="4-1049063243301" name="null" type="2" impl="org.micropsi.nodenet.modules.FocusController" parent="92-1046906565802" defiant="true">
+      <Slots>
+        <Slot key="14000" act="0.0"/>
+        <Slot key="14001" act="0.0"/>
+        <Slot key="14002" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="14000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1630">
+          <Link type="0" linked="5-1049063243301" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="14001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1630">
+          <Link type="0" linked="0-1048940344844" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="14002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1630">
+          <Link type="0" linked="3-1049063243301" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="2-1049063243301" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="166-040916/001833" name="69-040523/173021" type="2" impl="org.micropsi.nodenet.modules.hypercept.BootstrapGenerator" parent="162-040916/001833" defiant="true">
+      <Slots>
+        <Slot key="25000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="25000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="163-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="25001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="161-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="25002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="184-040916/001833" slot="27000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="0-1048951742613" name="SuccessActor" type="0" nodeType="51" dataType="GateTarget(4003)_at_5-1048905872029">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1301"/>
+      </Gates>
+    </Entity>
+    <Entity id="163-040916/001833" name="Possible" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="600-031218/223444" name="waitforperception" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="99-1046906565802" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="132-031219/164734" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="4-1051901702966" name="LinkReg" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="0-1056125100543" name="null" type="2" impl="org.micropsi.nodenet.modules.RetroReinforcer" parent="1-1044652927093" defiant="true">
+      <Slots>
+        <Slot key="19000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="19000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="1-1056125100543" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="19001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="33-031010/222819" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="99-1046906565802" name="check" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299">
+          <Link type="0" linked="173-040916/001833" slot="30000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299">
+          <Link type="1" linked="600-031218/223444" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="500"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299">
+          <Link type="1" linked="93-1046906565802" slot="0" weight="1.0020009999999997" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="0-1049217022378" name="eat" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1725">
+          <Link type="0" linked="4-1049217022378" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1725">
+          <Link type="1" linked="2-1049217022378" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="50"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1725"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1725">
+          <Link type="0" linked="6-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1725"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1725"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1725"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="93-1046906565802" name="north" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299">
+          <Link type="0" linked="100-1046906565802" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299">
+          <Link type="1" linked="99-1046906565802" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="50"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299">
+          <Link type="0" linked="0-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="177-040916/001833" name="agent" type="0" nodeType="50" dataType="percept_SteamVehicleAgent">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="184-040916/001833" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="170-040916/001833" name="reset fovea" type="0" nodeType="51" dataType="fovea_reset">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="0-1048905872029" name="act" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919">
+          <Link type="1" linked="0-1048957262170" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="100"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919">
+          <Link type="1" linked="0-1048957262170" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919">
+          <Link type="0" linked="2-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="0-1048948588738" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="53-031216/231320" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="1-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="10-1048905872029" name="PlanTrasher" type="2" impl="org.micropsi.nodenet.modules.ImmediateTrash" parent="5-1048905872029" defiant="true">
+      <Slots>
+        <Slot key="12000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="12000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="8-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="94-1046906565802" name="south" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299">
+          <Link type="0" linked="102-1046906565802" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299">
+          <Link type="1" linked="101-1046906565802" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="50"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299">
+          <Link type="0" linked="1-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="182-040916/001833" name="Banana" type="0" nodeType="50" dataType="percept_Banana">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="184-040916/001833" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="1-1049669180835" name="south-macro" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.5" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="94-1046906565802" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+      </Gates>
+    </Entity>
+    <Entity id="0-1044922010968" name="LegacyIEPS" type="1" dissoconstant="1.0" learningconst="0.0" strengthconst="1.0" parent="0-1041642705496">
+      <Slots/>
+      <Gates/>
+      <Content>
+        <Contains id="0-1048940344844"/>
+        <Contains id="5-1049063243301"/>
+        <Contains id="0-1049818575430"/>
+      </Content>
+    </Entity>
+    <Entity id="4-1049669180835" name="focus-next-macro" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.7" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="0-1049063243301" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+      </Gates>
+    </Entity>
+    <Entity id="2-1049063243301" name="check" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1631">
+          <Link type="0" linked="937-031220/025439" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1631"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1631">
+          <Link type="1" linked="0-1049063243301" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1631"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1631"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1631"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1631"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="436-040109/163545" name="FoolAround" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="100.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="4-031116/221634" slot="2002" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="465-031220/014448" name="execute" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="6-1048905872029" slot="11000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="169-040916/001833" name="constant" type="0" nodeType="50" dataType="constant_1.0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="167-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="8-031116/221634" name="GoalSelection" type="2" impl="org.micropsi.nodenet.modules.GoalSelection" parent="0-031116/221617" defiant="true">
+      <Slots>
+        <Slot key="18000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="18000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="2-031116/221634" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="18001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="17-031116/221635" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="18002" act="1.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="101-1046906565802" name="check" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299">
+          <Link type="0" linked="5-031116/221634" slot="1001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299">
+          <Link type="1" linked="599-031218/223423" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="500"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299">
+          <Link type="1" linked="94-1046906565802" slot="0" weight="1.0020009999999997" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="11-031115/152023" name="reset" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="4-1049063243301" slot="14002" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="10-031115/152006" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="139-031219/164900" name="west" type="0" nodeType="51" dataType="move-west">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="138-031219/164900" slot="0" weight="1.071224999999992" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="164-040916/001833" name="66-040523/172347" type="2" impl="org.micropsi.nodenet.modules.hypercept.Prover" parent="162-040916/001833" defiant="true">
+      <Slots/>
+      <Gates>
+        <Gate key="24000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="163-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="24001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="167-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="24005" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="170-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="24002" act="1.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="165-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="24003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="168-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="24004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="166-040916/001833" slot="25000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="3-1049217022378" name="check" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299">
+          <Link type="0" linked="10-031115/152006" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="5-031116/221634" slot="1001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299">
+          <Link type="1" linked="1-1049217022378" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="0-1049818575430" name="NewIndicator" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="2.0" min="0.0" theta="0.1" decaytype="-1" outputf="0" lastdecay="1334">
+          <Link type="0" linked="0-1049818575430" slot="0" weight="0.9" conf="1.0" used="false"/>
+          <Link type="0" linked="4-1049669180835" slot="0" weight="1.5" conf="1.0" used="false"/>
+          <Link type="0" linked="5-1049669180835" slot="0" weight="1.5" conf="1.0" used="false"/>
+          <Link type="0" linked="6-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="7-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="6-1049669180835" name="eat-macro" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.7" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="1" linked="1-1054313976864" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="50"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="0-1049217022378" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+      </Gates>
+    </Entity>
+    <Entity id="257-040916/005002" name="null" type="0" nodeType="14">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="102-1046906565802" name="south" type="0" nodeType="51" dataType="move-south">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1301">
+          <Link type="0" linked="101-1046906565802" slot="0" weight="1.0383609999999956" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="0-1045341534123" name="USTM" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="1" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="2" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="3" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="4" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="189-1056040849162" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="6" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+      </Gates>
+    </Entity>
+    <Entity id="145-031219/164946" name="east" type="0" nodeType="51" dataType="move-east">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="144-031219/164946" slot="0" weight="1.071224999999992" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="0-1049822016208" name="BiasGenerator" type="0" nodeType="50" dataType="debugSource_1.0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="1.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="0-1049669180835" slot="0" weight="0.5" conf="1.0" used="false"/>
+          <Link type="0" linked="1-1049669180835" slot="0" weight="0.5" conf="1.0" used="false"/>
+          <Link type="0" linked="4-1049669180835" slot="0" weight="0.7" conf="1.0" used="false"/>
+          <Link type="0" linked="5-1049669180835" slot="0" weight="0.2" conf="1.0" used="false"/>
+          <Link type="0" linked="6-1049669180835" slot="0" weight="0.7" conf="1.0" used="false"/>
+          <Link type="0" linked="7-1049669180835" slot="0" weight="0.7" conf="1.0" used="false"/>
+          <Link type="0" linked="134-031219/164900" slot="0" weight="0.5" conf="1.0" used="false"/>
+          <Link type="0" linked="140-031219/164945" slot="0" weight="0.5" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="174-040916/001833" name="Mushroom" type="0" nodeType="50" dataType="percept_Mushroom">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="184-040916/001833" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="83-031122/160355" name="Heal" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="4-031116/221634" slot="2002" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="171-040916/001833" name="0-040915/222744" type="2" impl="org.micropsi.nodenet.modules.hypercept.SurGenerator" parent="162-040916/001833" defiant="true">
+      <Slots/>
+      <Gates>
+        <Gate key="29000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="163-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="29002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="167-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="29001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="161-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="29003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="165-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="29004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="168-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="69-031122/160037" name="null" type="0" nodeType="11">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="181-040916/001833" name="ShockPodBush" type="0" nodeType="50" dataType="percept_ShockPodBush">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="184-040916/001833" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="1-1049063243301" name="focus-prev" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1341">
+          <Link type="0" linked="4-1049063243301" slot="14001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1341">
+          <Link type="1" linked="3-1049063243301" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="10"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1341"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1341">
+          <Link type="0" linked="5-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1341"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1341"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1341"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="53-031216/231320" name="act-plan" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="0-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="54-031216/231441" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="7-1048905872029" name="OrigReg" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+      </Gates>
+    </Entity>
+    <Entity id="144-031219/164946" name="check" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="143-031219/164945" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="500"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="141-031219/164945" slot="0" weight="1.0020009999999997" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="10-1054238787374" name="init" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="4-031219/161819" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="500"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="1-1048948588738" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="11-1048905872029" name="OrigStartReg" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+      </Gates>
+    </Entity>
+    <Entity id="1-1056125100543" name="Reinforce" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="107-1046906565802" name="check" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1932"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1932"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1932">
+          <Link type="1" linked="98-1046906565802" slot="0" weight="1.0020009999999997" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1932"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1932"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1932"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1932"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="92-1046906565802" name="BasicMacros" type="1" dissoconstant="1.0" learningconst="0.0" strengthconst="1.0" parent="0-1041642705496">
+      <Slots/>
+      <Gates/>
+      <Content>
+        <Contains id="93-1046906565802"/>
+        <Contains id="94-1046906565802"/>
+        <Contains id="97-1046906565802"/>
+        <Contains id="98-1046906565802"/>
+        <Contains id="99-1046906565802"/>
+        <Contains id="100-1046906565802"/>
+        <Contains id="101-1046906565802"/>
+        <Contains id="102-1046906565802"/>
+        <Contains id="107-1046906565802"/>
+        <Contains id="5-1046912383497"/>
+        <Contains id="3-1048905872029"/>
+        <Contains id="4-1048905872029"/>
+        <Contains id="0-1048939531985"/>
+        <Contains id="0-1048942307376"/>
+        <Contains id="0-1049063243301"/>
+        <Contains id="1-1049063243301"/>
+        <Contains id="2-1049063243301"/>
+        <Contains id="3-1049063243301"/>
+        <Contains id="4-1049063243301"/>
+        <Contains id="0-1049217022378"/>
+        <Contains id="1-1049217022378"/>
+        <Contains id="2-1049217022378"/>
+        <Contains id="3-1049217022378"/>
+        <Contains id="4-1049217022378"/>
+        <Contains id="5-1049217022378"/>
+        <Contains id="0-1049669180835"/>
+        <Contains id="1-1049669180835"/>
+        <Contains id="4-1049669180835"/>
+        <Contains id="5-1049669180835"/>
+        <Contains id="6-1049669180835"/>
+        <Contains id="7-1049669180835"/>
+        <Contains id="8-1049669180835"/>
+        <Contains id="9-1049669180835"/>
+        <Contains id="10-1049669180835"/>
+        <Contains id="0-1049822016208"/>
+        <Contains id="1-1054313976864"/>
+        <Contains id="2-1054313976864"/>
+        <Contains id="10-031115/152006"/>
+        <Contains id="11-031115/152023"/>
+        <Contains id="6-031125/141656"/>
+        <Contains id="7-031125/141733"/>
+        <Contains id="54-031216/231441"/>
+        <Contains id="55-031216/231451"/>
+        <Contains id="56-031216/231503"/>
+        <Contains id="599-031218/223423"/>
+        <Contains id="600-031218/223444"/>
+        <Contains id="132-031219/164734"/>
+        <Contains id="133-031219/164758"/>
+        <Contains id="134-031219/164900"/>
+        <Contains id="135-031219/164900"/>
+        <Contains id="136-031219/164900"/>
+        <Contains id="137-031219/164900"/>
+        <Contains id="138-031219/164900"/>
+        <Contains id="139-031219/164900"/>
+        <Contains id="140-031219/164945"/>
+        <Contains id="141-031219/164945"/>
+        <Contains id="142-031219/164945"/>
+        <Contains id="143-031219/164945"/>
+        <Contains id="144-031219/164946"/>
+        <Contains id="145-031219/164946"/>
+        <Contains id="676-031220/021442"/>
+        <Contains id="937-031220/025439"/>
+      </Content>
+    </Entity>
+    <Entity id="5-1051901702966" name="null" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="0-031116/221617" name="Emotion/Motivation" type="1" dissoconstant="1.0" learningconst="0.0" strengthconst="1.0" parent="0-1041642705496">
+      <Slots/>
+      <Gates/>
+      <Content>
+        <Contains id="1-031116/221634"/>
+        <Contains id="2-031116/221634"/>
+        <Contains id="4-031116/221634"/>
+        <Contains id="5-031116/221634"/>
+        <Contains id="6-031116/221634"/>
+        <Contains id="7-031116/221634"/>
+        <Contains id="8-031116/221634"/>
+        <Contains id="9-031116/221635"/>
+        <Contains id="10-031116/221635"/>
+        <Contains id="11-031116/221635"/>
+        <Contains id="12-031116/221635"/>
+        <Contains id="13-031116/221635"/>
+        <Contains id="14-031116/221635"/>
+        <Contains id="15-031116/221635"/>
+        <Contains id="17-031116/221635"/>
+        <Contains id="18-031116/221635"/>
+        <Contains id="68-031122/160028"/>
+        <Contains id="69-031122/160037"/>
+        <Contains id="83-031122/160355"/>
+        <Contains id="0-031125/011244"/>
+        <Contains id="436-040109/163545"/>
+      </Content>
+    </Entity>
+    <Entity id="134-031219/164900" name="west-macro" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.5" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="135-031219/164900" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="33-031010/222819" name="ReinforceChain" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="50-031216/230522" name="Plan" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="189-031125/224647" name="GoalCheckTrigger" type="2" impl="org.micropsi.nodenet.modules.RegisterMonitor" parent="0-1051901702966" defiant="true">
+      <Slots>
+        <Slot key="5000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="5004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="1-1051905167367" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="0-031125/011244" slot="22000" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="599-031218/223423" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="600-031218/223444" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="4-031219/161819" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="137-031219/164900" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="143-031219/164945" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="0-1044885535321" name="null" type="2" impl="org.micropsi.nodenet.modules.ProtocolGeneration" parent="1-1044652927093" defiant="true">
+      <Slots>
+        <Slot key="3000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="3000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="0-1048971895481" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="3001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="1-1048971895481" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="3002" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="0-1045341534123" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="18-031116/221635" name="Efficiency" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="10.0" min="-10.0" theta="0.4" decaytype="-1" outputf="0" lastdecay="2009">
+          <Link type="0" linked="4-031116/221634" slot="2002" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="10-031116/221635" slot="9000" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="12-031116/221635" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2009"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2009"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2009"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2009"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2009"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2009"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2009"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2009"/>
+      </Gates>
+    </Entity>
+    <Entity id="0-031125/011244" name="GoalChecker" type="2" impl="org.micropsi.nodenet.modules.GoalChecker" parent="0-031116/221617" defiant="true">
+      <Slots>
+        <Slot key="22000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="22000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="2-031116/221634" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="22001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="1-1051905167367" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="22003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="9-1048905872029" name="PlanExecution" type="2" impl="org.micropsi.nodenet.modules.ScriptExecution" parent="5-1048905872029" defiant="true">
+      <Slots>
+        <Slot key="4001" act="0.0"/>
+        <Slot key="4000" act="0.0"/>
+        <Slot key="4002" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="4007" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="13-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="8-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4006" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="4000" act="1.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="4003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="10-1048905872029" slot="12000" weight="1.1" conf="1.0" used="false"/>
+          <Link type="0" linked="0-1048951742613" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="10-1048905872029" slot="12000" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="1-1048951742613" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4005" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="0-1048971895481" name="ProtocolAction" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+      </Gates>
+    </Entity>
+    <Entity id="19-1048946417786" name="null" type="0" nodeType="50" dataType="constant_1.0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="1.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="9-1048905872029" slot="4000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="186-040916/001833" name="foveaV" type="2" impl="org.micropsi.nodenet.modules.hypercept.STActor" parent="161-040916/001833" defiant="true">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="28000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="185-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="184-040916/001833" slot="27003" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation attribute="y"/>
+    </Entity>
+    <Entity id="5-1048905872029" name="ExecutionSpace" type="1" dissoconstant="1.0" learningconst="0.0" strengthconst="1.0" parent="0-1041642705496">
+      <Slots/>
+      <Gates>
+        <Gate key="4003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1932">
+          <Link type="0" linked="4-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="5-031116/221634" slot="1001" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="56-031216/231503" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="5-1046912383497" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="677-031220/022235" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1932">
+          <Link type="0" linked="5-031116/221634" slot="1001" weight="-1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="5-1046912383497" slot="0" weight="-1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Content>
+        <Contains id="6-1048905872029"/>
+        <Contains id="7-1048905872029"/>
+        <Contains id="8-1048905872029"/>
+        <Contains id="9-1048905872029"/>
+        <Contains id="10-1048905872029"/>
+        <Contains id="11-1048905872029"/>
+        <Contains id="13-1048905872029"/>
+        <Contains id="19-1048946417786"/>
+        <Contains id="0-1048951742613"/>
+        <Contains id="1-1048951742613"/>
+        <Contains id="260-040110/150113"/>
+      </Content>
+    </Entity>
+    <Entity id="7-1051901702966" name="ReportNew" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1328">
+          <Link type="0" linked="3-1051901702966" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="13-031116/221635" name="SpecificExploration" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="10.0" min="-10.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2009">
+          <Link type="0" linked="4-031116/221634" slot="2002" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="10-031116/221635" slot="9000" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="12-031116/221635" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2009"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2009"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2009"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2009"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2009"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2009"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2009"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2009"/>
+      </Gates>
+    </Entity>
+    <Entity id="167-040916/001833" name="BeingChecked" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="5-1049669180835" name="focus-prev-macro" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.2" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="1-1049063243301" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+      </Gates>
+    </Entity>
+    <Entity id="2-1056125100543" name="null" type="0" nodeType="50" dataType="debugSource_1.0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="1.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="0-1056125100543" slot="19000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="56-031216/231503" name="check" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.6" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="676-031220/021442" slot="0" weight="-1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="55-031216/231451" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="56-040106/210808" name="protocol" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="677-031220/022235" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="4-031219/161819" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="0-1048939531985" name="null" type="2" impl="org.micropsi.nodenet.modules.FindAutomatism" parent="92-1046906565802" defiant="true">
+      <Slots>
+        <Slot key="10000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="10000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1325">
+          <Link type="0" linked="11-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="7-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="10002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1325">
+          <Link type="0" linked="2-031116/221634" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="10003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1325">
+          <Link type="0" linked="1-1051905167367" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="10004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1325">
+          <Link type="0" linked="1-1044652927093" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="10001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1325">
+          <Link type="0" linked="49-031216/230503" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="10005" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1325">
+          <Link type="0" linked="6-1048905872029" slot="11000" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="7-031125/141733" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="10006" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1325">
+          <Link type="0" linked="7-031125/141733" slot="0" weight="-1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="599-031218/223423" name="waitforperception" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="101-1046906565802" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="133-031219/164758" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="190-040916/003638" name="null" type="2" impl="org.micropsi.nodenet.modules.hypercept.LegacySituationAdapter" parent="162-040916/001833" defiant="true">
+      <Slots/>
+      <Gates>
+        <Gate key="31001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="165-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="31002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="0-1048940344844" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation lastsit=""/>
+    </Entity>
+    <Entity id="8-1048905872029" name="CopyReg" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1923"/>
+      </Gates>
+    </Entity>
+    <Entity id="161-040916/001833" name="Memory" type="1" dissoconstant="1.0" learningconst="0.0" strengthconst="1.0" parent="0-1041642705496">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates/>
+      <Content>
+        <Contains id="174-040916/001833"/>
+        <Contains id="175-040916/001833"/>
+        <Contains id="176-040916/001833"/>
+        <Contains id="177-040916/001833"/>
+        <Contains id="178-040916/001833"/>
+        <Contains id="179-040916/001833"/>
+        <Contains id="180-040916/001833"/>
+        <Contains id="181-040916/001833"/>
+        <Contains id="182-040916/001833"/>
+        <Contains id="183-040916/001833"/>
+        <Contains id="184-040916/001833"/>
+        <Contains id="185-040916/001833"/>
+        <Contains id="186-040916/001833"/>
+        <Contains id="187-040916/001833"/>
+        <Contains id="188-040916/001833"/>
+        <Contains id="189-040916/001833"/>
+        <Contains id="257-040916/005002"/>
+        <Contains id="258-040916/005006"/>
+      </Content>
+    </Entity>
+    <Entity id="12-031116/221635" name="SerendipityMotivator" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="9.11183989375626E-12" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="1.0" decaytype="-1" outputf="6" lastdecay="2015">
+          <Link type="0" linked="436-040109/163545" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="143-031219/164945" name="waitforperception" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="144-031219/164946" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="142-031219/164945" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="3-1049063243301" name="check" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1631">
+          <Link type="0" linked="937-031220/025439" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1631"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1631">
+          <Link type="1" linked="1-1049063243301" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1631"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1631"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1631"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1631"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="9-1049669180835" name="hypercept-macro" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="98-1046906565802" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="5-1049217022378" name="drink" type="0" nodeType="51" dataType="drink">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1301">
+          <Link type="0" linked="3-1049217022378" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="142-031219/164945" name="reset" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="4-1049063243301" slot="14002" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="143-031219/164945" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="185-040916/001833" name="fovea v" type="0" nodeType="51" dataType="fovea_v">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="10-031116/221635" name="EventEvaluation" type="2" impl="org.micropsi.nodenet.modules.EventEvaluation" parent="0-031116/221617" defiant="true">
+      <Slots>
+        <Slot key="9001" act="0.0"/>
+        <Slot key="9000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="9000" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="0-1045341534123" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="9002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="8-031116/221634" slot="18000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="5-1049063243301" name="Attention" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+      </Gates>
+    </Entity>
+    <Entity id="100-1046906565802" name="north" type="0" nodeType="51" dataType="move-north">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1301">
+          <Link type="0" linked="99-1046906565802" slot="0" weight="1.071224999999992" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="165-040916/001833" name="TheCase" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="0-1048942307376" name="null" type="2" impl="org.micropsi.nodenet.modules.TrialAndError" parent="92-1046906565802" defiant="true">
+      <Slots>
+        <Slot key="6000" act="0.0"/>
+        <Slot key="6001" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="6002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1918">
+          <Link type="0" linked="7-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="6003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1918">
+          <Link type="0" linked="11-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="6000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1918">
+          <Link type="0" linked="7-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="6-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="5-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="4-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="1-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="0-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="134-031219/164900" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="140-031219/164945" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="6001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1918">
+          <Link type="0" linked="6-1048905872029" slot="11000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="6004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="5-1046912383497" slot="0" weight="-1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="3-1048971895481" name="MonitorAction" type="2" impl="org.micropsi.nodenet.modules.RegisterMonitor" parent="1-1044652927093" defiant="true">
+      <Slots>
+        <Slot key="5000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="5004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1770">
+          <Link type="0" linked="11-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1770"/>
+        <Gate key="5001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1770">
+          <Link type="0" linked="0-1048971895481" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1770"/>
+      </Gates>
+      <Implementation previous=""/>
+    </Entity>
+    <Entity id="0-1051901702966" name="SituationMemory" type="1" dissoconstant="1.0" learningconst="0.0" strengthconst="1.0" parent="0-1041642705496">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates/>
+      <Content>
+        <Contains id="1-1051901702966"/>
+        <Contains id="3-1051901702966"/>
+        <Contains id="4-1051901702966"/>
+        <Contains id="5-1051901702966"/>
+        <Contains id="6-1051901702966"/>
+        <Contains id="7-1051901702966"/>
+        <Contains id="22-1051901702966"/>
+        <Contains id="0-1051905167367"/>
+        <Contains id="1-1051905167367"/>
+        <Contains id="189-031125/224647"/>
+      </Content>
+    </Entity>
+    <Entity id="0-1046912383497" name="MainControl" type="1" dissoconstant="1.0" learningconst="0.0" strengthconst="1.0" parent="0-1041642705496">
+      <Slots/>
+      <Gates/>
+      <Content>
+        <Contains id="1-1046912383497"/>
+        <Contains id="2-1046912383497"/>
+        <Contains id="0-1047166855426"/>
+        <Contains id="0-1048905872029"/>
+        <Contains id="1-1048905872029"/>
+        <Contains id="2-1048905872029"/>
+        <Contains id="0-1048945751939"/>
+        <Contains id="0-1048948588738"/>
+        <Contains id="1-1048948588738"/>
+        <Contains id="0-1048957262170"/>
+        <Contains id="10-1054238787374"/>
+        <Contains id="53-031216/231320"/>
+        <Contains id="4-031219/161819"/>
+        <Contains id="56-040106/210808"/>
+      </Content>
+    </Entity>
+    <Entity id="7-031116/221634" name="Integrity" type="0" nodeType="50" dataType="integrityurge">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="5-031116/221634" slot="1005" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="83-031122/160355" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="82-031122/160232" name="null" type="0" nodeType="11">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="188-040916/001833" name="foveaH" type="2" impl="org.micropsi.nodenet.modules.hypercept.STActor" parent="161-040916/001833" defiant="true">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="184-040916/001833" slot="27002" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="28000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="187-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation attribute="x"/>
+    </Entity>
+    <Entity id="2-1048905872029" name="act-try" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="10.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919">
+          <Link type="0" linked="0-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919">
+          <Link type="0" linked="8-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="0-1049473600114" name="GC" type="2" impl="org.micropsi.nodenet.modules.GarbageCollection" parent="1-1044652927093" defiant="true">
+      <Slots>
+        <Slot key="15000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="15001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2010">
+          <Link type="0" linked="0-1045341534123" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="189-1056040849162" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="15000" act="1.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2010"/>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="2-1048971895481" name="MonitorSituation" type="2" impl="org.micropsi.nodenet.modules.RegisterMonitor" parent="1-1044652927093" defiant="true">
+      <Slots>
+        <Slot key="5000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="5004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="1-1051905167367" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1346"/>
+        <Gate key="5003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1346"/>
+        <Gate key="5001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1346">
+          <Link type="0" linked="1-1048971895481" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1346"/>
+      </Gates>
+      <Implementation previous=""/>
+    </Entity>
+    <Entity id="4-1048905872029" name="check" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.9" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299">
+          <Link type="1" linked="3-1048905872029" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="28-1051822808870" name="null" type="0" nodeType="10">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="176-040916/001833" name="ThornBush" type="0" nodeType="50" dataType="percept_ThornBush">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="184-040916/001833" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="180-040916/001833" name="Wirselkraut" type="0" nodeType="50" dataType="percept_Wirselkraut">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="184-040916/001833" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="136-031219/164900" name="reset" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="4-1049063243301" slot="14002" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="137-031219/164900" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="1-1051905167367" name="CurrentSituation" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="3-1051901702966" name="hold" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1341">
+          <Link type="0" linked="3-1051901702966" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="6-1051901702966" slot="0" weight="0.5" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="52-031216/231124" name="Planning" type="2" impl="org.micropsi.nodenet.modules.PlanCreation" parent="49-031216/230503" defiant="true">
+      <Slots>
+        <Slot key="21000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="21000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="2-031116/221634" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="21001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="1-1044652927093" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="21002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="0-1051901702966" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="21003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="1-1051905167367" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="21004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="50-031216/230522" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="21005" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="51-031216/230535" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="21006" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="402-031220/000309" slot="5000" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="403-031220/000503" slot="5000" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="465-031220/014448" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="21007" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="56-031216/231503" slot="0" weight="-1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="404-031220/000611" slot="12000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="9-031116/221635" name="Liquid" type="0" nodeType="50" dataType="waterurge">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="5.0" fact="1.0" amp="1.0" max="100.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="5-031116/221634" slot="1004" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="15-031116/221635" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="1-1048948588738" name="main" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1326"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1326"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1326"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1326"/>
+        <Gate key="4" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1326">
+          <Link type="0" linked="10-1054238787374" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1326"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1326"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="7-031125/141733" name="check" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="6-031125/141656" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="51-031216/230535" name="PlanEnd" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="168-040916/001833" name="NotTheCase" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="2-1046912383497" name="null" type="0" nodeType="50" dataType="constant_1.0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="1.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="1-1046912383497" slot="4000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="6-031125/141656" name="automatism" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="0-1048939531985" slot="10000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="7-031125/141733" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="30"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="3-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="1-1049217022378" name="drink" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1757">
+          <Link type="0" linked="5-1049217022378" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1757">
+          <Link type="1" linked="3-1049217022378" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="50"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1757"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1757">
+          <Link type="0" linked="7-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1757"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1757"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1757"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="140-031219/164945" name="east-macro" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.5" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="141-031219/164945" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="1-1051901702966" name="null" type="2" impl="org.micropsi.nodenet.modules.RegisterMonitor" parent="0-1051901702966" defiant="true">
+      <Slots>
+        <Slot key="5000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="5004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1341">
+          <Link type="0" linked="0-1048940344844" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1341"/>
+        <Gate key="5001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1341">
+          <Link type="0" linked="4-1051901702966" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1341">
+          <Link type="0" linked="6-1051901702966" slot="0" weight="0.1" conf="1.0" used="false"/>
+          <Link type="0" linked="3-1051901702966" slot="0" weight="-1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation previous=""/>
+    </Entity>
+    <Entity id="676-031220/021442" name="protocol-blocker" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="676-031220/021442" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="11-031116/221635" name="Eat" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.039960019994996404" fact="1.0" amp="1.0" max="10.0" min="-10.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="4-031116/221634" slot="2002" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="10-031116/221635" slot="9000" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="12-031116/221635" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+      </Gates>
+    </Entity>
+    <Entity id="7-1049669180835" name="drink-macro" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.7" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="1" linked="10-031115/152006" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="50"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="1-1049217022378" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+      </Gates>
+    </Entity>
+    <Entity id="97-1046906565802" name="tae" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1917">
+          <Link type="0" linked="0-1048942307376" slot="6000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1917">
+          <Link type="1" linked="5-1046912383497" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="2000"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1917"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1917">
+          <Link type="0" linked="8-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1917"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1917"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1917"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="49-031216/230503" name="PlanSpace" type="1" dissoconstant="1.0" learningconst="0.0" strengthconst="1.0" parent="0-1041642705496">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates/>
+      <Content>
+        <Contains id="50-031216/230522"/>
+        <Contains id="51-031216/230535"/>
+        <Contains id="52-031216/231124"/>
+        <Contains id="402-031220/000309"/>
+        <Contains id="403-031220/000503"/>
+        <Contains id="404-031220/000611"/>
+        <Contains id="465-031220/014448"/>
+      </Content>
+    </Entity>
+    <Entity id="135-031219/164900" name="west" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="139-031219/164900" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="138-031219/164900" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="50"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="134-031219/164900" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="2-1049217022378" name="check" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1760">
+          <Link type="0" linked="1-1054313976864" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="5-031116/221634" slot="1001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1760"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1760">
+          <Link type="1" linked="0-1049217022378" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1760"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1760"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1760"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1760"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="677-031220/022235" name="protSit" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.6" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="2-1048971895481" slot="5000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="4-031116/221634" name="Motivation" type="2" impl="org.micropsi.nodenet.modules.Motivation" parent="0-031116/221617" defiant="true">
+      <Slots>
+        <Slot key="2001" act="0.0"/>
+        <Slot key="2000" act="0.0"/>
+        <Slot key="2002" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="2000" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1995">
+          <Link type="0" linked="17-031116/221635" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="2003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1995">
+          <Link type="0" linked="8-031116/221634" slot="18000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="0-1049063243301" name="focus-next" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1921">
+          <Link type="0" linked="4-1049063243301" slot="14000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1921">
+          <Link type="1" linked="2-1049063243301" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="10"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1921"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1921">
+          <Link type="0" linked="4-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1921"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1921"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1921"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="14-031116/221635" name="Food" type="0" nodeType="50" dataType="foodurge">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="100.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="5-031116/221634" slot="1003" weight="0.1" conf="1.0" used="false"/>
+          <Link type="0" linked="11-031116/221635" slot="0" weight="0.08" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="54-031216/231441" name="plan-macro" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="53-031216/231320" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="55-031216/231451" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="183-040916/001833" name="WaterHole" type="0" nodeType="50" dataType="percept_WaterHole">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="184-040916/001833" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="3-1048905872029" name="automatism-submacro" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1763"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1763">
+          <Link type="1" linked="4-1048905872029" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="200"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1763"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1763">
+          <Link type="0" linked="10-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1763">
+          <Link type="0" linked="6-031125/141656" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1763"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1763"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="402-031220/000309" name="null" type="2" impl="org.micropsi.nodenet.modules.RegisterMonitor" parent="49-031216/230503" defiant="true">
+      <Slots>
+        <Slot key="5000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="5004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="50-031216/230522" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="7-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="0-1049669180835" name="north-macro" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.5" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="93-1046906565802" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+      </Gates>
+    </Entity>
+    <Entity id="0-1051905167367" name="null" type="2" impl="org.micropsi.nodenet.modules.MostActiveDetector" parent="0-1051901702966" defiant="true">
+      <Slots/>
+      <Gates>
+        <Gate key="17000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="1-1051905167367" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="258-040916/005006" name="null" type="0" nodeType="50" dataType="constant_1.0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="257-040916/005002" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="137-031219/164900" name="waitforperception" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="138-031219/164900" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="136-031219/164900" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="189-1056040849162" name="alpha" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="0-1045341534123" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+      </Gates>
+    </Entity>
+    <Entity id="8-1049669180835" name="tae-macro" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1768"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1768"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1768"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1768">
+          <Link type="0" linked="2-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1768">
+          <Link type="0" linked="97-1046906565802" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1768"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1768"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="1-1048951742613" name="FailActor" type="0" nodeType="51" dataType="GateTarget(4004)_at_5-1048905872029">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1301"/>
+      </Gates>
+    </Entity>
+    <Entity id="260-040110/150113" name="OrigUnlinker" type="2" impl="org.micropsi.nodenet.modules.Unlinker" parent="5-1048905872029" defiant="true">
+      <Slots>
+        <Slot key="20000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="20000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="11-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="7-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="6-031116/221634" name="Afilliation" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="10.0" min="-10.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="4-031116/221634" slot="2002" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="10-031116/221635" slot="9000" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="12-031116/221635" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="29-1051822808870" name="null" type="0" nodeType="13">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="173-040916/001833" name="98-040915/233348" type="2" impl="org.micropsi.nodenet.modules.hypercept.RebootRemover" parent="162-040916/001833" defiant="true">
+      <Slots>
+        <Slot key="30000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="30000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="163-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="30003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="165-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="30004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="168-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="1-1048905872029" name="act-automatism" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="10.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919">
+          <Link type="0" linked="0-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919">
+          <Link type="0" linked="10-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1919"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="0-1048957262170" name="loop" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1932"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1932">
+          <Link type="1" linked="0-1048905872029" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1932">
+          <Link type="1" linked="0-1048905872029" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+          <Link type="1" linked="4-031219/161819" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1932"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1932"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1932"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1932"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="6-1051901702966" name="AND" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.5" decaytype="-1" outputf="0" lastdecay="1342">
+          <Link type="0" linked="22-1051901702966" slot="16000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="5-031116/221634" name="Emotions" type="2" impl="org.micropsi.nodenet.modules.EmotionalRegulation" parent="0-031116/221617" defiant="true">
+      <Slots>
+        <Slot key="1000" act="0.0"/>
+        <Slot key="1001" act="0.0"/>
+        <Slot key="1002" act="0.0"/>
+        <Slot key="1003" act="0.0"/>
+        <Slot key="1004" act="0.0"/>
+        <Slot key="1005" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="1004" act="2.0" fact="1.0" amp="1.0" max="2.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="1003" act="0.0" fact="1.0" amp="1.0" max="2.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="1002" act="0.0" fact="1.0" amp="1.0" max="2.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="4-031116/221634" slot="2001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1005" act="0.0" fact="1.0" amp="1.0" max="2.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="1000" act="-1.2388585275198691" fact="1.0" amp="1.0" max="2.0" min="-2.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="1001" act="0.0" fact="1.0" amp="1.0" max="2.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="4-031116/221634" slot="2000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1102" act="0.0" fact="1.0" amp="1.0" max="10.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="6-031116/221634" slot="0" weight="2.004601351456839" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1100" act="1.0" fact="1.0" amp="1.0" max="10.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="1101" act="1.0" fact="1.0" amp="1.0" max="10.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+      </Gates>
+      <Implementation competence="0.0" okayness="0.0" certainty="0.0" threshold="0.0" resolution="-1.2388585275198691" activation="5.012487506248436"/>
+    </Entity>
+    <Entity id="10-031115/152006" name="drinkwait" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="1" linked="7-1049669180835" slot="0" weight="1.0" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="0"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="11-031115/152023" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="15-031116/221635" name="Drink" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="5.012487506248436" fact="1.0" amp="1.0" max="10.0" min="-10.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="4-031116/221634" slot="2002" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="10-031116/221635" slot="9000" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="12-031116/221635" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+      </Gates>
+    </Entity>
+    <Entity id="187-040916/001833" name="fovea h" type="0" nodeType="51" dataType="fovea_h">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="0-1048940344844" name="CurrentLLSituation" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="100.0" fact="1.0" amp="1.0" max="100.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+      </Gates>
+    </Entity>
+    <Entity id="0-1047166855426" name="null" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1918">
+          <Link type="0" linked="1-1048905872029" slot="0" weight="0.8" conf="1.0" used="false"/>
+          <Link type="0" linked="2-1048905872029" slot="0" weight="0.6" conf="1.0" used="false"/>
+          <Link type="0" linked="0-1048948588738" slot="0" weight="0.4" conf="1.0" used="false"/>
+          <Link type="0" linked="0-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="10-1054238787374" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="53-031216/231320" slot="0" weight="0.7" conf="1.0" used="false"/>
+          <Link type="0" linked="0-1048957262170" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="175-040916/001833" name="Fungus" type="0" nodeType="50" dataType="percept_Fungus">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="184-040916/001833" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="189-040916/001833" name="reset" type="0" nodeType="51" dataType="fovea_reset">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="184-040916/001833" slot="27004" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="10-1049669180835" name="automatism-macro" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1762"/>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1762"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1762"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1762">
+          <Link type="0" linked="1-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1762">
+          <Link type="0" linked="3-1048905872029" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1762"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1762"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="68-031122/160028" name="null" type="0" nodeType="10">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="133-031219/164758" name="reset" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="4-1049063243301" slot="14002" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="1" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="599-031218/223423" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="0-1041642705496" name="root" type="1" dissoconstant="1.0" learningconst="0.0" strengthconst="0.0" parent="null">
+      <Slots/>
+      <Gates/>
+      <Content>
+        <Contains id="1-1044652927093"/>
+        <Contains id="0-1044922010968"/>
+        <Contains id="92-1046906565802"/>
+        <Contains id="0-1046912383497"/>
+        <Contains id="5-1048905872029"/>
+        <Contains id="0-1051901702966"/>
+        <Contains id="0-031116/221617"/>
+        <Contains id="49-031216/230503"/>
+        <Contains id="161-040916/001833"/>
+        <Contains id="162-040916/001833"/>
+      </Content>
+    </Entity>
+    <Entity id="239-040916/004447" name="null" type="2" impl="org.micropsi.nodenet.modules.hypercept.HypoMaintenance" parent="162-040916/001833" defiant="true">
+      <Slots/>
+      <Gates>
+        <Gate key="26000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="163-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="26001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="168-040916/001833" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="1-1046912383497" name="null" type="2" impl="org.micropsi.nodenet.modules.ScriptExecution" parent="0-1046912383497" defiant="true">
+      <Slots>
+        <Slot key="4001" act="0.0"/>
+        <Slot key="4000" act="0.0"/>
+        <Slot key="4002" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="4007" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="0-1048945751939" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015">
+          <Link type="0" linked="0-1047166855426" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4006" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="4000" act="1.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="4003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="4004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+        <Gate key="4005" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="2015"/>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="1-1044652927093" name="ProtocolSpace" type="1" dissoconstant="1.0" learningconst="0.0" strengthconst="1.05" parent="0-1041642705496">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates/>
+      <Content>
+        <Contains id="0-1044885535321"/>
+        <Contains id="0-1045341534123"/>
+        <Contains id="0-1048971895481"/>
+        <Contains id="1-1048971895481"/>
+        <Contains id="2-1048971895481"/>
+        <Contains id="3-1048971895481"/>
+        <Contains id="0-1049473600114"/>
+        <Contains id="28-1051822808870"/>
+        <Contains id="29-1051822808870"/>
+        <Contains id="189-1056040849162"/>
+        <Contains id="0-1056125100543"/>
+        <Contains id="1-1056125100543"/>
+        <Contains id="2-1056125100543"/>
+        <Contains id="33-031010/222819"/>
+        <Contains id="82-031122/160232"/>
+        <Contains id="415-031218/221534"/>
+        <Contains id="677-031220/022235"/>
+      </Content>
+    </Entity>
+    <Entity id="98-1046906565802" name="hypercept" type="0" nodeType="0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="1" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299">
+          <Link type="1" linked="107-1046906565802" slot="0" weight="1.0020009999999997" conf="1.0" used="false" x="0.0" y="0.0" z="0.0" t="10"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="3" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299">
+          <Link type="0" linked="9-1049669180835" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="5" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="6" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="1299"/>
+        <Gate key="7" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="8" act="0.0" fact="0.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+  </Entities>
+</MicroPsiNet>

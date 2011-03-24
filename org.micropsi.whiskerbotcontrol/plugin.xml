@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.1"?>
+<plugin
+   id="org.micropsi.whiskerbotcontrol"
+   name="Whiskerbot Control plugin"
+   version="0.0.1"
+   provider-name="NBP AMouse Group"
+   class="org.micropsi.eclipse.whiskerbotcontrol.WhiskerbotcontrolPlugin">
+
+   <runtime>
+      <library name="whiskerbotcontrol.jar">
+         <export name="*"/>
+      </library>
+   </runtime>
+
+   <requires>
+      <import plugin="org.micropsi.console" export="true"/>
+      <!--import plugin="org.micropsi.alifeview" export="true"/-->
+      <import plugin="org.micropsi.media" export="true"/>
+   </requires>
+   
+   <extension
+         point="org.micropsi.console.consoles">
+      <console
+            name="Robot Console"
+            class="org.micropsi.eclipse.whiskerbotcontrol.RobotConsole"
+            id="org.micropsi.eclipse.whiskerbotcontrol.robotconsole">
+      </console>
+  </extension>
+
+  <extension
+         point="org.micropsi.runtime.runtimeCodeContributions">
+      <contribution
+            name="Whiskerbot Code Contribution"
+            class="org.micropsi.eclipse.whiskerbotcontrol.AMouseCodeContribution"
+            id="org.micropsi.eclipse.whiskerbotcontrol.amousecodecontribution">
+      </contribution>
+   </extension>
+
+  <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            name="Robot"
+            category="org.micropsi.eclipse.runtime.aeppreferences"
+            class="org.micropsi.eclipse.whiskerbotcontrol.RobotPreferences"
+            id="org.micropsi.eclipse.whiskerbotcontrol.robotpreferences">
+      </page>
+  </extension>
+ 
+  <extension 
+   	    point="org.eclipse.ui.actionSets"> 
+    <actionSet
+      id="org.micropsi.robotactions" 
+      label="Robot"
+      visible="true"> 
+      <menu
+        id="org.micropsi.robotmenu" 
+        label="Robot"
+        path="additions"> 
+        <separator name="robot"/>
+      </menu>
+      <action
+        id="org.micropsi.resetrobot" 
+        label="Reset Robot"
+        menubarPath="org.micropsi.robotmenu/robot" 
+        class="org.micropsi.eclipse.whiskerbotcontrol.ResetRobotAction"> 
+      </action>
+      <action
+        id="org.micropsi.resetrobot" 
+        label="Register Overlay"
+        menubarPath="org.micropsi.robotmenu/robot" 
+        class="org.micropsi.eclipse.whiskerbotcontrol.RegisterOverlayAction"> 
+      </action>
+    </actionSet>
+  </extension>
+    
+  <extension
+         point="org.eclipse.ui.actionSetPartAssociations">
+      <actionSetPartAssociation
+            targetID="org.micropsi.robotactions">
+         <part id="*">
+         </part>
+      </actionSetPartAssociation>
+  </extension>
+
+</plugin>
