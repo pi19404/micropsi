@@ -1,0 +1,39 @@
+<project name="Micropsi" default="update" basedir="..">
+
+  <property name="src" location="sources"/>
+  <property name="build" location="bin"/>
+
+  <target name="init">
+    <tstamp/>
+  </target>
+
+  <target name="clean" description="clean up" >
+    <delete dir="viewer"/>
+  	<delete dir="os"/>
+  </target>
+
+  <target name="libloader" description="copy the lib loader binary in the right place" >
+      <copy todir="">
+      	<fileset dir="bin" includes="LibLoader.class"></fileset>
+      </copy>
+  </target>
+
+  <target name="update" depends="init" description="update binary content from the 3denging project">
+      <antcall target="clean"/>
+      <mkdir dir="viewer"/>
+  	  <mkdir dir="os/win32"/>
+      
+      <copy todir="viewer/bin">
+      	<fileset dir="../org.micropsi.native.3dviewer/bin" includes="*.dll,*.exe"></fileset>
+      </copy>
+
+      <copy todir="viewer/data">
+      	<fileset dir="../org.micropsi.native.3dviewer/data"/>
+  	  </copy>
+
+      <copy todir="os/win32">
+      	<fileset dir="../org.micropsi.native.3dviewer/bin" includes="3dview2.dll"></fileset>
+      </copy>
+  </target>
+  
+</project>
