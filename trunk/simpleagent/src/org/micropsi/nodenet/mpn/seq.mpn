@@ -1,0 +1,178 @@
+
+<MicroPsiNet>
+  <Entities netstep="4022">
+    <Entity id="7-040809/142500" name="kopf" type="2" impl="org.micropsi.nodenet.modules.chunkagent.Chunk" parent="17-040809/010438" defiant="true">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+        <Slot key="88002" act="0.0"/>
+        <Slot key="88004" act="0.0"/>
+        <Slot key="88001" act="0.0"/>
+        <Slot key="88003" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4005"/>
+        <Gate key="1" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4005"/>
+        <Gate key="2" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4005"/>
+        <Gate key="4" act="0.0" fact="1.0" amp="1.0" max="2.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4005">
+          <Link type="0" linked="4-040809/142500" slot="88001" weight="1.0" conf="1.0" used="true"/>
+          <Link type="0" linked="5-040809/142500" slot="88001" weight="1.0" conf="1.0" used="true"/>
+          <Link type="0" linked="10-040809/142500" slot="88001" weight="1.0" conf="1.0" used="true"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4005"/>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="6-040809/142500" name="seq-2-1" type="2" impl="org.micropsi.nodenet.modules.chunkagent.Chunk" parent="17-040809/010438" defiant="true">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+        <Slot key="88002" act="0.0"/>
+        <Slot key="88004" act="0.0"/>
+        <Slot key="88001" act="0.0"/>
+        <Slot key="88003" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4007"/>
+        <Gate key="1" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4007"/>
+        <Gate key="2" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4007"/>
+        <Gate key="4" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4007"/>
+        <Gate key="3" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4007">
+          <Link type="0" linked="4-040809/142500" slot="88003" weight="1.0" conf="1.0" used="true"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="8-040809/142500" name="0-040808/211804" type="0" nodeType="50" dataType="constant_1.0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="1.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4022">
+          <Link type="0" linked="10-040809/142500" slot="88003" weight="1.0" conf="1.0" used="true"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="2-040809/142500" name="seq-2-2" type="2" impl="org.micropsi.nodenet.modules.chunkagent.Chunk" parent="17-040809/010438" defiant="true">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+        <Slot key="88002" act="0.0"/>
+        <Slot key="88004" act="0.0"/>
+        <Slot key="88001" act="0.0"/>
+        <Slot key="88003" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4007"/>
+        <Gate key="1" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4007"/>
+        <Gate key="2" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4007"/>
+        <Gate key="4" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4007"/>
+        <Gate key="3" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4007">
+          <Link type="0" linked="4-040809/142500" slot="88003" weight="1.0" conf="1.0" used="true"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="10-040809/142500" name="seq-3" type="2" impl="org.micropsi.nodenet.modules.chunkagent.Chunk" parent="17-040809/010438" defiant="true">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+        <Slot key="88002" act="0.0"/>
+        <Slot key="88004" act="0.0"/>
+        <Slot key="88001" act="0.0"/>
+        <Slot key="88003" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4006"/>
+        <Gate key="1" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4006"/>
+        <Gate key="2" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4006">
+          <Link type="0" linked="4-040809/142500" slot="88004" weight="1.0" conf="1.0" used="true"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4006"/>
+        <Gate key="3" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4006">
+          <Link type="0" linked="7-040809/142500" slot="88003" weight="1.0" conf="1.0" used="true"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="9-040809/142500" name="1-040808/213507" type="0" nodeType="50" dataType="constant_1.0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="1.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4022">
+          <Link type="0" linked="5-040809/142500" slot="88003" weight="1.0" conf="1.0" used="true"/>
+          <Link type="0" linked="6-040809/142500" slot="88002" weight="1.0" conf="1.0" used="true"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="5-040809/142500" name="seq-1" type="2" impl="org.micropsi.nodenet.modules.chunkagent.Chunk" parent="17-040809/010438" defiant="true">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+        <Slot key="88002" act="0.0"/>
+        <Slot key="88004" act="0.0"/>
+        <Slot key="88001" act="0.0"/>
+        <Slot key="88003" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4006"/>
+        <Gate key="1" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4006">
+          <Link type="0" linked="4-040809/142500" slot="88002" weight="1.0" conf="1.0" used="true"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4006"/>
+        <Gate key="4" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4006"/>
+        <Gate key="3" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4006">
+          <Link type="0" linked="7-040809/142500" slot="88003" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="17-040809/010438" name="null" type="1" dissoconstant="1.0" learningconst="0.0" strengthconst="1.0" parent="null">
+      <Slots/>
+      <Gates/>
+      <Content>
+        <Contains id="2-040809/142500"/>
+        <Contains id="3-040809/142500"/>
+        <Contains id="4-040809/142500"/>
+        <Contains id="5-040809/142500"/>
+        <Contains id="6-040809/142500"/>
+        <Contains id="7-040809/142500"/>
+        <Contains id="8-040809/142500"/>
+        <Contains id="9-040809/142500"/>
+        <Contains id="10-040809/142500"/>
+      </Content>
+    </Entity>
+    <Entity id="3-040809/142500" name="28-040808/194539" type="0" nodeType="50" dataType="debugSource">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4004">
+          <Link type="0" linked="7-040809/142500" slot="88001" weight="1.0" conf="1.0" used="true"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="4-040809/142500" name="seq-2" type="2" impl="org.micropsi.nodenet.modules.chunkagent.Chunk" parent="17-040809/010438" defiant="true">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+        <Slot key="88002" act="0.0"/>
+        <Slot key="88004" act="0.0"/>
+        <Slot key="88001" act="0.0"/>
+        <Slot key="88003" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4006"/>
+        <Gate key="1" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4006">
+          <Link type="0" linked="10-040809/142500" slot="88002" weight="1.0" conf="1.0" used="true"/>
+        </Gate>
+        <Gate key="2" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4006">
+          <Link type="0" linked="5-040809/142500" slot="88004" weight="1.0" conf="1.0" used="true"/>
+        </Gate>
+        <Gate key="4" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4006">
+          <Link type="0" linked="6-040809/142500" slot="88001" weight="1.0" conf="1.0" used="true"/>
+          <Link type="0" linked="2-040809/142500" slot="88001" weight="1.0" conf="1.0" used="true"/>
+        </Gate>
+        <Gate key="3" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="4006">
+          <Link type="0" linked="7-040809/142500" slot="88003" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+  </Entities>
+</MicroPsiNet>

@@ -1,0 +1,98 @@
+Syntax error on token ")", ] expectedSyntax error, insert "]" to complete ArgumentListString[] s = {"a","b","c"};
+System.out.println(s[s.length-1]);
+An exception occurred during evaluation:  java.lang.ArrayIndexOutOfBoundsException
+
+System.out.println("k_"+new java.util.Date()+"uu");	
+
+
+String s="abc\r\n";
+for(int i=0;i<s.length();i++){
+	System.out.print((int)s.charAt(i)+" ");
+}
+
+
+
+double d = Math.E;
+System.out.print("%f2.6",d);
+An exception occurred during evaluation:  java.util.UnknownFormatConversionException
+System.out.println((int)'\t');
+
+
+logger.debug("Leo: BPChanges1 received in agent "+tmp.getKey()+" "+tmp.getValue());
+System.out.println(Double.parseDouble("111"))
+
+
+Cannot cast from int to StringString d = "2.2";
+int i;
+i = (int)Math.round(Double.parseDouble(d));
+d = Integer.toString(i);
+System.out.println(d);
+
+===================================================================
+
+import java.*;
+java.util.StringTokenizer token = new java.util.StringTokenizer("N,3,43,23",",");
+//token.nextToken(); //skip first element
+System.out.println(token.nextToken());
+System.out.println(token.nextToken());
+System.out.println(token.nextToken());
+System.out.println(token.nextToken());
+System.out.println(token.hasMoreTokens());
+System.out.println(token.nextToken());
+An exception occurred during evaluation:  java.util.NoSuchElementException
+
+==============================================================
+
+org.micropsi.comp.robot.khepera2.KheperaManager comPort = org.micropsi.comp.robot.khepera2.KheperaManager.getInstance();
+//org.micropsi.comp.robot.khepera2.Khepera k = new org.micropsi.comp.robot.khepera2.Khepera;
+//org.micropsi.comp.robot.khepera2.Khepera.getProximitySensors(); 
+comPort.khepera.getAmbientLightSensors();
+String s = comPort.khepera.getLs8();
+System.out.println(s);
+
+Syntax error on token "!", delete this tokenSystem.out.println(!(true && false));
+
+
+============================================================
+String str = "2o,2,4,n";
+System.out.println((str.startsWith("o")&&(str.endsWith("n"))));
+System.out.println(((str.charAt(0)=='o')&&(str.endsWith("n"))));
+
+============================================================
+	
+int i=2;
+int ii=3;
+int iii=3;
+double j=12.93;
+iii=(int)Math.round(j);
+System.out.println(i/ii+" | "+(double)(i/ii)+" | "+(double)i/(double)ii+" | "+iii);
+
+=============================================================
+	
+	System.out.println(Math.pow(-2.0,-4.0));
+
+=============================================================
+	System.out.println(Double.compare(2.3,2.1));
+
+============================================================
+	System.out.println(1.5614250085993551e-004 * 2);
+============================================================
+	String a = "3";
+	System.out.println(true && !( a.equals("5")&& a.equals("4")));
+	
+========================================================
+double y = Double.parseDouble("3.2");
+	int yy = (int)y;
+	String s = Integer.toString(yy);
+	System.out.println(yy+" | "+y+" | "+Integer.toString(yy));   
+double x=2.2;
+System.out.println((int)x);
+==========================================================Syntax error on token "=", delete this token=
+	double x = -0.02;
+System.out.println((int)x);
+
+The method pritln(int) is undefined for the type PrintStreamint i = 1;
+System.out.println(5 * (++i));
+==========================================
+	String str = "12";
+	System.out.println(str.charAt(0)=='1');An exception occurred during evaluation:  java.lang.StringIndexOutOfBoundsExceptionAn exception occurred during evaluation:  java.lang.StringIndexOutOfBoundsException

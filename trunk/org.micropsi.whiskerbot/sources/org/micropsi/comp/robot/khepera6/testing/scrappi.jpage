@@ -1,0 +1,95 @@
+System.out.println((char)111);char c = '\n';System.out.println((int)c);The method println(int) is undefined for the type Class<System>Syntax error on token ";", delete this tokenThe method println(String) is undefined for the type Class<System>The method println(String) is undefined for the type Class<System>int i = 6;System.class.println((int)(i = 8)+"dd");int i = 10;System.out.println("char:"+(char)i+"end");Type mismatch: cannot convert from int to booleanint i = 0;if(i) System.out.println(i);boolean b;
+logger.debug("Leo: BPChanges1 received in agent "+tmp.getKey()+" "+tmp.getValue());
+System.out.println(Double.parseDouble("111"))
+
+
+Cannot cast from int to StringString d = "2.2";
+int i;
+i = (int)Math.round(Double.parseDouble(d));
+d = Integer.toString(i);
+System.out.println(d);
+
+===================================================================
+
+import java.*;
+java.util.StringTokenizer token = new java.util.StringTokenizer("N,3,43,23",",");
+//token.nextToken(); //skip first element
+System.out.println(token.nextToken());
+System.out.println(token.nextToken());
+System.out.println(token.nextToken());
+System.out.println(token.nextToken());
+System.out.println(token.hasMoreTokens());
+System.out.println(token.nextToken());
+An exception occurred during evaluation:  java.util.NoSuchElementException
+
+==============================================================
+
+org.micropsi.comp.robot.khepera2.KheperaManager comPort = org.micropsi.comp.robot.khepera2.KheperaManager.getInstance();
+//org.micropsi.comp.robot.khepera2.Khepera k = new org.micropsi.comp.robot.khepera2.Khepera;
+//org.micropsi.comp.robot.khepera2.Khepera.getProximitySensors(); 
+comPort.khepera.getAmbientLightSensors();
+String s = comPort.khepera.getLs8();
+System.out.println(s);
+
+Syntax error on token "!", delete this tokenSystem.out.println(!(true && false));
+
+
+============================================================
+String str = "2o,2,4,n";
+System.out.println((str.startsWith("o")&&(str.endsWith("n"))));
+System.out.println(((str.charAt(0)=='o')&&(str.endsWith("n"))));
+
+============================================================
+	
+int i=2;
+int ii=3;
+int iii=3;
+double j=12.93;
+iii=(int)Math.round(j);
+System.out.println(i/ii+" | "+(double)(i/ii)+" | "+(double)i/(double)ii+" | "+iii);
+
+=============================================================
+	
+	System.out.println(Math.pow(-2.0,-4.0));
+
+=============================================================
+	System.out.println(Double.compare(2.3,2.1));
+
+============================================================
+	System.out.println(1.5614250085993551e-004 * 2);
+============================================================
+	String a = "3";
+	System.out.println(true && !( a.equals("5")&& a.equals("4")));
+	
+========================================================
+double y = Double.parseDouble("3.2");
+	int yy = (int)y;
+	String s = Integer.toString(yy);
+	System.out.println(yy+" | "+y+" | "+Integer.toString(yy));   
+double x=2.2;
+System.out.println((int)x);
+==========================================================Syntax error on token "=", delete this token=
+	double x = -0.02;
+System.out.println((int)x);
+
+The method pritln(int) is undefined for the type PrintStreamint i = 1;
+System.out.println(5 * (++i));
+==========================================
+	String str = "12";
+	System.out.println(str.charAt(0)=='1');An exception occurred during evaluation:  java.lang.StringIndexOutOfBoundsExceptionAn exception occurred during evaluation:  java.lang.StringIndexOutOfBoundsException
+==================
+	Syntax error on token "int", assert expectedSyntax error on token "+", invalid AssignmentOperator
+Cannot cast from int to StringType mismatch: cannot convert from int to StringString l1 = "70";
+try{
+	l1 = String.valueOf(Integer.parseInt("400."));
+} catch(NumberFormatException e){
+	System.out.println("autsch!");
+}
+	System.out.println(l1);
+	
+	Syntax error on token "==", delete this token
+String s = null;
+s="";
+	System.out.println(10%3);
+	Functions cannot be resolved to a typeFunctions cannot be resolved
+	Functions F = Functions.functions;

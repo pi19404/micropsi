@@ -1,0 +1,363 @@
+
+<MicroPsiNet>
+  <Entities netstep="2015">
+    <Entity id="97-040915/233331" name="null" type="2" impl="org.micropsi.nodenet.modules.hypercept.HypoMaintenance" parent="2-040829/161005" defiant="true">
+      <Slots/>
+      <Gates>
+        <Gate key="26000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="25-040829/161005" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="26001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="31-040829/161005" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="10-040905/174019" name="32-040903/180443" type="2" impl="org.micropsi.nodenet.modules.hypercept.SituationImporter" parent="1-040829/161005" defiant="true">
+      <Slots>
+        <Slot key="27000" act="0.0"/>
+        <Slot key="27001" act="0.0"/>
+        <Slot key="27004" act="0.0"/>
+        <Slot key="27002" act="0.0"/>
+        <Slot key="27003" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="27000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="0-040915/222744" name="null" type="2" impl="org.micropsi.nodenet.modules.hypercept.SurGenerator" parent="2-040829/161005" defiant="true">
+      <Slots/>
+      <Gates>
+        <Gate key="29000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="25-040829/161005" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="29002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="30-040829/161005" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="29001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="1-040829/161005" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="29003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="27-040829/161005" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="29004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="31-040829/161005" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="1-040829/161005" name="Memory" type="1" dissoconstant="1.0" learningconst="0.0" strengthconst="1.0" parent="0-040829/160955">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates/>
+      <Content>
+        <Contains id="4-040829/161005"/>
+        <Contains id="5-040829/161005"/>
+        <Contains id="6-040829/161005"/>
+        <Contains id="7-040829/161005"/>
+        <Contains id="8-040829/161005"/>
+        <Contains id="9-040829/161005"/>
+        <Contains id="10-040829/161005"/>
+        <Contains id="11-040829/161005"/>
+        <Contains id="12-040829/161005"/>
+        <Contains id="13-040829/161005"/>
+        <Contains id="10-040905/174019"/>
+        <Contains id="11-040905/174019"/>
+        <Contains id="13-040905/174019"/>
+        <Contains id="14-040905/174019"/>
+        <Contains id="17-040905/174019"/>
+        <Contains id="18-040905/174019"/>
+      </Content>
+    </Entity>
+    <Entity id="7-040829/161005" name="agent" type="0" nodeType="50" dataType="percept_SteamVehicleAgent">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="10-040905/174019" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="17-040905/174019" name="foveaH" type="2" impl="org.micropsi.nodenet.modules.hypercept.STActor" parent="1-040829/161005" defiant="true">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="10-040905/174019" slot="27002" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="28000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="14-040905/174019" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation attribute="x"/>
+    </Entity>
+    <Entity id="29-040829/161005" name="69-040523/173021" type="2" impl="org.micropsi.nodenet.modules.hypercept.BootstrapGenerator" parent="2-040829/161005" defiant="true">
+      <Slots>
+        <Slot key="25000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="25000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="25-040829/161005" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="25001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="1-040829/161005" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="25002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="10-040905/174019" slot="27000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="18-040905/174019" name="reset" type="0" nodeType="51" dataType="fovea_reset">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="10-040905/174019" slot="27004" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="34-040829/161005" name="constant" type="0" nodeType="50" dataType="constant_1.0">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="30-040829/161005" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="12-040829/161005" name="Banana" type="0" nodeType="50" dataType="percept_Banana">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="10-040905/174019" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="98-040915/233348" name="null" type="2" impl="org.micropsi.nodenet.modules.hypercept.RebootRemover" parent="2-040829/161005" defiant="true">
+      <Slots>
+        <Slot key="30000" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="30000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="25-040829/161005" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="30002" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="30001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="30003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="27-040829/161005" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="30004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="31-040829/161005" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="10-040829/161005" name="Wirselkraut" type="0" nodeType="50" dataType="percept_Wirselkraut">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="10-040905/174019" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="11-040905/174019" name="fovea v" type="0" nodeType="51" dataType="fovea_v">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="0-040829/160955" name="null" type="1" dissoconstant="1.0" learningconst="0.0" strengthconst="1.0" parent="null">
+      <Slots/>
+      <Gates/>
+      <Content>
+        <Contains id="1-040829/161005"/>
+        <Contains id="2-040829/161005"/>
+      </Content>
+    </Entity>
+    <Entity id="4-040829/161005" name="Mushroom" type="0" nodeType="50" dataType="percept_Mushroom">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="10-040905/174019" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="2-040829/161005" name="HyPercept" type="1" dissoconstant="1.0" learningconst="0.0" strengthconst="1.0" parent="0-040829/160955">
+      <Slots/>
+      <Gates/>
+      <Content>
+        <Contains id="25-040829/161005"/>
+        <Contains id="26-040829/161005"/>
+        <Contains id="27-040829/161005"/>
+        <Contains id="29-040829/161005"/>
+        <Contains id="30-040829/161005"/>
+        <Contains id="31-040829/161005"/>
+        <Contains id="34-040829/161005"/>
+        <Contains id="15-040905/193409"/>
+        <Contains id="0-040915/222744"/>
+        <Contains id="97-040915/233331"/>
+        <Contains id="98-040915/233348"/>
+      </Content>
+    </Entity>
+    <Entity id="11-040829/161005" name="ShockPodBush" type="0" nodeType="50" dataType="percept_ShockPodBush">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="10-040905/174019" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="9-040829/161005" name="Tree" type="0" nodeType="50" dataType="percept_Tree">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="10-040905/174019" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="13-040905/174019" name="foveaV" type="2" impl="org.micropsi.nodenet.modules.hypercept.STActor" parent="1-040829/161005" defiant="true">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+        <Gate key="28000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="11-040905/174019" slot="0" weight="1.0" conf="1.0" used="false"/>
+          <Link type="0" linked="10-040905/174019" slot="27003" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation attribute="y"/>
+    </Entity>
+    <Entity id="31-040829/161005" name="NotTheCase" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="6-040829/161005" name="ThornBush" type="0" nodeType="50" dataType="percept_ThornBush">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="10-040905/174019" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="27-040829/161005" name="TheCase" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="26-040829/161005" name="66-040523/172347" type="2" impl="org.micropsi.nodenet.modules.hypercept.Prover" parent="2-040829/161005" defiant="true">
+      <Slots/>
+      <Gates>
+        <Gate key="24000" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="25-040829/161005" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="24001" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="30-040829/161005" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="24005" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="15-040905/193409" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="24002" act="1.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="27-040829/161005" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="24003" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="31-040829/161005" slot="0" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+        <Gate key="24004" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="29-040829/161005" slot="25000" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+      <Implementation/>
+    </Entity>
+    <Entity id="13-040829/161005" name="WaterHole" type="0" nodeType="50" dataType="percept_WaterHole">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="10-040905/174019" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="30-040829/161005" name="BeingChecked" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="15-040905/193409" name="reset fovea" type="0" nodeType="51" dataType="fovea_reset">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="25-040829/161005" name="Possible" type="0" nodeType="30">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="0.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+    <Entity id="8-040829/161005" name="ShockpodBush" type="0" nodeType="50" dataType="percept_Shockpod bush">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="10-040905/174019" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="5-040829/161005" name="Fungus" type="0" nodeType="50" dataType="percept_Fungus">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0">
+          <Link type="0" linked="10-040905/174019" slot="27001" weight="1.0" conf="1.0" used="false"/>
+        </Gate>
+      </Gates>
+    </Entity>
+    <Entity id="14-040905/174019" name="fovea h" type="0" nodeType="51" dataType="fovea_h">
+      <Slots>
+        <Slot key="0" act="0.0"/>
+      </Slots>
+      <Gates>
+        <Gate key="0" act="0.0" fact="1.0" amp="1.0" max="1.0" min="-1.0" theta="0.0" decaytype="-1" outputf="0" lastdecay="0"/>
+      </Gates>
+    </Entity>
+  </Entities>
+</MicroPsiNet>
