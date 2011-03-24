@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<fragment
+   id="sun.com.jmf.linux"
+   name="JMF Linux"
+   version="2.1.1"
+   provider-name="The Micropsi Project"
+   plugin-id="com.sun.jmf"
+   plugin-version="2.1.1"
+   match="equivalent">
+
+   <runtime>
+      <library name="linux.jar">
+         <export name="*"/>
+      </library>
+      <library name="lib/jmf.jar">
+         <export name="*"/>
+      </library>
+   </runtime>
+
+</fragment>
