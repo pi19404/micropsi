@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.1"?>
+<plugin
+   id="org.micropsi.3dviewer"
+   name="Micropsi 3dviewer"
+   version="0.6.13"
+   provider-name="The Micropsi Project"
+   class="org.micropsi.eclipse.viewer3d.Viewer3DPlugin">
+
+   <runtime>
+      <library name="3dviewer.jar"/>
+   </runtime>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.ui.views"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.eclipse.ui.workbench.texteditor"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.micropsi.console"/>
+      <import plugin="org.micropsi.runtime"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.ui"/>
+   </requires>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            name="3D View"
+            icon="icons/viewer.gif"
+            category="org.micropsi.worldconsole"
+            class="org.micropsi.eclipse.viewer3d.World3DView"
+            id="org.micropsi.eclipse.viewer3d.world3dview">
+      </view>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            name="3D Viewer"
+            category="org.micropsi.eclipse.runtime.aeppreferences"
+            class="org.micropsi.eclipse.viewer3d.Viewer3dPreferences"
+            id="org.micropsi.eclipse.viewer3d.viewer3dpreferences">
+      </page>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="3D Viewer"
+            id="org.micropsi.3dviewer.starter"
+            visible="true">
+         <action
+               label="Start 3D Viewer"
+               class="org.micropsi.eclipse.viewer3d.Start3DViewerAction"
+               icon="icons/viewer.gif"
+               toolbarPath="Micropsi"
+               id="org.micropsi.eclipse.mindconsole.selectagent">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>
