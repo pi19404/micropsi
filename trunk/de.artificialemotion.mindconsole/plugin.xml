@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.1"?>
+<plugin
+   id="org.micropsi.mindconsole"
+   name="Micropsi Mind console"
+   version="0.6.13"
+   provider-name="The Micropsi Project"
+   class="org.micropsi.eclipse.mindconsole.MindPlugin">
+
+   <runtime>
+      <library name="mindconsole.jar">
+         <export name="*"/>
+      </library>
+      <library name="lib/org.micropsi.net.jar">
+         <export name="*"/>
+      </library>
+   </runtime>
+   <requires>
+      <import plugin="org.eclipse.core.runtime" export="true"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.micropsi.console"/>
+      <import plugin="org.micropsi.runtime"/>
+      <import plugin="org.micropsi.agentmanager"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.jface"/>
+      <import plugin="org.eclipse.jdt.core"/>
+      <import plugin="org.eclipse.jdt.ui"/>
+      <import plugin="org.eclipse.core.resources"/>
+   </requires>
+
+   <extension
+         point="org.micropsi.runtime.runtimeCodeContributions">
+      <contribution
+            name="Micropsi Net Code Contribution"
+            class="org.micropsi.eclipse.mindconsole.NetCodeContribution"
+            id="org.micropsi.eclipse.mindconsole.netcodecontribution">
+      </contribution>
+   </extension>
+   <extension
+         point="org.micropsi.console.consoles">
+      <console
+            name="Mind Console"
+            class="org.micropsi.eclipse.mindconsole.MindConsole"
+            id="org.micropsi.eclipse.mindconsole.mindconsole">
+      </console>
+   </extension>
+   <extension
+         point="org.micropsi.agentmanager.agentrelated">
+      <agentrelated
+            name="Mind Agent relation"
+            id="org.micropsi.eclipse.mindconsole.mindconsole">
+      </agentrelated>
+   </extension>
+   <extension
+         point="org.micropsi.console.monitorProviders">
+      <monitorProvider
+            name="Gate provider"
+            class="org.micropsi.eclipse.mindconsole.GateMonitorProvider"
+            id="org.micropsi.eclipse.mindconsole.gatemonitorprovider">
+      </monitorProvider>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="Mind"
+            icon="icons/brain.gif"
+            class="org.micropsi.eclipse.mindconsole.MindPerspective"
+            id="org.micropsi.eclipse.mindconsole.mindperspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="NetDebug"
+            icon="icons/oscilloscope.gif"
+            class="org.micropsi.eclipse.mindconsole.NetDebugPerspective"
+            id="org.micropsi.eclipse.mindconsole.netdebugperspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="Sensors"
+            icon="icons/oscilloscope.gif"
+            class="org.micropsi.eclipse.mindconsole.SensorPerspective"
+            id="org.micropsi.eclipse.mindconsole.sensorperspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Micropsi Mind Console"
+            id="org.micropsi.mindconsole">
+      </category>
+      <view
+            name="MindNavigator"
+            icon="icons/space.gif"
+            category="org.micropsi.mindconsole"
+            class="org.micropsi.eclipse.mindconsole.MindNavigatorView"
+            id="org.micropsi.eclipse.mindconsole.mindnavigatorview">
+      </view>
+      <view
+            name="MindEdit"
+            icon="icons/brainedit.gif"
+            category="org.micropsi.mindconsole"
+            class="org.micropsi.eclipse.mindconsole.MindEditView"
+            id="org.micropsi.eclipse.mindconsole.mindeditview">
+      </view>
+      <view
+            name="EntityEdit"
+            icon="icons/entity.gif"
+            category="org.micropsi.mindconsole"
+            class="org.micropsi.eclipse.mindconsole.EntityEditView"
+            id="org.micropsi.eclipse.mindconsole.entityeditview">
+      </view>
+      <view
+            name="LinkageEdit"
+            icon="icons/link.gif"
+            category="org.micropsi.mindconsole"
+            class="org.micropsi.eclipse.mindconsole.LinkageEditView"
+            id="org.micropsi.eclipse.mindconsole.linkageeditview">
+      </view>
+      <view
+            name="IncomingLinks"
+            icon="icons/link.gif"
+            category="org.micropsi.mindconsole"
+            class="org.micropsi.eclipse.mindconsole.IncomingLinksView"
+            id="org.micropsi.eclipse.mindconsole.incominglinksview">
+      </view>
+      <view
+            name="Library"
+            icon="icons/library.gif"
+            category="org.micropsi.mindconsole"
+            class="org.micropsi.eclipse.mindconsole.LibraryView"
+            id="org.micropsi.eclipse.mindconsole.libraryview">
+      </view>
+      <view
+            name="VisualSituation"
+            icon="icons/visualsituation.gif"
+            category="org.micropsi.mindconsole"
+            class="org.micropsi.eclipse.mindconsole.VisualSituationView"
+            id="org.micropsi.eclipse.mindconsole.visualsituationview">
+      </view>
+      <view
+            name="DebugSource"
+            icon="icons/debugsource.gif"
+            category="org.micropsi.mindconsole"
+            class="org.micropsi.eclipse.mindconsole.DebugSourceView"
+            id="org.micropsi.eclipse.mindconsole.debugsourceview">
+      </view>
+      <view
+            name="Scripting"
+            icon="icons/script.gif"
+            category="org.micropsi.mindconsole"
+            class="org.micropsi.eclipse.mindconsole.ScriptView"
+            id="org.micropsi.eclipse.mindconsole.scriptview">
+      </view>
+      
+   </extension>
+   <extension
+         point="org.eclipse.ui.viewActions">
+      <viewContribution
+            targetID="org.micropsi.eclipse.mindconsole.mindeditview"
+            id="org.micropsi.eclipse.mindconsole.mindeditview.actions">
+         <action
+               label="New Link"
+               icon="icons/link.gif"
+               tooltip="Creates a new Link"
+               class="org.micropsi.eclipse.mindconsole.actions.CreateNewLinkAction"
+               menubarPath="additions"
+               toolbarPath="additions"
+               id="org.micropsi.eclipse.mindconsole.actions.createnewlinkaction">
+         </action>
+         <action
+               label="New NetEntity"
+               icon="icons/newentity.gif"
+               tooltip="Creates a new NetEntity"
+               class="org.micropsi.eclipse.mindconsole.actions.CreateNewEntityAction"
+               menubarPath="additions"
+               toolbarPath="additions"
+               id="org.micropsi.eclipse.mindconsole.actions.createnewentityaction">
+         </action>
+         <action
+               label="Save state"
+               icon="icons/savestate.gif"
+               tooltip="Saves the net&apos;s state"
+               class="org.micropsi.eclipse.mindconsole.actions.SaveAgentAction"
+               menubarPath="additions"
+               toolbarPath="additions"
+               id="org.micropsi.eclipse.mindconsole.actions.saveagentaction">
+         </action>
+         <action
+               label="Load state"
+               icon="icons/loadstate.gif"
+               tooltip="Loads the net&apos;s state"
+               class="org.micropsi.eclipse.mindconsole.actions.LoadAgentAction"
+               menubarPath="additions"
+               toolbarPath="additions"
+               id="org.micropsi.eclipse.mindconsole.actions.loadagentaction">
+         </action>
+         <action
+               label="Change cycle delay"
+               style="push"
+               icon="icons/timing.gif"
+               tooltip="Change the per-cycle delay"
+               class="org.micropsi.eclipse.mindconsole.actions.ChangeDelayAction"
+               toolbarPath="Normal/Micropsi/Brainview"
+               id="org.micropsi.eclipse.mindconsole.actions.changedelayaction">
+         </action>
+         <action
+               label="Goto parent space"
+               style="push"
+               icon="icons/nodespaceUp.gif"
+               tooltip="Opens the space&apos;s parent space"
+               class="org.micropsi.eclipse.mindconsole.actions.OpenParentAction"
+               toolbarPath="Normal/Micropsi/Brainview"
+               id="org.micropsi.eclipse.mindconsole.actions.openparentaction">
+         </action>
+      </viewContribution>
+      <viewContribution
+            targetID="org.micropsi.eclipse.mindconsole.scriptview"
+            id="org.micropsi.eclipse.mindconsole.scriptview.actions">
+         <action
+               label="Kill current"
+               style="push"
+               icon="icons/killscript.gif"
+               tooltip="Kills the currently running script (avoid!)"
+               class="org.micropsi.eclipse.mindconsole.actions.KillScriptAction"
+               toolbarPath="additions"
+               id="org.micropsi.eclipse.mindconsole.actions.killscriptaction">
+         </action>
+         <action
+               label="Stop current"
+               style="push"
+               icon="icons/stopscript.gif"
+               tooltip="Stops the currently running script"
+               class="org.micropsi.eclipse.mindconsole.actions.StopScriptAction"
+               toolbarPath="additions"
+               id="org.micropsi.eclipse.mindconsole.actions.stopscriptaction">
+         </action>
+         <action
+               label="Run selected"
+               style="push"
+               icon="icons/runscript.gif"
+               tooltip="Runs ths selected script"
+               class="org.micropsi.eclipse.mindconsole.actions.RunScriptAction"
+               toolbarPath="additions"
+               id="org.micropsi.eclipse.mindconsole.actions.runscriptaction">
+         </action>
+      </viewContribution>      
+   </extension>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="Micropsi Net control"
+            id="org.micropsi.mindconsole.netcontrol">
+         <menu
+        	id="org.micropsi.agentsmenu" 
+	        label="Agents"
+    	    path="additions"> 
+    	 </menu>    
+         <action
+               label="Select agent"
+               style="push"
+               class="org.micropsi.eclipse.mindconsole.actions.SelectAgentAction"
+               menubarPath="org.micropsi.agentsmenu/agents"
+               id="org.micropsi.eclipse.mindconsole.selectagent">
+         </action>
+         <action
+               label="Step on!"
+               style="push"
+               icon="icons/step.gif"
+               tooltip="Continues one cycle (in suspend mode)"
+               class="org.micropsi.eclipse.mindconsole.actions.StepSuspendedAction"
+               toolbarPath="Normal/Micropsi"
+               disabledIcon="icons/stepdisabled.gif"
+               id="org.micropsi.eclipse.mindconsole.actions.stepsuspendedaction">
+         </action>
+         <action
+               label="Suspend net"
+               style="push"
+               icon="icons/pause.gif"
+               tooltip="Puts the net into suspend mode"
+               class="org.micropsi.eclipse.mindconsole.actions.SuspendNetAction"
+               toolbarPath="Normal/Micropsi"
+               disabledIcon="icons/pausedisabled.gif"
+               id="org.micropsi.eclipse.mindconsole.actions.suspendnetaction">
+         </action>
+         <action
+               label="Run net"
+               style="push"
+               icon="icons/play.gif"
+               tooltip="Starts the net (from suspend mode)"
+               class="org.micropsi.eclipse.mindconsole.actions.RunNetAction"
+               toolbarPath="Normal/Micropsi"
+               disabledIcon="icons/playdisabled.gif"
+               id="org.micropsi.eclipse.mindconsole.actions.runnetaction">
+         </action>
+      </actionSet>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.micropsi.eclipse.mindconsole.mindperspective">
+         <actionSet
+               id="org.micropsi.mindconsole.netcontrol">
+         </actionSet>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.micropsi.eclipse.mindconsole.netdebugperspective">
+         <actionSet
+               id="org.micropsi.mindconsole.netcontrol">
+         </actionSet>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            name="Net editor"
+            category="org.micropsi.eclipse.runtime.aeppreferences"
+            class="org.micropsi.eclipse.mindconsole.pref.NetEditorPreferences"
+            id="org.micropsi.eclipse.mindconsole.pref.neteditorpreferences">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="Micropsi BrainEditor control"
+            id="org.micropsi.eclipse.mindconsole.mindcontrol">
+         <action
+               label="Zoom"
+               style="pulldown"
+               icon="icons/zoom.gif"
+               tooltip="Zoom"
+               state="true"
+               class="org.micropsi.eclipse.mindconsole.actions.ZoomPulldownDelegate"
+               toolbarPath="Normal/Micropsi/Brainview"
+               id="org.micropsi.eclipse.mindconsole.actions.zoompulldowndelegate">
+         </action>
+         <action
+               label="Watch"
+               style="toggle"
+               icon="icons/watch.gif"
+               tooltip="Watch the net"
+               state="true"
+               class="org.micropsi.eclipse.mindconsole.actions.ToggleWatchAction"
+               toolbarPath="Normal/Micropsi/Brainview"
+               id="org.micropsi.eclipse.mindconsole.actions.togglewatchaction">
+         </action>
+         <action
+               label="Goto parent space"
+               style="push"
+               icon="icons/nodespaceUp.gif"
+               tooltip="Opens the space&apos;s parent space"
+               class="org.micropsi.eclipse.mindconsole.actions.OpenParentAction"
+               toolbarPath="Normal/Micropsi/Brainview"
+               id="org.micropsi.eclipse.mindconsole.actions.openparentaction">
+         </action>
+      </actionSet>
+   </extension>
+   <extension
+         point="org.eclipse.ui.actionSetPartAssociations">
+      <actionSetPartAssociation
+            targetID="org.micropsi.eclipse.mindconsole.mindcontrol">
+         <part
+               id="org.micropsi.eclipse.mindconsole.mindeditview">
+         </part>
+         <part
+               id="org.micropsi.eclipse.mindconsole.entityeditview">
+         </part>
+         <part
+               id="org.micropsi.eclipse.mindconsole.linkageeditview">
+         </part>
+         <part
+               id="org.micropsi.eclipse.mindconsole.incominglinksview">
+         </part>
+      </actionSetPartAssociation>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <wizard
+            name="MicroPsi agent project"
+            icon="icons/brain.gif"
+            category="org.eclipse.jdt.ui.java"
+            class="org.micropsi.eclipse.mindconsole.wizards.NewMicroPsiProjectWizard"
+            project="true"
+            id="org.micropsi.eclipse.mindconsole.wizards.newmicropsiprojectwizard">
+         <description>
+            Create a new MicroPsi agent project
+         </description>
+      </wizard>
+   </extension>
+
+</plugin>
