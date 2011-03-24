@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.micropsi.optional"
+      label="org.micropsi.optional"
+      version="0.6.13"
+      provider-name="The Micropsi Project"
+      image="micropsi_lg.gif">
+
+   <description url="http://www.cognitive-agents.org">
+      This are the Micropsi optional tools. The package is meant for
+Micropsi related tools or pieces of code that aren&apos;t directly necessary
+for the (scientific) work with the toolkit, but either do look cool or
+are interesting in some other way for the public.
+   </description>
+
+   <copyright>
+      Micropsi Optional Tools (c) by The Micropsi Project 2002-2005
+   </copyright>
+
+   <license url="http://www.gnu.org/copyleft/gpl.html">
+      This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307,
+USA.
+   </license>
+
+   <url>
+      <update label="Micropsi Update site" url="http://www.cognitive-agents.org/update"/>
+   </url>
+
+   <requires>
+      <import plugin="org.micropsi.console"/>
+      <import plugin="org.micropsi.runtime"/>
+      <import plugin="org.micropsi.worldconsole"/>
+   </requires>
+
+   <plugin
+         id="org.micropsi.media"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="com.sun.jmf"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="sun.com.jmf.linux"
+         os="linux"
+         arch="x86"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"/>
+
+   <plugin
+         id="com.sun.jmf.win32"
+         os="win32"
+         arch="x86"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"/>
+
+</feature>
