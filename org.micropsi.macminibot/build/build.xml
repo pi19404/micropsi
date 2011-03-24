@@ -1,0 +1,50 @@
+<project name="org.micropsi.macminibot" default="dist-everything" basedir=".">
+
+  <property name="src" location="../sources"/>
+  <property name="build" location="../bin"/>
+  <property name="dist"  location="../dist"/>
+
+  <target name="init">
+    <tstamp/>
+    <mkdir dir="${build}"/>
+  </target>
+
+  <target name="compile" depends="init" description="compile the source " >
+    <!-- Compile the java code from ${src} into ${build} -->
+    <javac srcdir="${src}" destdir="${build}">
+      <classpath>
+        <pathelement path="${classpath}"/>
+        <pathelement path="${log4j}"/>
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="dist-everything" depends="compile" description="generates distribution jars" >
+    <mkdir dir="${dist}/lib"/>
+
+    <antcall target="macminibot"/>
+
+  </target>  
+  
+  <target name="macminibot" depends="compile" description="" >
+    <mkdir dir="${dist}/lib"/>
+    <delete file="${dist}/lib/org.micropsi.macminibot.jar"/>
+    <jar jarfile="${dist}/lib/org.micropsi.macminibot.jar" basedir="${build}"
+    	includes="
+    		org/micropsi/comp/agent/**,
+    		org/micropsi/comp/robot/**"
+    />
+    <delete file="${dist}/lib/org.micropsi.macminibot.src.zip"/>
+    <zip zipfile="${dist}/lib/org.micropsi.macminibot.src.zip" basedir="${src}"
+	includes="
+		org/micropsi/comp/agent/**,
+		org/micropsi/comp/robot/**"
+  	/>    
+  </target>
+  
+  <target name="clean" description="clean up" >
+    <delete dir="${build}"/>
+    <delete dir="${dist}"/>
+    <delete dir="${doc}/javadoc"/>
+  </target>
+</project>

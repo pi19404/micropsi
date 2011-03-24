@@ -1,0 +1,156 @@
+<project name="Micropsi" default="dist-everything" basedir=".">
+
+  <!-- ####################### EDIT HERE ####################### -->
+  
+  <property name = "log4j" location="../libs/log4j-1.2.8.jar"/>
+  <property name = "servlet" location="../libs/servlet.jar"/>
+      
+  <!-- ######################################################### -->
+
+  <property name="src" location="../sources"/>
+  <property name="build" location="../bin"/>
+  <property name="dist"  location="../dist"/>
+  <property name="doc" location="../doc"/>
+
+  <target name="init">
+    <tstamp/>
+    <mkdir dir="${build}"/>
+  </target>
+
+  <target name="compile" depends="init" description="compile the source " >
+    <!-- Compile the java code from ${src} into ${build} -->
+    <javac srcdir="${src}" destdir="${build}">
+      <classpath>
+        <pathelement path="${classpath}"/>
+        <pathelement path="${log4j}"/>
+	    <pathelement path="${servlet}"/>
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="dist-everything" depends="compile" description="generates distribution jars" >
+    <mkdir dir="${dist}/lib"/>
+
+    <antcall target="common"/>
+	<antcall target="micropsi"/>
+	<antcall target="agent"/>
+	<antcall target="server"/>
+	<antcall target="timer"/>
+	<antcall target="world"/>
+	<antcall target="robot"/>
+	<antcall target="console"/>
+	<antcall target="source-everything"/>
+
+	<!--copy file="${dist}/lib/aep-micropsi.jar" todir="../de.artificialemotion.runtime/lib" overwrite="true"/>
+	<copy file="${dist}/lib/aep-micropsisrc.zip" todir="../de.artificialemotion.runtime/lib" overwrite="true"/-->
+
+  </target>  
+  
+  <target name="common" depends="compile" description="" >
+    <mkdir dir="${dist}/lib"/>
+    <delete file="${dist}/lib/org.micropsi.common.jar"/>
+    <jar jarfile="${dist}/lib/org.micropsi.common.jar" basedir="${build}"
+    	includes="
+    		org/micropsi/common/**,
+    		org/micropsi/comp/common/**,
+    		org/micropsi/comp/messages/**"
+    />
+    <delete file="${dist}/lib/org.micropsi.common.src.zip"/>
+    <zip zipfile="${dist}/lib/org.micropsi.common.src.zip" basedir="${src}"
+    	includes="
+    		org/micropsi/common/**,
+    		org/micropsi/comp/common/**,
+    		org/micropsi/comp/messages/**"
+    />
+    
+  </target>
+  
+  <target name="micropsi" depends="compile" description="">
+    <mkdir dir="${dist}/lib"/>
+	<delete file="${dist}/lib/org.micropsi.net.jar"/>
+    <jar jarfile="${dist}/lib/org.micropsi.net.jar" basedir="${build}"
+    	includes="
+    		org/micropsi/nodenet/**"
+    />
+    <delete file="${dist}/lib/org.micropsi.net.src.zip"/>
+    <zip zipfile="${dist}/lib/org.micropsi.net.src.zip" basedir="${src}"
+    	includes="
+    		org/micropsi/nodenet/**"
+    />
+  </target>
+
+  <target name="agent" depends="compile" description="" >
+    <mkdir dir="${dist}/lib"/>
+	<delete file="${dist}/lib/org.micropsi.agentframework.jar"/>    
+    <jar jarfile="${dist}/lib/org.micropsi.agentframework.jar" basedir="${build}"
+    	includes="org/micropsi/comp/agent/**"
+    />
+  </target>
+
+  <target name="console" depends="compile" description="" >
+    <mkdir dir="${dist}/lib"/>
+	<delete file="${dist}/lib/org.micropsi.console.jar"/>    
+    <jar jarfile="${dist}/lib/org.micropsi.console.jar" basedir="${build}"
+    	includes="org/micropsi/comp/console/**"
+    />
+  </target>
+
+  <target name="server" depends="compile" description="" >
+    <mkdir dir="${dist}/lib"/>
+	<delete file="${dist}/lib/org.micropsi.server.jar"/>    
+    <jar jarfile="${dist}/lib/org.micropsi.server.jar" basedir="${build}"
+    	includes="org/micropsi/comp/server/**"
+    />
+  </target>
+
+  <target name="timer" depends="compile" description="" >
+    <mkdir dir="${dist}/lib"/>
+	<delete file="${dist}/lib/org.micropsi.timer.jar"/>        
+    <jar jarfile="${dist}/lib/org.micropsi.timer.jar" basedir="${build}"
+    	includes="org/micropsi/comp/timer/**"
+    />
+  </target>
+  
+  <target name="world" depends="compile" description="" >
+    <mkdir dir="${dist}/lib"/>
+	<delete file="${dist}/lib/org.micropsi.world.jar"/>            
+    <jar jarfile="${dist}/lib/org.micropsi.world.jar" basedir="${build}"
+    	includes="org/micropsi/comp/world/**"
+    />
+  </target>
+        
+  <target name="robot" depends="compile" description="" >
+    <mkdir dir="${dist}/lib"/>
+	<delete file="${dist}/lib/org.micropsi.robot.jar"/>            
+    <jar jarfile="${dist}/lib/org.micropsi.robot.jar" basedir="${build}"
+    	includes="org/micropsi/comp/robot/**"
+    />
+  </target>
+
+  <target name="source-everything" depends="compile" description="generate the source package">
+  	<mkdir dir="${dist}/src"/>
+  	<zip zipfile="${dist}/src/org.mircopsi.coresrc-${DSTAMP}.zip">
+  		<fileset dir="${src}"/>
+  	</zip>
+  </target>
+
+  <target name="documentation" depends="compile" description="generate the documentation">
+    <mkdir dir="${doc}/javadoc"/>
+    <javadoc sourcepath="${src}" 
+             destdir="${doc}/javadoc"
+             packagenames="org.micropsi.*" 
+             windowtitle = "JavaDoc: MicroPsi classes"
+             footer = "(c) by Micropsi Project: http://www.cognitive-agents.org"
+             protected="true"
+             author="false"
+             doctitle="MicroPsi overview"
+             overview="${doc}/overview.txt"
+             bottom="."/> 
+  </target>
+
+  <target name="clean" description="clean up" >
+    <delete dir="${build}"/>
+    <delete dir="${dist}"/>
+    <delete dir="${doc}/javadoc"/>
+  </target>
+</project>
