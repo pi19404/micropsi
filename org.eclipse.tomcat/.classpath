@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="catalina.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="bootstrap.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="commons-beanutils.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="commons-collections.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="commons-digester.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="commons-logging-api.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="commons-modeler.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="jakarta-regexp-1.3.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="jasper-compiler.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="jasper-runtime.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="mx4j-jmx.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="naming-common.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="naming-factory.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="naming-resources.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="servlet.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="servlets-common.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="servlets-default.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="servlets-invoker.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="servlets-manager.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="tomcat-coyote.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="tomcat-http11.jar"/>
+	<classpathentry exported="true" sourcepath="D:/tomcat4.1.30src" kind="lib" path="tomcat-util.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.4"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

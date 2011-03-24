@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+
+   <extension
+         id="appserver"
+         name="%appserver"
+         point="org.eclipse.help.appserver.server">
+      <server
+            default="true"
+            class="org.eclipse.tomcat.internal.TomcatAppServer">
+      </server>
+   </extension>
+<!--  jndi protocol -->
+   <extension
+         point="org.eclipse.core.runtime.urlHandlers">
+      <handler
+            class="org.apache.naming.resources.DirContextURLStreamHandler"
+            protocol="jndi">
+      </handler>
+   </extension>
+
+</bundle>
