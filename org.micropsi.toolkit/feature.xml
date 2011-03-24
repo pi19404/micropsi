@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.micropsi.toolkit"
+      label="org.micropsi.toolkit"
+      version="0.6.13"
+      provider-name="The Micropsi Project"
+      plugin="org.micropsi.runtime"
+      image="micropsi_lg.gif"
+      primary="true">
+
+   <description url="http://www.cognitive-agents.org">
+      The Micropsi toolkit provides everything needed for the creation
+and use of MicroPsi agents. It contains both the system and the
+agent framework, components for running the agent and a convenient
+agent editor.
+See http://www.cognitive-agents.org/webdoc/space/0.6.13
+   </description>
+
+   <copyright>
+      Micropsi Toolkit (c) by The Micropsi Project 2002-2005
+   </copyright>
+
+   <license url="http://www.gnu.org/copyleft/gpl.html">
+      This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version
+2 of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307,
+USA.
+   </license>
+
+   <url>
+      <update label="Micropsi Update site" url="http://www.cognitive-agents.org/update"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.jface"/>
+      <import plugin="org.eclipse.jdt.core"/>
+      <import plugin="org.eclipse.jdt.ui"/>
+      <import plugin="org.eclipse.core.resources"/>
+   </requires>
+
+   <plugin
+         id="org.micropsi.agentmanager"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.micropsi.console"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.micropsi.mindconsole"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.micropsi.runtime"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.micropsi.worldconsole"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>

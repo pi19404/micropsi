@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description url="http://www.cognitive-agents.org/update">
+      Update Site for the Micropsi Toolkit
+   </description>
+   <feature url="features/org.micropsi.toolkit_0.6.13.jar" id="org.micropsi.toolkit" version="0.6.13">
+      <category name="Toolkit"/>
+   </feature>
+   <feature url="features/org.micropsi.optional_0.6.13.jar" id="org.micropsi.optional" version="0.6.13">
+      <category name="Optional"/>
+   </feature>
+   <feature url="features/org.micropsi.native3d_0.6.13.jar" id="org.micropsi.native3d" version="0.6.13" os="win32" ws="win32" arch="ia64,ia64_32,x86,x86_64">
+      <category name="Optional"/>
+   </feature>
+   <category-def name="Toolkit" label="Toolkit"/>
+   <category-def name="Optional" label="Optional"/>
+</site>

@@ -1,0 +1,4 @@
+name=quicktime
+type=net-rtp
+devicename=239.60.60.60:51372
+size=320x240

@@ -1,0 +1,5 @@
+name=img
+type=isight
+devicename=isight
+framerate=15
+size=320x240
