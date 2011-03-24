@@ -1,0 +1,42 @@
+<config>
+  <runner>
+    <components>
+      agent
+    </components>
+    <threadpool>
+      <maxthreads> 10 </maxthreads>
+      <minthreads> 5 </minthreads>
+      <maxidletime> 5000 </maxidletime>
+    </threadpool>
+    <log>
+      <file> console.log </file>
+      <level> ALL </level>
+    </log>
+  </runner>
+  
+  <component id="agent">
+    <class>
+      org.micropsi.comp.agent.AgentFrameworkComponent
+    </class>
+    <data>
+      <agentclass> org.micropsi.comp.agent.MouseMicroPsiAgent </agentclass>
+      <worldadapters> org.micropsi.comp.agent.MouseWorldAdapter </worldadapters>
+      <agenttype> MouseAgentObject </agenttype>
+      <agentstates> $WORKSPACE/mouseagent/src/org/micropsi/nodenet/mpn/ </agentstates> 
+      <additionalcp> $WORKSPACE/mouseagent/bin/ </additionalcp>
+      <initialstate> initial </initialstate>
+      <situation>reality</situation>
+      <cyclelength> 20 </cyclelength>
+      <servers>
+      </servers>
+      <clients>
+        <client id="c1">
+          <type> 0 </type>
+          <name> agentserverclient </name>
+		  <connect-to> serveragentserver </connect-to>
+          <usethreadpool> false </usethreadpool>
+        </client>
+      </clients>	
+    </data>
+  </component>
+</config>

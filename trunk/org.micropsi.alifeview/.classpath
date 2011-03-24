@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="sources"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/org.micropsi.core"/>
+	<classpathentry kind="src" path="/org.micropsi.alifemouse"/>
+	<classpathentry kind="lib" path="/org.micropsi.core/libs/log4j-1.2.8.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

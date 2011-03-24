@@ -1,0 +1,114 @@
+<world>
+  <groundmap>
+    <worldtype> doerner
+    </worldtype>
+    <typesimagefile> psi_emo.png 
+    </typesimagefile>
+    <groundtypes>
+      <groundtype>
+        <name> grass 
+        </name>
+        <index> 0 
+        </index>
+        <moveefficiency> 1.0 
+        </moveefficiency>
+        <agentallowed> true 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> sand 
+        </name>
+        <index> 1 
+        </index>
+        <moveefficiency> 1.0 
+        </moveefficiency>
+        <agentallowed> true 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> swamp 
+        </name>
+        <index> 2 
+        </index>
+        <moveefficiency> 1.0 
+        </moveefficiency>
+        <agentallowed> true 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> darkgrass 
+        </name>
+        <index> 3 
+        </index>
+        <moveefficiency> 1.0 
+        </moveefficiency>
+        <agentallowed> true 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> shallowwater 
+        </name>
+        <index> 4 
+        </index>
+        <moveefficiency> 1.0 
+        </moveefficiency>
+        <agentallowed> true 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> rock 
+        </name>
+        <index> 5 
+        </index>
+        <moveefficiency> 1.0 
+        </moveefficiency>
+        <agentallowed> true 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> clay 
+        </name>
+        <index> 6 
+        </index>
+        <moveefficiency> 1.0 
+        </moveefficiency>
+        <agentallowed> true 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> water 
+        </name>
+        <index> 7 
+        </index>
+        <moveefficiency> 0.0 
+        </moveefficiency>
+        <agentallowed> false 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> cliff 
+        </name>
+        <index> 8 
+        </index>
+        <moveefficiency> 0.0 
+        </moveefficiency>
+        <agentallowed> false 
+        </agentallowed>
+      </groundtype>
+    </groundtypes>
+    <groundmaparea>
+    	<lowerleftcoords> (0.0, 0.0, 0.0) 
+    	</lowerleftcoords>
+    	<upperrightcoords> (100.0, 100.0, 0.0) 
+   	</upperrightcoords>
+    </groundmaparea>
+    <defaultgroundtype> 1 
+    </defaultgroundtype>
+  </groundmap>
+  <visiblearea>
+    <lowerleftcoords> (0.0, 0.0, 0.0) 
+    </lowerleftcoords>
+    <upperrightcoords> (100.0, 100.0, 0.0) 
+    </upperrightcoords>
+  </visiblearea>
+</world>
