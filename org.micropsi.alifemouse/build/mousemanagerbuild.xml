@@ -1,0 +1,78 @@
+<project name="Micropsi" default="alifemouse" basedir=".">
+
+  <!-- ####################### EDIT HERE ####################### -->
+  
+  <property name = "log4j" location="../../org.micropsi.core/libs/log4j-1.2.8.jar"/>
+  <property name = "servlet" location="../../org.micropsi.core/libs/servlet.jar"/>  
+      
+  <!-- ######################################################### -->
+
+  <property name="src" location="../sources"/>
+  <property name="build" location="../bin"/>
+  <property name="dist"  location="../dist"/>
+  <property name="doc" location="../doc"/>
+
+  <target name="init">
+    <tstamp/>
+    <mkdir dir="${build}"/>
+  </target>
+
+  <target name="compile" depends="init" description="compile the source " >
+    <!-- Compile the java code from ${src} into ${build} -->
+    <javac srcdir="${src}" destdir="${build}">
+      <classpath>
+        <pathelement path="${classpath}"/>
+        <pathelement path="${log4j}"/>
+	    <pathelement path="${servlet}"/>
+      </classpath>
+    </javac>
+  </target>
+    
+  <target name="alifemouse" depends="compile" description="">
+    <mkdir dir="${dist}/lib"/>
+	<delete file="${dist}/lib/org.micropsi.alifemouse.jar"/>
+    <jar jarfile="${dist}/lib/org.micropsi.alifemouse.jar" basedir="${build}"
+    	includes="
+    		org/micropsi/comp/**,
+    		org/micropsi/nodenet/**"
+    />
+    <delete file="../../org.micropsi.alifeview/lib/org.micropsi.alifemouse.jar"/>
+    <jar jarfile="../../org.micropsi.alifeview/lib/org.micropsi.alifemouse.jar" basedir="${build}"
+    	includes="
+    		org/micropsi/comp/**,
+    		org/micropsi/nodenet/**"
+    />
+    <delete file="${dist}/lib/org.micropsi.alifemouse.src.zip"/>
+    <zip zipfile="${dist}/lib/org.micropsi.alifemouse.src.zip" basedir="${src}"
+    	includes="
+    		org/micropsi/comp/**,
+    		org/micropsi/nodenet/**"
+    />
+    <delete file="../../org.micropsi.alifeview/lib/org.micropsi.agentframework.jar"/>    
+    <copy file="../../org.micropsi.core/dist/lib/org.micropsi.agentframework.jar" 
+          todir="../../org.micropsi.alifeview/lib/"
+    /> 
+    <delete file="../../org.micropsi.alifeview/lib/org.micropsi.world.jar"/>    
+    <copy file="../../org.micropsi.core/dist/lib/org.micropsi.world.jar" 
+          todir="../../org.micropsi.alifeview/lib/"
+    />
+  	<delete file="../../org.micropsi.alifemousemanager/lib/org.micropsi.agentframework.jar"/>    
+  	<copy file="../../org.micropsi.core/dist/lib/org.micropsi.agentframework.jar" 
+  	      todir="../../org.micropsi.alifemousemanager/lib/"
+  	/> 
+  	<delete file="../../org.micropsi.alifemousemanager/lib/org.micropsi.world.jar"/>    
+  	<copy file="../../org.micropsi.core/dist/lib/org.micropsi.world.jar" 
+  	      todir="../../org.micropsi.alifemousemanager/lib/"
+  	/>
+  	<delete file="../../org.micropsi.alifemousemanager/lib/org.micropsi.alifemouse.jar"/>    
+  	<copy file="../dist/lib/org.micropsi.alifemouse.jar" 
+  	      todir="../../org.micropsi.alifemousemanager/lib/"
+  	/>
+  </target>
+    
+  <target name="clean" description="clean up" >
+    <delete dir="${build}"/>
+    <delete dir="${dist}"/>
+    <delete dir="${doc}/javadoc"/>
+  </target>
+</project>

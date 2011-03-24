@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.1"?>
+<plugin
+   id="org.micropsi.alifeview"
+   name="Alifeview Plug-in"
+   version="1.0.0"
+   provider-name="The Micropsi Project"
+   class="org.micropsi.eclipse.alifeview.AlifeviewPlugin">
+
+   <runtime>
+      <library name="lib/org.micropsi.alifemouse.jar">
+         <export name="*"/>
+      </library>
+      <library name="alifeview.jar">
+         <export name="*"/>
+      </library>
+   </runtime>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.micropsi.mindconsole" export="true"/>
+      <import plugin="org.micropsi.console" export="true"/>
+      <import plugin="org.micropsi.runtime" export="true"/>
+   </requires>
+
+   <extension
+ 	    point="org.micropsi.console.consoles">
+      <console
+            name="View Console"
+            class="org.micropsi.eclipse.alifeview.ViewConsole"
+            id="org.micropsi.eclipse.alifeview.viewconsole">
+      </console>
+   </extension>
+   
+   <extension
+         point="org.micropsi.worldconsole.overlays">
+       <overlay
+         name="Waypoints"
+         class="org.micropsi.comp.console.worldconsole.WaypointOverlayRenderer"
+         zOrder="0"
+         id="org.micropsi.comp.console.worldconsole.waypointoverlayrenderer">
+      </overlay>
+   </extension>
+   
+   <extension
+	    point="org.micropsi.worldconsole.overlays">
+      <overlay
+         name="Regions"
+         class="org.micropsi.comp.console.worldconsole.RegionOverlayRenderer"
+         zOrder="0"
+         id="org.micropsi.comp.console.worldconsole.regionoverlayrenderer">
+      </overlay>
+   </extension>
+
+   <extension
+	    point="org.micropsi.worldconsole.overlays">
+      <overlay
+         name="Hierarchy"
+         class="org.micropsi.comp.console.worldconsole.HierarchyOverlayRenderer"
+         zOrder="0"
+         id="org.micropsi.comp.console.worldconsole.hierarchyoverlayrenderer">
+      </overlay>
+    </extension>
+</plugin>

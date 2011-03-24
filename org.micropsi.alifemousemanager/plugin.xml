@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.1"?>
+<plugin
+   id="org.micropsi.alifemousemanager"
+   name="AlifemouseManager Plug-in"
+   version="1.0.0"
+   provider-name="The Micropsi Project"
+   class="org.micropsi.eclipse.alifemousemanager.AlifemousemanagerPlugin">
+
+   <runtime>
+   	  <library name="lib/org.micropsi.agentframework.jar">
+         <export name="*"/>
+      </library>
+      <library name="lib/org.micropsi.world.jar">
+         <export name="*"/>
+      </library>
+      <library name="lib/org.micropsi.alifemouse.jar">
+         <export name="*"/>
+      </library>
+      <library name="alifemousemanager.jar">
+         <export name="*"/>
+      </library>
+   </runtime>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.micropsi.mindconsole" export="true"/>
+      <import plugin="org.micropsi.console" export="true"/>
+      <import plugin="org.micropsi.runtime" export="true"/>
+   </requires>
+   
+   <extension
+         point="org.micropsi.runtime.runtimeCodeContributions">
+      <contribution
+            name="Micropsi Alifemousemanager Code Contribution"
+            class="org.micropsi.eclipse.alifemousemanager.AlifemousemanagerCodeContribution"
+            id="org.micropsi.eclipse.alifemousemanager.alifemousemanagercodecontribution">
+      </contribution>
+   </extension>
+   <extension
+         point="org.micropsi.console.consoles">
+      <console
+            name="AlifeManager Console"
+            class="org.micropsi.comp.console.AlifeManagerConsole"
+            id="org.micropsi.comp.console.alifemanagerconsole">
+      </console>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Alifemouse Manager"
+            id="alifemousemanager">
+      </category>
+      <view
+            name="AlifeInitialisation"
+            icon="icons/sample.gif"
+            category="alifemanager"
+            class="org.micropsi.eclipse.console.AlifeLoaderView"
+      		id="org.micropsi.eclipse.console.alifeloaderview">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.ui.resourcePerspective">
+         <view
+               ratio="0.5"
+               relative="org.eclipse.ui.views.TaskList"
+               relationship="right"
+               id="alifemanager.views.AlifeLoaderView">
+         </view>
+      </perspectiveExtension>
+   </extension>
+
+</plugin>
