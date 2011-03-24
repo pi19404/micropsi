@@ -1,0 +1,62 @@
+<config>
+  <runner>
+    <components>
+      console-$USERNAME,micropsi
+    </components>
+    <threadpool>
+      <maxthreads> 10 </maxthreads>
+      <minthreads> 5 </minthreads>
+      <maxidletime> 5000 </maxidletime>
+    </threadpool>
+    <log>
+      <file> $MICROPSI_HOME/console.log </file>
+      <level> ALL </level>
+    </log>
+    <server> localserver </server>
+  </runner>
+   
+  <component id="console-$USERNAME">
+    <class>
+      org.micropsi.comp.console.ConsoleComponent
+    </class>
+    <data>
+      <functionality>org.micropsi.eclipse.runtime.EclipseConsoleFunctionality</functionality>
+      <servers>
+      </servers>
+      <clients>
+        <client id="c1">
+          <type> 100 </type>
+          <name> consoleserverclient </name>
+		  <connect-to> http://agharta:8080/micropsi/consoleservice?debug=true </connect-to>
+          <usethreadpool> false </usethreadpool>
+        </client>
+      </clients>	
+    </data>
+  </component>
+
+  <component id="micropsi">
+    <class>
+      org.micropsi.comp.agent.AgentFrameworkComponent
+    </class>
+    <data>
+      <agentclass> org.micropsi.comp.agent.micropsi.MicroPsiAgent</agentclass>
+      <worldadapters> org.micropsi.comp.agent.micropsi.IslandWorldAdapter,org.micropsi.comp.agent.micropsi.FaceWorldAdapter</worldadapters>
+      <agenttype> SteamVehicleAgentObject </agenttype>
+      <agentstates> $WORKSPACE/simpleagent/src/org/micropsi/nodenet/mpn/ </agentstates> 
+      <additionalcp> $WORKSPACE/simpleagent/bin/ </additionalcp>
+      <initialstate> initial </initialstate>
+      <situation>reality</situation>
+      <cyclelength> 100 </cyclelength>
+      <servers>
+      </servers>
+      <clients>
+        <client id="c1">
+          <type> 100 </type>
+          <name> agentserverclient </name>
+		  <connect-to> http://agharta:8080/micropsi/agentservice?debug=true </connect-to>
+          <usethreadpool> false </usethreadpool>
+        </client>
+      </clients>	
+    </data>
+  </component>
+</config>

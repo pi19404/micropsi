@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.micropsi.native3d"
+      label="org.micropsi.native3d"
+      version="0.6.13"
+      provider-name="The Micropsi Project"
+      os="win32"
+      ws="win32"
+      arch="ia64,ia64_32,x86,x86_64">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <url>
+      <update label="Micropsi Update site" url="http://www.cognitive-agents.org/update"/>
+   </url>
+
+   <plugin
+         id="org.micropsi.3dviewer"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.micropsi.3demotion"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>

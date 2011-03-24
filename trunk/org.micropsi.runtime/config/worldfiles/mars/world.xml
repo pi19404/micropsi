@@ -1,0 +1,69 @@
+
+<world>
+  <worldtype> mars 
+  </worldtype>
+  <groundmap>
+    <typesimagefile> mars.png 
+    </typesimagefile>
+    <groundtypes>
+      <groundtype>
+        <name> hellgruen 
+        </name>
+        <index> 1 
+        </index>
+        <moveefficiency> 1.0 
+        </moveefficiency>
+        <agentallowed> true 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> dunkelgruen 
+        </name>
+        <index> 3 
+        </index>
+        <moveefficiency> 0.6 
+        </moveefficiency>
+        <agentallowed> true 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> braun 
+        </name>
+        <index> 6 
+        </index>
+        <moveefficiency> 1.0 
+        </moveefficiency>
+        <agentallowed> true 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> grau 
+        </name>
+        <index> 8 
+        </index>
+        <moveefficiency> 0.0 
+        </moveefficiency>
+        <agentallowed> false 
+        </agentallowed>
+      </groundtype>
+    </groundtypes>
+    <groundmaparea>
+      <lowerleftcoords> (0, 0, 0.0) 
+      </lowerleftcoords>
+      <upperrightcoords> (512, 512, 0.0) 
+      </upperrightcoords>
+    </groundmaparea>
+    <defaultgroundtype> 1 
+    </defaultgroundtype>
+  </groundmap>
+  <visiblearea>
+    <lowerleftcoords> (0, 0, 0.0) 
+    </lowerleftcoords>
+    <upperrightcoords> (512, 512, 0.0) 
+    </upperrightcoords>
+  </visiblearea>
+  <spawnLocations>
+    <position> (15.0, 15.0, 0.0) 
+    </position>
+  </spawnLocations>
+</world>

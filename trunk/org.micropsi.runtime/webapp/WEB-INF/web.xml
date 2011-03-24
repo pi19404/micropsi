@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+$Header: G:\DEV\Workspace\migration3.0\micropsi-cvs-repository\micropsi/org.micropsi.runtime/webapp/WEB-INF/web.xml,v 1.5 2005/04/28 18:00:51 vuine Exp $
+-->
+
+<!DOCTYPE web-app 
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" 
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+    <display-name>Micropsi Web Application</display-name>
+    <description>
+      This web application enables aep components to provide channel servers that my
+      be connected via HTTP(TCP/IP).
+      Find out more about Micropsi at http://www.cognitive-agents.org
+    </description>
+
+    <servlet>
+      <servlet-name>servlet-serverconsoleserver</servlet-name>
+      <description>
+
+        The servlet for the serverconsoleserver of the "server" component
+      
+      </description>
+      <servlet-class>org.micropsi.comp.common.ComponentService</servlet-class>
+      <init-param>
+        <param-name>configFile</param-name>
+        <param-value> leer </param-value>
+      </init-param>
+      <init-param>
+        <param-name>component</param-name>
+        <param-value>localserver</param-value>
+      </init-param>
+      <init-param>
+        <param-name>channelserver</param-name>
+        <param-value>serverconsoleserver</param-value>
+      </init-param>
+      <load-on-startup>5</load-on-startup>
+    </servlet>
+
+    <servlet>
+      <servlet-name>servlet-serveragentserver</servlet-name>
+      <description>
+
+        The servlet for the serveragentserver of the "server" component
+      
+      </description>
+      <servlet-class>org.micropsi.comp.common.ComponentService</servlet-class>
+      <init-param>
+        <param-name>configFile</param-name>
+        <param-value> leer </param-value>
+      </init-param>
+      <init-param>
+        <param-name>component</param-name>
+        <param-value>localserver</param-value>
+      </init-param>
+      <init-param>
+        <param-name>channelserver</param-name>
+        <param-value>serveragentserver</param-value>
+      </init-param>
+      <load-on-startup>5</load-on-startup>
+    </servlet>
+
+    <servlet>
+      <servlet-name>servlet-serveravatarserver</servlet-name>
+      <description>
+
+        The servlet for the serveragentserver of the "server" component
+      
+      </description>
+      <servlet-class>org.micropsi.comp.common.ComponentService</servlet-class>
+      <init-param>
+        <param-name>configFile</param-name>
+        <param-value> leer </param-value>
+      </init-param>
+      <init-param>
+        <param-name>component</param-name>
+        <param-value>localserver</param-value>
+      </init-param>
+      <init-param>
+        <param-name>channelserver</param-name>
+        <param-value>serveragentserver</param-value>
+      </init-param>
+      <load-on-startup>5</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+      <servlet-name>servlet-serverconsoleserver</servlet-name>
+      <url-pattern>/consoleservice</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+      <servlet-name>servlet-serveragentserver</servlet-name>
+      <url-pattern>/agentservice</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+      <servlet-name>servlet-serveravatarserver</servlet-name>
+      <url-pattern>/avatarservice</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+      <session-timeout>5</session-timeout>    <!-- 5 minutes -->
+    </session-config>
+
+</web-app>

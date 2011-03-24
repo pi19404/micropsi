@@ -1,0 +1,366 @@
+<worldviewconfig>
+  <groundmapimagedir>
+    ../gfx/world/worldimages
+  </groundmapimagedir>
+  <objectimagedir>
+    ../gfx/world/objectimages
+  </objectimagedir>
+
+  <defaulticon> 
+  	<image> 
+  	  <source> unknownbox.png </source>
+	</image>
+  </defaulticon>
+
+  <classinfo class="Tree">
+  	<name> Tree </name>
+  	<iconinfo>
+      <image> 
+        <source> tree_small.png </source>
+        <center>
+          <x>43</x>
+          <y>116</y>
+        </center>
+      </image>
+    </iconinfo> 
+  </classinfo>
+  
+  <classinfo class="PalmTree">
+  	<name> PalmTree </name>
+  	<iconinfo>
+      <image> 
+        <source> ouruglypalmtree.png </source>
+        <center>
+          <x>87</x>
+          <y>122</y>
+        </center>
+      </image>
+    </iconinfo> 
+  </classinfo>
+  
+  <classinfo class="PineTree">
+  	<name> PineTree </name>
+  	<iconinfo>
+      <image> 
+        <source> pinetree.png </source>
+        <center>
+          <x>48</x>
+          <y>155</y>
+        </center>
+      </image>
+    </iconinfo> 
+  </classinfo>
+  
+  <classinfo class="GreenTree">
+  	<name> GreenTree </name>
+  	<iconinfo>
+      <image> 
+        <source> uglyuglytree.png </source>
+        <center>
+          <x>47</x>
+          <y>140</y>
+        </center>
+      </image>
+    </iconinfo> 
+  </classinfo>
+
+ <classinfo class="Hazel">
+  	<name> Hazel </name>
+  	<iconinfo>
+      <image> 
+        <source> uglyuglytree.png </source>
+        <center>
+          <x>47</x>
+          <y>140</y>
+        </center>
+      </image>
+    </iconinfo> 
+  </classinfo>
+  
+  <classinfo class="Nettle">
+  	<name> Nettle </name>
+  	<iconinfo>
+      <image> 
+        <source> nettle.png </source>
+        <center>
+          <x>28</x>
+          <y>68</y>
+        </center>
+      </image>
+    </iconinfo> 
+  </classinfo>
+  
+  <classinfo class="Sunflower">
+  	<name> Sunflower </name>
+  	<iconinfo>
+      <image> 
+        <source> sunflower.png </source>
+        <center>
+          <x>19</x>
+          <y>76</y>
+        </center>
+      </image>
+    </iconinfo> 
+  </classinfo>
+  
+  <classinfo class="TreeStump">
+  	<name> TreeStump </name>
+  	<iconinfo>
+      <image> 
+        <source> treestump.png </source>
+        <center>
+          <x>33</x>
+          <y>19</y>
+        </center>
+      </image>
+    </iconinfo> 
+  </classinfo>
+  
+  <classinfo class="WoodBlock">
+  	<name> WoodBlock </name>
+  	<iconinfo>
+      <image> 
+        <source> hackklotz.png </source>
+        <center>
+          <x>16</x>
+          <y>36</y>
+        </center>
+      </image>
+    </iconinfo> 
+  </classinfo>
+  
+  <classinfo class="Boulder">
+  	<name> Boulder </name>
+  	<iconinfo>
+      <image> 
+        <source> boulder.png </source>
+      </image>
+        <center>
+          <x>22</x>
+          <y>22</y>
+        </center>
+    </iconinfo> 
+  </classinfo>
+  
+  <classinfo class="Rock">
+  	<name> Rock </name>
+  	<iconinfo>
+      <image> 
+        <source> rock.png </source>
+      </image>
+    </iconinfo> 
+  </classinfo>
+  
+  <classinfo class="Flower">
+  	<name> Flower </name>
+  	<iconinfo>
+      <image> 
+        <source> smallflower.png </source>
+        <center>
+          <x>21</x>
+          <y>51</y>
+        </center>
+      </image>
+    </iconinfo> 
+  </classinfo>
+  
+  <classinfo class="FlyAgaric">
+  	<name> FlyAgaric </name>
+  	<iconinfo>
+      <image> 
+        <source> fliegenpilz.png </source>
+        <center>
+          <x>13</x>
+          <y>24</y>
+        </center>
+      </image>
+    </iconinfo> 
+  </classinfo>
+  
+  <classinfo class="Boletus">
+  	<name> Boletus </name>
+  	<iconinfo>
+      <image> 
+        <source> shroom2.png </source>
+        <center>
+          <x>15</x>
+          <y>21</y>
+        </center>
+      </image>
+    </iconinfo> 
+  </classinfo>
+  
+  <classinfo class="RedMushroom">
+  	<name> RedMushroom </name>
+  	<iconinfo>
+      <image> 
+        <source> shroom1.png </source>
+        <center>
+          <x>10</x>
+          <y>21</y>
+        </center>
+      </image>
+    </iconinfo> 
+  </classinfo>
+  
+  <classinfo class="WaterHole">
+  	<name> Waterhole </name>
+  	<iconinfo>
+      <image> 
+        <source> waterfull.png </source>
+      </image>
+    </iconinfo> 
+  </classinfo>
+  
+  <classinfo class="WaterHoleEmpty">
+  	<name> WaterholeEmpty </name>
+  	<iconinfo>
+      <image> 
+        <source> waterempty.png </source>
+      </image>
+    </iconinfo> 
+  </classinfo>
+ 
+  <classinfo class="Banana">
+  	<name> Banana </name>
+  	<iconinfo>
+      <image> 
+        <source> banana_small.png </source>
+      </image> 
+    </iconinfo> 
+  </classinfo>  
+
+  <classinfo class="Mushroom">
+  	<name> Mushroom </name>
+  	<iconinfo>
+      <image> 
+        <source> mushroom_small.png </source>
+        <center>
+          <x>12</x>
+          <y>20</y>
+        </center>
+      </image> 
+    </iconinfo> 
+  </classinfo> 
+  
+  <classinfo class="Fungus">
+  	<name> Fungus </name>
+  	<iconinfo>
+      <image> 
+        <source> fungus_small.png </source>
+        <center>
+          <x>12</x>
+          <y>20</y>
+        </center>
+      </image> 
+    </iconinfo> 
+  </classinfo>  
+
+  <classinfo class="SteamVehicleAgent">
+  	<name> SteamVehicleAgent </name>
+  	<iconinfo>
+      <imageset> 
+        <sourcetemplate> Micropsi_$orientation.png </sourcetemplate>
+        <orientations>0, 22, 45, 67, 90, 112, 135, 157, 180, 202, 225, 247, 270, 292, 315, 337 </orientations>
+      </imageset> 
+    </iconinfo> 
+  </classinfo>  
+
+  <classinfo class="Puddle">
+  	<name> Puddle </name>
+  	<iconinfo>
+      <image> 
+        <source> waterhole_small.png </source>
+      </image> 
+    </iconinfo> 
+  </classinfo>  
+  
+  <classinfo class="Peppermint">
+ 	<name> Peppermint </name>
+  	<iconinfo>
+      <image> 
+        <source> wirselkraut_small.png </source>
+        <center>
+          <x>14</x>
+          <y>17</y>
+        </center>
+      </image> 
+    </iconinfo> 
+  </classinfo> 
+    
+  <classinfo class="ShockPodBush">
+  	<name> ShockPodBush </name>
+  	<iconinfo>
+      <image> 
+        <source> shockpodbush_small.png </source>
+      </image> 
+    </iconinfo> 
+  </classinfo> 
+  
+   <classinfo class="ThornBush">
+  	<name> ThornBush </name>
+  	<iconinfo>
+      <image> 
+        <source> thornbush_small.png </source>
+        <center>
+          <x>20</x>
+          <y>44</y>
+        </center>
+      </image> 
+    </iconinfo> 
+  </classinfo>
+  
+  <classinfo class="Lamp">
+    <name> Lamp </name>
+  	<iconinfo>
+      <image> 
+        <source> lamp_small.png </source>
+        <center>
+          <x>22</x>
+          <y>60</y>
+        </center>
+      </image> 
+    </iconinfo> 
+  </classinfo> 
+  
+  <classinfo class="BraitenbergVehicleAgent">
+    <name> BraitenbergVehicleAgent </name>
+  	<iconinfo>
+      <imageset> 
+        <sourcetemplate> braitenberg_$orientation.png </sourcetemplate>
+        <orientations>0, 22, 45, 67, 90, 112, 135, 157, 180, 202, 225, 247, 270, 292, 315, 337
+        </orientations>
+      </imageset> 
+    </iconinfo> 
+  </classinfo> 
+
+ <classinfo class="OmnidriveVehicleAgent">
+    <name> OmnidriveVehicleAgent </name>
+  	<iconinfo>
+      <imageset> 
+        <sourcetemplate> omni$orientation.png </sourcetemplate>
+        <orientations>0, 11, 22, 33, 44, 55, 66, 77, 88, 99, 110, 120, 131, 142, 153, 164, 175, 186, 197, 208, 219, 230, 240, 251, 262, 273, 284, 295, 306, 317, 328, 339, 350
+        </orientations>
+      </imageset> 
+    </iconinfo> 
+  </classinfo> 
+
+  <classinfo class="SagaAgent">
+  	<name> SagaAgent </name>
+  	<iconinfo>
+      <image> 
+        <source> sagaagent.png </source>
+      </image>
+    </iconinfo> 
+  </classinfo>
+  
+  <classinfo class="SoilentGreen">
+  	<name> SoilentGreen </name>
+  	<iconinfo>
+      <image> 
+        <source> soilentgreen.png </source>
+      </image>
+    </iconinfo> 
+  </classinfo> 
+  
+</worldviewconfig>
