@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.1"?>
+<plugin
+   id="org.micropsi.3demotion"
+   name="Micropsi 3D Emotion Face"
+   version="0.6.13"
+   provider-name="The Micropsi Project"
+   class="org.micropsi.eclipse.emotion3d.Emotion3DPlugin">
+
+   <runtime>
+      <library name="3demotion.jar"/>
+   </runtime>
+
+   <requires>
+      <import plugin="org.micropsi.runtime" export="true"/>
+      <import plugin="org.micropsi.console" export="true"/>
+      <import plugin="org.micropsi.agentmanager" export="true"/>
+      <import plugin="org.eclipse.ui.ide" export="true"/>
+      <import plugin="org.eclipse.ui" export="true"/>
+      <import plugin="org.eclipse.jface" export="true"/>
+   </requires>
+
+   <extension-point id="facetranslations" name="Face Translations" schema="schema/facetranslations.exsd"/>
+
+   <extension
+   		point="org.micropsi.console.consoles">
+      <console
+        name="3D Emotion"
+        class="org.micropsi.eclipse.emotion3d.Emotion3DConsole"
+        id="org.micropsi.eclipse.agentmanager.emotion3dconsole">
+      </console>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            name="3D Emotion Face"
+            icon="icons/3demotion.gif"
+            category="org.micropsi.worldconsole"
+            class="org.micropsi.eclipse.emotion3d.Emotion3DView"
+            id="org.micropsi.eclipse.emotion3d.emotion3dview">
+      </view>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            name="3D Emotion Face"
+            category="org.micropsi.eclipse.runtime.aeppreferences"
+            class="org.micropsi.eclipse.emotion3d.Emotion3dPreferences"
+            id="org.micropsi.eclipse.emotion3d.emotion3dpreferences">
+      </page>
+   </extension>
+   
+   <extension
+         point="org.micropsi.3demotion.facetranslations">
+      <view
+            name="Nodenet"
+            id="org.micropsi.eclipse.emotion3d.facetranslations.nodenetfacetranslation"
+            class="org.micropsi.eclipse.emotion3d.NodenetFaceTranslation">
+      </view>
+   </extension>
+</plugin>
