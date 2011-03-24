@@ -1,0 +1,62 @@
+<project name="insula" default="compile" basedir=".">
+
+  <!-- ####################### EDIT HERE ####################### -->
+  
+  <property name = "web-inf" location="../WEB-INF/lib/"/>
+  <property name = "common" location="/usr/local/tomcat/common/lib"/>
+		
+  <!-- ######################################################### -->
+
+  <property name="src" location="../WEB-INF/src"/>
+  <property name="build" location="../WEB-INF/classes"/>
+  <property name="dist"  location="../dist"/>
+
+  <target name="init">
+    <tstamp/>
+    <mkdir dir="${build}"/>
+  </target>
+
+  <target name="compile" depends="init" description="compile the source " >
+    <!-- Compile the java code from ${src} into ${build} -->
+    <javac srcdir="${src}" destdir="${build}" verbose="true">
+      <classpath>
+      	<fileset dir="${web-inf}"><include name="*"/></fileset>
+      	<fileset dir="${common}"><include name="*"/></fileset>
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="dist-everything" depends="compile" description="generates distribution jars" >
+    <mkdir dir="${dist}"/>
+  </target>
+	
+  <target name="fetch-3dviewer" depends="init" description="update binary content from the 3dengine project">
+    <delete dir="../downloads"/>
+	<mkdir dir="../downloads"/>
+  	<mkdir dir="../downloads/tmp"/>
+  	<mkdir dir="../downloads/tmp/bin"/>
+  	<mkdir dir="../downloads/tmp/data"/>
+	      
+	<copy todir="../downloads/tmp/bin">
+	  <fileset dir="../../org.micropsi.3dview2/bin" includes="*.dll,*.exe" excludes="3dview2.dll,3demotion.*"></fileset>
+	</copy>
+
+	<copy todir="../downloads/tmp/data">
+	  <fileset dir="../../org.micropsi.3dview2/data"/>
+    </copy>
+  	
+	<copy tofile="../downloads/tmp/data/config/configuration.xml" file="data/3dconfig.xml" overwrite="true"/>
+  	
+  	<zip destfile="../downloads/org.micropsi.3dviewer.zip">
+  		<fileset dir="../downloads/tmp"/>
+  	</zip>
+  	
+  	<delete dir="../downloads/tmp"/>
+
+  </target>
+
+  <target name="clean" description="clean up" >
+    <delete dir="${build}"/>
+    <delete dir="${dist}"/>
+  </target>
+</project>

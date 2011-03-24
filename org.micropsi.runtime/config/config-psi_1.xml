@@ -1,0 +1,149 @@
+<config>
+  <runner>
+    <components>
+      world,localserver,timer,micropsi,console
+    </components>
+    <threadpool>
+      <maxthreads> 10 </maxthreads>
+      <minthreads> 5 </minthreads>
+      <maxidletime> 5000 </maxidletime>
+    </threadpool>
+    <log>
+      <file> $MICROPSI_HOME/console.log </file>
+      <level> ALL </level>
+    </log>
+    <server> localserver </server>
+  </runner>
+  
+  <component id="timer">
+    <class>
+      org.micropsi.comp.timer.TimerComponent
+    </class>
+    <data>
+      <steplength> 100 </steplength>
+      <autostart> true </autostart>
+      <syncmode> false </syncmode>
+      <servers>
+        <server id="s1">
+          <type> 0 </type>
+          <name> timeragentserver </name>
+        </server>
+      </servers>
+      <clients>
+        <client id="c1">
+          <type> 0 </type>
+          <name> timerserverclient </name>
+		  <connect-to> servertimerserver </connect-to>
+          <usethreadpool> false </usethreadpool>
+        </client>
+      </clients>	
+    </data>
+  </component>
+ 
+   <component id="world">
+    <class>
+      org.micropsi.comp.world.WorldComponent
+    </class>
+    <data>
+      <servers>
+        <server id="s1">
+          <type> 0 </type>
+          <name> worldserverserver </name>
+        </server>
+      </servers>
+      <clients>     
+      </clients>	
+      <worldfiledir> $MICROPSI_HOME/config/worldfiles </worldfiledir>
+      <worldfile> psi_1_world.xml </worldfile>	
+      <objecttypesconfigfile> $MICROPSI_HOME/config/doernerobjecttypes.xml </objecttypesconfigfile>	
+      <groundmapimagedir> $MICROPSI_HOME/config/worldgroundmaps </groundmapimagedir>
+    </data>
+  </component>
+ 
+  <component id="console">
+    <class>
+      org.micropsi.comp.console.ConsoleComponent
+    </class>
+    <data>
+      <functionality>org.micropsi.eclipse.runtime.EclipseConsoleFunctionality</functionality>
+      <servers>
+      </servers>
+      <clients>
+        <client id="c1">
+          <type> 0 </type>
+          <name> consoleserverclient </name>
+		  <connect-to> serverconsoleserver </connect-to>
+          <usethreadpool> false </usethreadpool>
+        </client>
+      </clients>	
+    </data>
+  </component>
+
+  <component id="micropsi">
+    <class>
+      org.micropsi.comp.agent.AgentFrameworkComponent
+    </class>
+    <data>
+      <agentclass> org.micropsi.comp.agent.micropsi.MicroPsiAgent</agentclass>
+      <worldadapters> org.micropsi.comp.agent.micropsi.IslandWorldAdapter,org.micropsi.comp.agent.micropsi.FaceWorldAdapter</worldadapters>
+      <agenttype> SteamVehicleAgentObject </agenttype>
+      <agentstates> $WORKSPACE/simpleagent/src/org/micropsi/nodenet/mpn/ </agentstates> 
+      <additionalcp> $WORKSPACE/simpleagent/bin/ </additionalcp>
+      <initialstate> initial </initialstate>
+      <cyclelength> 100 </cyclelength>
+      <servers>
+      </servers>
+      <clients>
+        <client id="c1">
+          <type> 0 </type>
+          <name> agentserverclient </name>
+		  <connect-to> serveragentserver </connect-to>
+          <usethreadpool> false </usethreadpool>
+        </client>
+      </clients>	
+    </data>
+  </component>
+
+   <component id="localserver">
+    <class>
+      org.micropsi.comp.server.ServerComponent
+    </class>
+    <data>
+      <useworld> world </useworld>  
+      <servers>
+        <server id="s1">
+          <type> 0 </type>
+          <name> serverconsoleserver </name>
+        </server>
+        <server id="s2">
+          <type> 0 </type>
+          <name> serveragentserver </name>
+        </server>
+        <server id="s3">
+          <type> 0 </type>
+          <name> servertimerserver </name>
+        </server>
+        
+        <server id="s4">
+          <type> 1 </type>
+          <name> serverconsoleserver </name>
+        </server>
+        <server id="s5">
+          <type> 1 </type>
+          <name> serveragentserver </name>
+        </server>
+        
+        
+      </servers>
+      <clients>
+        <client id="c1">
+          <type> 0 </type>
+          <name> serverworldclient </name>
+		  <connect-to> worldserverserver </connect-to>
+          <usethreadpool> false </usethreadpool>
+        </client>      
+      </clients>	
+    </data>
+  </component>
+
+</config>

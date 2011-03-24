@@ -1,0 +1,113 @@
+<config>
+  <runner>
+    <components>
+      world,psitopia,timer,webconsole
+    </components>
+    <threadpool>
+      <maxthreads> 10 </maxthreads>
+      <minthreads> 5 </minthreads>
+      <maxidletime> 5000 </maxidletime>
+    </threadpool>
+    <log>
+      <file> $MICROPSI_HOME/psitopia.log </file>
+      <level> ALL </level>
+    </log>
+  </runner>
+  
+  <component id="timer">
+    <class>
+      org.micropsi.comp.timer.TimerComponent
+    </class>
+    <data>
+      <steplength> 100 </steplength>
+      <autostart> true </autostart>
+      <syncmode> false </syncmode>
+      <servers>
+        <server id="s1">
+          <type> 0 </type>
+          <name> timeragentserver </name>
+        </server>
+      </servers>
+      <clients>
+        <client id="c1">
+          <type> 0 </type>
+          <name> timerserverclient </name>
+		  <connect-to> servertimerserver </connect-to>
+          <usethreadpool> false </usethreadpool>
+        </client>
+      </clients>	
+    </data>
+  </component>
+ 
+   <component id="world">
+    <class>
+      org.micropsi.comp.world.WorldComponent
+    </class>
+    <data>
+      <servers>
+        <server id="s1">
+          <type> 0 </type>
+          <name> worldserverserver </name>
+        </server>
+      </servers>
+      <clients>     
+      </clients>	
+      <worldfiledir> $MICROPSI_HOME/config/worldfiles </worldfiledir>
+      <worldfile> world.xml </worldfile>	
+      <groundmapimagedir> $MICROPSI_HOME/config </groundmapimagedir>
+      <objecttypesconfigfile> $MICROPSI_HOME/config/worldobjecttypes.xml </objecttypesconfigfile>	
+    </data>
+  </component>
+ 
+  <component id="webconsole">
+    <class>
+      org.micropsi.comp.console.ConsoleComponent
+    </class>
+    <data>
+      <functionality>org.micropsi.comp.console.web.WebConsole</functionality>
+      <worldconsoleconfig>C:/Programme/eclipse/workspace/org.micropsi.psitopia/config/worldviewconfig.xml</worldconsoleconfig>
+      <servers>
+      </servers>
+      <clients>
+        <client id="c1">
+          <type> 0 </type>
+          <name> consoleserverclient </name>
+		  <connect-to> serverconsoleserver </connect-to>
+          <usethreadpool> false </usethreadpool>
+        </client>
+      </clients>
+    </data>
+  </component>
+  
+  <component id="psitopia">
+    <class>
+      org.micropsi.comp.server.ServerComponent
+    </class>
+    <data>
+      <useworld> world </useworld>  
+      <servers>
+        <server id="s1">
+          <type> 1 </type>
+          <name> serverconsoleserver </name>
+        </server>
+        <server id="s2">
+          <type> 1 </type>
+          <name> serveragentserver </name>
+        </server>
+        <server id="s3">
+          <type> 0 </type>
+          <name> servertimerserver </name>
+        </server>
+      </servers>
+      <clients>
+        <client id="c1">
+          <type> 0 </type>
+          <name> serverworldclient </name>
+		  <connect-to> worldserverserver </connect-to>
+          <usethreadpool> false </usethreadpool>
+        </client>      
+      </clients>	
+    </data>
+  </component>
+
+</config>

@@ -1,0 +1,129 @@
+<configuration>
+    <application>
+        <!--Determines whether the application window should always be above all other windows-->
+        <!--Possible Values: true, false-->
+        <!--Default Value: false-->
+        <alwaysontop>true</alwaysontop>
+        <!--Determines whether the application should start in fullscreen mode (as opposed to windowed mode)-->
+        <!--Possible Values: true, false-->
+        <!--Default Value: false-->
+        <fullscreen>false</fullscreen>
+        <!--Screen or window resolution in pixels-->
+        <!--Possible Values: (10, 10) - (10000, 10000)-->
+        <!--Default Value: (800, 600)-->
+        <windowsize>
+            <cx>800</cx>
+            <cy>600</cy>
+        </windowsize>
+    </application>
+    <debug>
+        <!--Determines whether special debugging keyboard shortcuts are enabled-->
+        <!--Possible Values: true, false-->
+        <!--Default Value: true-->
+        <debugkeysenabled>true</debugkeysenabled>
+        <!--Determines the shader version to use. dx9 requires at least pixel shader 2.0 support. dx8 requires pixel shader 1.4. dx7 uses the fixed function pipeline. detect will use the maximum version that is available.-->
+        <!--Possible Values: detect, dx7, dx8, dx9-->
+        <!--Default Value: detect-->
+        <shaderversion>detect</shaderversion>
+    </debug>
+    <general>
+        <!--Determines the default texture resolution. Reduce this value if your graphics card does not have enough video memory or the application runs too slow. This will reduce the visual quality.-->
+        <!--Possible Values: 32, 64, 128, 256, 512, 1024-->
+        <!--Default Value: 1024-->
+        <defaulttextureresolution>1024</defaulttextureresolution>
+        <!--Uses two render passes for different distances. Reduces Z-Fighting, but slows the application down.-->
+        <!--Possible Values: true, false-->
+        <!--Default Value: false-->
+        <distancepasses>false</distancepasses>
+        <!--Determines the maximum distance you can move away from the terrain (only if map is not wrapped around).-->
+        <!--Possible Values: 0.00 - 10000.00-->
+        <!--Default Value: 500.00-->
+        <maxdistancefromterrain>500.000000</maxdistancefromterrain>
+        <!--Determines the maximum visibility distance of world objects. Lowering this value improves performance. This value cannot be higher than the range of vision-->
+        <!--Possible Values: 0.00 - 2000.00-->
+        <!--Default Value: 800.00-->
+        <maxobjectdistance>800.000000</maxobjectdistance>
+        <!--Determines the range of vision in the application. Reduce this value if the application runs too slow.-->
+        <!--Possible Values: 100.00 - 2000.00-->
+        <!--Default Value: 1000.00-->
+        <rangeofvision>1000.000000</rangeofvision>
+        <!--Triple buffering reduces the negative impact of vsync on application speed - at the cost of video memory. Note that enabling triple buffering makes only sense if vsync is enabled as well.-->
+        <!--Possible Values: true, false-->
+        <!--Default Value: false-->
+        <triplebuffering>false</triplebuffering>
+        <!--Determines whether syncronization the screen update ("vertical retrace") is enabled. This can reduce flickering, but will slow the application down somewhat.-->
+        <!--Possible Values: true, false-->
+        <!--Default Value: false-->
+        <vsync>false</vsync>
+    </general>
+    <networking>
+        <!--URL of the microPSI avatar service (used for simulation of remote agent)-->
+        <!--Default Value: /micropsi/avatarservice-->
+        <avatarserviceurl>/org.micropsi.psitopia/avatarservice</avatarserviceurl>
+        <!--URL of the microPSI console service (used for communication with the world simulation)-->
+        <!--Default Value: /micropsi/consoleservice-->
+        <consoleserviceurl>/org.micropsi.psitopia/consoleservice</consoleserviceurl>
+        <!--micropsi server http port -->
+        <!--Possible Values: 0 - 65535-->
+        <!--Default Value: 8080-->
+        <httpport>8080</httpport>
+        <!--for legacy tpc connection (deprecated): connection port on the world server-->
+        <!--Possible Values: 0 - 65535-->
+        <!--Default Value: 10001-->
+        <tcpworldserverport>10001</tcpworldserverport>
+        <!--Default World server to connect to-->
+        <!--Default Value: localhost-->
+        <worldserver>psitopia.cognitive-agents.org</worldserver>
+    </networking>
+    <shadow>
+        <!--Determines the resolution of the shadow map texture. The higher, the better the shadows will look - but the price of beauty is speed and texture memory. The actual value used will never be higher than the window width in pixels.-->
+        <!--Possible Values: 4096, 2048, 1024, 512, 256, 128, 64, 32-->
+        <!--Default Value: 512-->
+        <shadowmapresolution>512</shadowmapresolution>
+        <!--Determines whether shadows are enabled or not. Shadows look nice, but slow the application down and use texture memory.-->
+        <!--Possible Values: true, false-->
+        <!--Default Value: true-->
+        <shadowsenabled>true</shadowsenabled>
+    </shadow>
+    <sound>
+        <!--Determines whether sound is enabled-->
+        <!--Possible Values: true, false-->
+        <!--Default Value: true-->
+        <soundenabled>true</soundenabled>
+    </sound>
+    <startup>
+        <!--Determines wheter 3DView2 will attempt to connect to server on startup-->
+        <!--Possible Values: true, false-->
+        <!--Default Value: false-->
+        <connect>false</connect>
+        <!--Determines what connection method 3DView2 will use when attempting to connect to server on startup-->
+        <!--Possible Values: tcp, http-->
+        <!--Default Value: tcp-->
+        <connectionmethod>http</connectionmethod>
+        <!--set to true if you want fake demo agents on startup (only in offline mode)-->
+        <!--Possible Values: true, false-->
+        <!--Default Value: true-->
+        <createdemoagents>false</createdemoagents>
+        <!--Determines in which mode 3DView2 will start-->
+        <!--Possible Values: menu, spectator, agent, editor-->
+        <!--Default Value: menu-->
+        <mode>menu</mode>
+        <!--Determines which offline world file 3DView2 will load when starting in offline mode-->
+        <!--Default Value: defaultisland.xml-->
+        <offlineworld>defaultisland.xml</offlineworld>
+    </startup>
+    <water>
+        <!--Determines the maximum distance of world objects reflected on the water surface. Lowering this value improves performance. Set this value to 0 to disable water reflections of world objects altogether.-->
+        <!--Possible Values: 0.00 - 2000.00-->
+        <!--Default Value: 300.00-->
+        <maxobjectreflectiondistance>300.000000</maxobjectreflectiondistance>
+        <!--Determines the resolution of the water reflections texture. The higher, the better the reflections will look - but the price of beauty is speed and texture memory. However, the actual size used will never be higher than screen size.-->
+        <!--Possible Values: 1024, 512, 256, 128, 64, 32-->
+        <!--Default Value: 512-->
+        <reflectiontextureresolution>512</reflectiontextureresolution>
+        <!--Determines whether object shadows are reflected on the water surface. This feature is hardly noticable, however, the performance cost is only very small. Shadows must be enabled for this to work.-->
+        <!--Possible Values: true, false-->
+        <!--Default Value: true-->
+        <reflectshadows>true</reflectshadows>
+    </water>
+</configuration>

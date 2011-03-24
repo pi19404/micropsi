@@ -1,0 +1,166 @@
+
+<world>
+  <worldtype> doerner 
+  </worldtype>
+  <groundmap>
+    <typesimagefile> psi_emo.png 
+    </typesimagefile>
+    <groundtypes>
+      <groundtype>
+        <name> grass 
+        </name>
+        <index> 0 
+        </index>
+        <moveefficiency> 1.0 
+        </moveefficiency>
+        <agentallowed> true 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> sand 
+        </name>
+        <index> 1 
+        </index>
+        <moveefficiency> 1.0 
+        </moveefficiency>
+        <agentallowed> true 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> swamp 
+        </name>
+        <index> 2 
+        </index>
+        <moveefficiency> 1.0 
+        </moveefficiency>
+        <agentallowed> true 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> darkgrass 
+        </name>
+        <index> 3 
+        </index>
+        <moveefficiency> 1.0 
+        </moveefficiency>
+        <agentallowed> true 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> shallowwater 
+        </name>
+        <index> 4 
+        </index>
+        <moveefficiency> 1.0 
+        </moveefficiency>
+        <agentallowed> true 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> rock 
+        </name>
+        <index> 5 
+        </index>
+        <moveefficiency> 1.0 
+        </moveefficiency>
+        <agentallowed> true 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> clay 
+        </name>
+        <index> 6 
+        </index>
+        <moveefficiency> 1.0 
+        </moveefficiency>
+        <agentallowed> true 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> water 
+        </name>
+        <index> 7 
+        </index>
+        <moveefficiency> 0.0 
+        </moveefficiency>
+        <agentallowed> false 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> cliff 
+        </name>
+        <index> 8 
+        </index>
+        <moveefficiency> 0.0 
+        </moveefficiency>
+        <agentallowed> false 
+        </agentallowed>
+      </groundtype>
+    </groundtypes>
+    <groundmaparea>
+      <lowerleftcoords> (0.0, 0.0, 0.0) 
+      </lowerleftcoords>
+      <upperrightcoords> (200.0, 200.0, 0.0) 
+      </upperrightcoords>
+    </groundmaparea>
+    <defaultgroundtype> 7 
+    </defaultgroundtype>
+  </groundmap>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> dfdfs 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Banana 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (91.87, 117.13, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.5, 0.2, 0.1 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 50.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+</world>

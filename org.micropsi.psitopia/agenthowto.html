@@ -1,0 +1,31 @@
+<html> 
+<head>
+<title>psitopia</title>
+<link rel="stylesheet" href="psitopia.css" type="text/css">
+</head>
+<body>
+<div id="Layer1" style="position:absolute; left:50px; top:102px; width:487px; height:220px; z-index:1">
+<h1> How to send your own agents </h1>
+<br/><br/>
+<a href="index.html">main page</a>
+<br/><br/>
+You can send your own agents to Psitopia. Any agent that runs within the MicroPsi framework and uses either
+the SteamVehicle, Turtle or Omnidrive model can be sent to Psitopia.<br/><br/>
+Currently, you'll have to do some configuration work to achieve this and we can't guide you through all the
+possibilities. There is, however, a standard procedure to get a SteamVehicle agent with a Node net brain
+(a simpleagent, for instance) to visit Psitopia:
+
+<ul>
+<li> Download and install the MicroPsi toolkit (see the <a href="http://www.cognitive-agents.org/micropsi/space/installation"> webdoc </a>) 
+<li> Start and go to Window - Preferences - Micropsi - Runtime system
+<li> Select a different runtime config. In the org.micropsi.core/config directory, select psitopia-client.xml
+<li> Enter "psitopia" in the "Server to use" field
+<li> Enter a user name you like
+<li> Uncheck "Make Server available via HTTP"
+<li> Restart Eclipse. Now use the toolkit as you would do it with a local system. Your agent now lives on
+Psitopia!
+</ul>
+</div>
+<p>&nbsp;</p>
+</body>
+</html>

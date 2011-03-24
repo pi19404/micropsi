@@ -1,0 +1,2974 @@
+
+<world>
+  <worldtype> doerner 
+  </worldtype>
+  <groundmap>
+    <typesimagefile> insel.png 
+    </typesimagefile>
+    <groundtypes>
+      <groundtype>
+        <name> grass 
+        </name>
+        <index> 0 
+        </index>
+        <moveefficiency> 1.0 
+        </moveefficiency>
+        <agentallowed> true 
+        </agentallowed>
+      </groundtype>
+      <groundtype>
+        <name> water 
+        </name>
+        <index> 1 
+        </index>
+        <moveefficiency> 0.0 
+        </moveefficiency>
+        <agentallowed> false 
+        </agentallowed>
+      </groundtype>
+    </groundtypes>
+    <groundmaparea>
+      <lowerleftcoords> (-10.0, -10.0, 0.0) 
+      </lowerleftcoords>
+      <upperrightcoords> (50.0, 50.0, 0.0) 
+      </upperrightcoords>
+    </groundmaparea>
+    <defaultgroundtype> 1 
+    </defaultgroundtype>
+  </groundmap>
+  <visiblearea>
+    <lowerleftcoords> (-10.0, -10.0, 0.0) 
+    </lowerleftcoords>
+    <upperrightcoords> (50.0, 50.0, 0.0) 
+    </upperrightcoords>
+  </visiblearea>
+  <object>
+    <class> org.micropsi.comp.world.objects.FungusObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Fungus005 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Fungus 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (23.59, 5.93, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.15, 0.15, 0.2 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 20.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.FungusObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Fungus002 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Fungus 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (25.87, 27.4, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.15, 0.15, 0.2 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 50.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Banana007 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Banana 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (4.93, 35.4, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.5, 0.2, 0.1 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 50.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.FungusObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Fungus010 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Fungus 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (35.94, 24.07, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.15, 0.15, 0.2 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 20.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.ThornBushObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> ThornBush004 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> ThornBush 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (32.47, 26.33, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.5, 1, 0.8 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> grow rate 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> max height 
+          </name>
+          <value> 12.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 50 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.FungusObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Fungus005 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Fungus 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (25.87, 13.0, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.15, 0.15, 0.2 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 20.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.ThornBushObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> ThornBush001 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> ThornBush 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (14.0, 6.0, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.5, 1, 0.8 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> grow rate 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> max height 
+          </name>
+          <value> 12.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 50 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.FungusObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Fungus003 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Fungus 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (2.6, 6.0, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.15, 0.15, 0.2 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 20.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.PeppermintObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Peppermint003 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Peppermint 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (42.26, 26.79, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.3, 0.5, 0.2 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 4.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1.0 
+          </value>
+        </property>
+        <property>
+          <name> healing points 
+          </name>
+          <value> 60 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaTreeObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> BananaTree001 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Tree 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (11.0, 16.0, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 2, 2, 8 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> grow rate 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> max height 
+          </name>
+          <value> 12.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 2 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 50 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Banana010 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Banana 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (32.46, 41.47, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.5, 0.2, 0.1 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 50.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.WaterHoleObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Waterhole006 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> WaterHole 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (37.67, 2.67, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 10, 10, 1 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 400.0 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 800.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Banana004 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Banana 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (22.66, -3.07, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.5, 0.2, 0.1 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 50.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.LampObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> MeisterMaus 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Lamp 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (3.67, 24.2, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 1, 1, 1 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> brightness 
+          </name>
+          <value> 100.0 
+          </value>
+        </property>
+        <property>
+          <name> light_low_angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> light_high_angle 
+          </name>
+          <value> 360.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.PeppermintObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Peppermint007 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Peppermint 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (6.73, 26.33, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.3, 0.5, 0.2 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 4.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1.0 
+          </value>
+        </property>
+        <property>
+          <name> healing points 
+          </name>
+          <value> 60 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaTreeObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> BananaTree002 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Tree 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (19.0, 11.0, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 2, 2, 8 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> grow rate 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> max height 
+          </name>
+          <value> 12.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 2 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 50 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaTreeObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> BananaTree009 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Tree 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (35.53, 33.47, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 2, 2, 8 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> grow rate 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> max height 
+          </name>
+          <value> 12.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 2 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 50 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.PeppermintObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Peppermint005 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Peppermint 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (33.87, 13.53, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.3, 0.5, 0.2 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 4.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1.0 
+          </value>
+        </property>
+        <property>
+          <name> healing points 
+          </name>
+          <value> 60 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaTreeObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> BananaTree015 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Tree 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (7.13, 38.73, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 2, 2, 8 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> grow rate 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> max height 
+          </name>
+          <value> 12.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 2 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 50 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.MushroomObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Mushroom003 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Mushroom 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (13.4, -2.93, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.15, 0.15, 0.2 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 20.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.PeppermintObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Peppermint003 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Peppermint 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (40.87, 14.4, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.3, 0.5, 0.2 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 4.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1.0 
+          </value>
+        </property>
+        <property>
+          <name> healing points 
+          </name>
+          <value> 60 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Banana003 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Banana 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (3.6, 16.53, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.5, 0.2, 0.1 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 50.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaTreeObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> BananaTree005 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Tree 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (1.93, 17.26, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 2, 2, 8 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> grow rate 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> max height 
+          </name>
+          <value> 12.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 2 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 50 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.PeppermintObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Peppermint007 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Peppermint 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (-1.07, 13.34, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.3, 0.5, 0.2 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 4.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1.0 
+          </value>
+        </property>
+        <property>
+          <name> healing points 
+          </name>
+          <value> 60 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.FungusObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Fungus001 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Fungus 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (17.07, 27.07, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.15, 0.15, 0.2 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 50.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.ThornBushObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> ThornBush007 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> ThornBush 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (25.87, 43.53, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.5, 1, 0.8 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> grow rate 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> max height 
+          </name>
+          <value> 12.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 50 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaTreeObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> BananaTree006 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Tree 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (16.87, -0.73, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 2, 2, 8 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> grow rate 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> max height 
+          </name>
+          <value> 12.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 2 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 50 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.ThornBushObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> ThornBush003 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> ThornBush 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (27.47, -2.6, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.5, 1, 0.8 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> grow rate 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> max height 
+          </name>
+          <value> 12.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 50 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaTreeObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> BananaTree004 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Tree 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (23.33, 16.13, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 2, 2, 8 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> grow rate 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> max height 
+          </name>
+          <value> 12.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 2 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 50 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Banana002 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Banana 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (12.0, 17.0, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.5, 0.2, 0.1 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 50.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.ThornBushObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> ThornBush002 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> ThornBush 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (29.0, 4.0, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.5, 1, 0.8 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> grow rate 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> max height 
+          </name>
+          <value> 12.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 50 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaTreeObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> BananaTree007 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Tree 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (41.4, 9.47, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 2, 2, 8 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> grow rate 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> max height 
+          </name>
+          <value> 12.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 2 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 50 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.FungusObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Fungus012 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Fungus 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (13.8, 24.93, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.15, 0.15, 0.2 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 20.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Banana004 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Banana 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (33.0, 34.27, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.5, 0.2, 0.1 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 50.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.FungusObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Fungus011 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Fungus 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (24.2, 35.0, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.15, 0.15, 0.2 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 20.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaTreeObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> BananTree010 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Tree 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (23.46, 37.93, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 2, 2, 8 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> grow rate 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> max height 
+          </name>
+          <value> 12.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 2 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 50 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaTreeObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> BananaTree003 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Tree 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (8.0, 11.0, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 2, 2, 8 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> grow rate 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> max height 
+          </name>
+          <value> 12.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 2 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 50 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BoulderObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> 213 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Boulder 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (34.73, 17.93, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 1, 1, 1 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 80.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.PeppermintObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Peppermint001 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Peppermint 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (26.53, 17.87, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.3, 0.5, 0.2 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 4.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1.0 
+          </value>
+        </property>
+        <property>
+          <name> healing points 
+          </name>
+          <value> 60 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.WaterHoleObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Waterhole003 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> WaterHole 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (15.67, 33.54, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 10, 10, 1 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 400.0 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 800.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.ThornBushObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> ThornBush005 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> ThornBush 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (12.8, 37.14, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.5, 1, 0.8 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> grow rate 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> max height 
+          </name>
+          <value> 12.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 50 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.ThornBushObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> ThornBush006 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> ThornBush 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (16.6, 41.86, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.5, 1, 0.8 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> grow rate 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> max height 
+          </name>
+          <value> 12.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 50 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.WaterHoleObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Waterhole001 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> WaterHole 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (8.0, 4.0, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 10, 10, 1 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 400.0 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 800.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.WaterHoleObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Waterhole002 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> WaterHole 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (25.54, 23.67, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 10, 10, 1 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 400.0 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 800.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.FungusObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Fungus007 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Fungus 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (32.73, 3.4, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.15, 0.15, 0.2 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 20.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 1.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> Banana008 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Banana 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (6.74, 33.67, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 0.5, 0.2, 0.1 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> nutrient content 
+          </name>
+          <value> 50.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <object>
+    <class> org.micropsi.comp.world.objects.BananaTreeObject 
+    </class>
+    <data>
+      <properties>
+        <property>
+          <name> name 
+          </name>
+          <value> BananTree011 
+          </value>
+        </property>
+        <property>
+          <name> class 
+          </name>
+          <value> Tree 
+          </value>
+        </property>
+        <property>
+          <name> position 
+          </name>
+          <value> (27.74, 35.27, 0.0) 
+          </value>
+        </property>
+        <property>
+          <name> size-x,y,z 
+          </name>
+          <value> 2, 2, 8 
+          </value>
+        </property>
+        <property>
+          <name> orientation angle 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> weight 
+          </name>
+          <value> 0.0 
+          </value>
+        </property>
+        <property>
+          <name> grow rate 
+          </name>
+          <value> 0.2 
+          </value>
+        </property>
+        <property>
+          <name> max height 
+          </name>
+          <value> 12.0 
+          </value>
+        </property>
+        <property>
+          <name> water content 
+          </name>
+          <value> 2 
+          </value>
+        </property>
+        <property>
+          <name> max water content 
+          </name>
+          <value> 50 
+          </value>
+        </property>
+      </properties>
+      <states/>
+    </data>
+  </object>
+  <spawnLocations>
+    <position> (15.0, 15.0, 0.0) 
+    </position>
+  </spawnLocations>
+</world>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.1"?>
+<plugin
+   id="org.micropsi.runtime"
+   name="Micropsi Runtime"
+   version="0.6.13"
+   provider-name="The Micropsi Project"
+   class="org.micropsi.eclipse.runtime.RuntimePlugin">
+
+   <runtime>
+      <library name="lib/log4j-1.2.8.jar">
+         <export name="*"/>
+      </library>
+      <library name="lib/org.micropsi.common.jar">
+         <export name="*"/>
+      </library>
+      <library name="lib/org.micropsi.console.jar">
+         <export name="*"/>
+      </library>
+      <library name="runtime.jar">
+         <export name="*"/>
+      </library>
+   </runtime>
+   <requires>
+      <import plugin="org.eclipse.core.runtime" export="true"/>
+      <import plugin="org.eclipse.ui.ide" export="true"/>
+      <import plugin="org.eclipse.ui.views" export="true"/>
+      <import plugin="org.eclipse.jface.text" export="true"/>
+      <import plugin="org.eclipse.ui.workbench.texteditor" export="true"/>
+      <import plugin="org.eclipse.ui.editors" export="true"/>
+      <import plugin="org.eclipse.core.resources" export="true"/>
+      <import plugin="org.eclipse.ui" export="true"/>
+      <import plugin="org.eclipse.help.appserver"/>
+      <import plugin="org.eclipse.tomcat" version="4.1.230"/>
+   </requires>
+
+   <extension-point id="runtimeUsers" name="Runtime System Users" schema="schema/runtimeUsers.exsd"/>
+   <extension-point id="runtimeCodeContributions" name="Runtime Code Contributions" schema="schema/runtimeCodeContributions.exsd"/>
+
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            name="Micropsi"
+            class="org.micropsi.eclipse.runtime.MicropsiPreferences"
+            id="org.micropsi.eclipse.runtime.aeppreferences">
+      </page>
+      <page
+            name="Runtime system"
+            category="org.micropsi.eclipse.runtime.aeppreferences"
+            class="org.micropsi.eclipse.runtime.SystemPreferences"
+            id="org.micropsi.eclipse.runtime.systempreferences">
+      </page>
+   </extension>
+
+</plugin>
