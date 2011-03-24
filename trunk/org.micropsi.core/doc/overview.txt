@@ -1,0 +1,18 @@
+<body>
+<p>
+This is the MicroPSI source documentation; at the bottom of this page is
+a list of the most interesting packages for people working with MicroPsi sourcecode.
+</p><p>
+There are a lot of classes here that are part of our infrastructure for
+communication and other tasks - these should't bother you too much, and they
+aren't documented.
+</p><p>
+People working with the toolkit are most likely to be interested in the packages
+<ol>
+<li> org.micropsi.nodenet.agent - Contains the public API for a micropsi agent core. 
+<li> org.micropsi.nodenet - Contains the public API for micropsi node nets.
+<li> org.micropsi.comp.agent.aaa - Contains the public API for adapting the agent to the world
+<li> org.micropsi.comp.world.objects - Contains world objects and the world's agent objects.
+<li> org.micropsi.comp.robot - Contains classes for using a Micropsi agent with robots.
+</ol>
+</body>

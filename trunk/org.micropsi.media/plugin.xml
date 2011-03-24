@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin
+   id="org.micropsi.media"
+   name="Micropsi Media"
+   version="0.6.13"
+   provider-name="The Micropsi Project"
+   class="org.micropsi.eclipse.media.MediaPlugin">
+
+   <runtime>
+      <library name="media.jar">
+         <export name="*"/>
+      </library>
+      <library name="lib/org.micropsi.mediaserver.jar">
+         <export name="*"/>
+      </library>
+   </runtime>
+
+   <requires>
+      <import plugin="org.micropsi.runtime" export="true"/>
+      <import plugin="com.sun.jmf" export="true"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+   </requires>
+
+   <extension
+         point="org.micropsi.runtime.runtimeCodeContributions">
+      <contribution
+            name="Media Code Contribution"
+            class="org.micropsi.eclipse.media.MediaCodeContribution"
+            id="org.micropsi.eclipse.media.mediacodecontribution">
+      </contribution>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Micropsi Media"
+            id="org.micropsi.media">
+      </category>
+      <view
+            allowMultiple="true"
+            category="org.micropsi.media"
+            class="org.micropsi.eclipse.media.VideoView"
+            icon="icons/video.gif"
+            id="org.micropsi.eclipse.media.videoview"
+            name="Video">
+      </view>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            name="Video Servers"
+            class="org.micropsi.eclipse.media.VideoServerPreferences"
+            id="org.micropsi.eclipse.media.videoserverpreferences">
+      </page>
+   </extension>
+   
+</plugin>

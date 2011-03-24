@@ -1,0 +1,22 @@
+WorldComponent supports the following Console "Questions":
+
+* getinfostring
+  returns a string describing the current status of the world.
+
+* getstatusstring
+  same as getinfostring, a litte bit more information
+  
+* getobjectlist
+  returns a list of all objects, containing their id, objectName and objectClass
+  
+* createworldmessage sender_id recipient_id message_class param_str_1 ... param_str_n
+  sends a WorldMessage (more precisely: an object of type 'message_class') to the
+  object with id 'recipient id'.
+
+  message_class has to be a descendant of WorldMessage. If no package is specified, it is looked for in
+  world.messages (which should be fine).
+  
+  message_class has to have a constructor with signiture:
+    message_class(String param_str_1, ..., String param_str_n, SimpleObject sender);
+    
+  the answer is a string describing whether it had worked or why not.
