@@ -1,0 +1,9 @@
+http://jan.netcomp.monash.edu.au/internetdevices/jmf/lecture.html
+http://java.sun.com/products/java-media/jmf/2.1.1/guide/JMFTOC.html
+
+
+name=image,type=image,devicename=C:/test.jpg,size=320x240,framerate=-1
+name=omincam,type=camera,devicename=vfw:Microsoft WDM Image Capture (Win32):0,encoding=rgb,framerate=-1,size=160x120,maxdatalength=38400
+name=tracker,type=camera,devicename=vfw:Microsoft WDM Image Capture (Win32):0,encoding=yuv,framerate=-1,size=352x288,maxdatalength=152064
+name=net,type=net-rtp,devicename=239.60.60.60:51372,size=162x120
+name=fernsehen,type=camera,devicename=vfw:Microsoft WDM Image Capture (Win32):0,encoding=yuv,framerate=-1,size=320x240

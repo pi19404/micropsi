@@ -1,0 +1,48 @@
+<project name="Micropsi" default="dist-everything" basedir=".">
+
+  <!-- ####################### EDIT HERE ####################### -->
+  
+  <property name = "log4j" location="../libs/log4j-1.2.8.jar"/>
+  <property name = "jmf" location="../libs/jmf.jar"/>
+      
+  <!-- ######################################################### -->
+
+  <property name="src" location="../sources"/>
+  <property name="build" location="../bin"/>
+  <property name="dist"  location="../dist"/>
+  <property name="doc" location="../doc"/>
+
+  <target name="init">
+    <tstamp/>
+    <mkdir dir="${build}"/>
+  </target>
+
+  <target name="compile" depends="init" description="compile the source " >
+    <!-- Compile the java code from ${src} into ${build} -->
+    <javac srcdir="${src}" destdir="${build}">
+      <classpath>
+        <pathelement path="${classpath}"/>
+        <pathelement path="${log4j}"/>
+	    <pathelement path="${jmf}"/>
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="dist-everything" depends="compile" description="generates distribution jars" >
+    <mkdir dir="${dist}/lib"/>
+    <antcall target="mediaserver"/>
+  </target>  
+  
+  <target name="mediaserver" depends="compile" description="" >
+    <mkdir dir="${dist}/lib"/>
+    <delete file="${dist}/lib/org.micropsi.mediaserver.jar"/>
+    <jar jarfile="${dist}/lib/org.micropsi.mediaserver.jar" basedir="${build}" includes="org/micropsi/media/**"/>
+    <delete file="${dist}/lib/org.micropsi.mediaserver.src.zip"/>
+    <zip zipfile="${dist}/lib/org.micropsi.mediaserver.src.zip" basedir="${src}" includes="org/micropsi/media/**"/>
+  </target>
+  
+  <target name="clean" description="clean up" >
+    <delete dir="${build}"/>
+    <delete dir="${dist}"/>
+  </target>
+</project>
