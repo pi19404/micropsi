@@ -1,0 +1,10 @@
+
+<MicroPsiNet>
+  <Entities netstep="0">
+    <Entity id="0-050428/150218" name="null" type="1" dissoconstant="1.0" learningconst="1.0" strengthconst="1.0" parent="null">
+      <Slots/>
+      <Gates/>
+      <Content/>
+    </Entity>
+  </Entities>
+</MicroPsiNet>
