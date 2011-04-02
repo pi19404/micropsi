@@ -1,6 +1,4 @@
-== Summary ==
-
-MicroPsi is a cognitive architecture, based on the Psi theory by Dietrich Dörner 
+#summary MicroPsi is a cognitive architecture, based on the Psi theory by Dietrich Dörner
 
 == Introduction ==
 
