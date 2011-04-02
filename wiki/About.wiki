@@ -8,7 +8,7 @@ MicroPsi has been created by Joscha Bach. The effort has had many contributors, 
 
 = Details =
 
-You may find information about the project at [http://cognitive-ai.com]http://cognitive-ai.com.
+You may find information about the project at http://cognitive-ai.com.
 
 = Installation Instructions =
 
