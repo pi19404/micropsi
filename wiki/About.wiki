@@ -12,6 +12,8 @@ You may find information about the project at [http://cognitive-ai.com]http://co
 
 = Installation Instructions =
 
+This is the codebase of the MicroPsi plugins. You will only have to follow the next steps if you want to work "under the hood" of MicroPsi.
+
 1) Install Java 1.6
 
 2) Download Eclipse 3.6.x RCP edition
