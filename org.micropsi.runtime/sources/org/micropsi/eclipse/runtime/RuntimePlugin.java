@@ -30,7 +30,7 @@ import org.osgi.framework.BundleContext;
 
 public class RuntimePlugin extends AbstractUIPlugin {
 	
-	public static final String VERSION = "0_6_13";
+	public static final String VERSION = "0_7_0";
 	
 	// The shared instance.
 	private static RuntimePlugin plugin;

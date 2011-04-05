@@ -3,7 +3,7 @@
 <plugin
    id="org.micropsi.console"
    name="Micropsi Basic console services"
-   version="0.6.13"
+   version="0.7.0"
    provider-name="The Micropsi Project"
    class="org.micropsi.eclipse.console.ConsolePlugin">
 

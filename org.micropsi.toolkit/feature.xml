@@ -2,7 +2,7 @@
 <feature
       id="org.micropsi.toolkit"
       label="org.micropsi.toolkit"
-      version="0.6.13"
+      version="0.7.0"
       provider-name="The Micropsi Project"
       plugin="org.micropsi.runtime"
       image="micropsi_lg.gif"
@@ -13,7 +13,7 @@
 and use of MicroPsi agents. It contains both the system and the
 agent framework, components for running the agent and a convenient
 agent editor.
-See http://www.cognitive-agents.org/webdoc/space/0.6.13
+See http://www.cognitive-agents.org/webdoc/space/0.7.0
    </description>
 
    <copyright>

@@ -3,7 +3,7 @@
 <plugin
    id="org.micropsi.3demotion"
    name="Micropsi 3D Emotion Face"
-   version="0.6.13"
+   version="0.7.0"
    provider-name="The Micropsi Project"
    class="org.micropsi.eclipse.emotion3d.Emotion3DPlugin">
 
