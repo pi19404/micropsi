@@ -2,7 +2,7 @@
 <feature
       id="org.micropsi.optional"
       label="org.micropsi.optional"
-      version="0.6.13"
+      version="0.7.0"
       provider-name="The Micropsi Project"
       image="micropsi_lg.gif">
 

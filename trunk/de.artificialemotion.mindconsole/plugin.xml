@@ -3,7 +3,7 @@
 <plugin
    id="org.micropsi.mindconsole"
    name="Micropsi Mind console"
-   version="0.6.13"
+   version="0.7.0"
    provider-name="The Micropsi Project"
    class="org.micropsi.eclipse.mindconsole.MindPlugin">
 

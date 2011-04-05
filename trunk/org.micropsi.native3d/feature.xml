@@ -2,7 +2,7 @@
 <feature
       id="org.micropsi.native3d"
       label="org.micropsi.native3d"
-      version="0.6.13"
+      version="0.7.0"
       provider-name="The Micropsi Project"
       os="win32"
       ws="win32"
