@@ -31,7 +31,7 @@
       <import plugin="org.eclipse.core.resources" export="true"/>
       <import plugin="org.eclipse.ui" export="true"/>
       <import plugin="org.eclipse.help.appserver"/>
-      <import plugin="org.eclipse.tomcat" version="4.1.230"/>
+      <import plugin="org.eclipse.tomcat"/>
    </requires>
 
    <extension-point id="runtimeUsers" name="Runtime System Users" schema="schema/runtimeUsers.exsd"/>
