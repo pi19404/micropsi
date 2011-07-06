@@ -122,7 +122,7 @@ public class MoveAction implements ActionTranslatorIF {
 	}
 
 	public double getCurrentActionPriority() {
-		double highest = 0;		
+		double highest = 0;	
 				
 		double tmp = move_north.getSignalStrength(); 
 		if(tmp > highest)
