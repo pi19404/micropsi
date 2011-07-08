@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestInputManager", "TestInputManager.vcproj", "{70BE9323-3E73-4B15-8F28-BFAD6A565708}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{70BE9323-3E73-4B15-8F28-BFAD6A565708}.Debug.ActiveCfg = Debug|Win32
+		{70BE9323-3E73-4B15-8F28-BFAD6A565708}.Debug.Build.0 = Debug|Win32
+		{70BE9323-3E73-4B15-8F28-BFAD6A565708}.Release.ActiveCfg = Release|Win32
+		{70BE9323-3E73-4B15-8F28-BFAD6A565708}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

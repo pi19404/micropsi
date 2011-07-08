@@ -1,0 +1,26 @@
+/**
+
+\mainpage Willkommen in der UILib-Doku!
+
+\section windowhandles Window Handles
+
+Ein Window Handle (WHDL) identifizier ein Fenster. Wenn einer Funktion ein Fenster übergeben werden soll, geschieht dies fast immer in Form eines WHDL. Wenn Fenster Referenzen auf andere Fenster als Member ablegen, geschieht dies als WHDL. Ein WHDL kann vom WindowMgr in einen Pointer auf das Fenster umgewandelt werden. 
+
+Das erscheint zunächst unpraktisch und die Ständige Umwandlung von WHDLs in Pointer kostet natürlich Zeit (wenn auch wenig). Die Verwendung von Handlen hat gegenüber Pointern zwei wesentliche Vorzüge:
+
+1. Pointer kann man nicht abspeichern. Durch die Verwendung von WHDLs ist ein Persistenzsystem leicht zu implementieren.
+
+2. Es läßt sich leicht und sauber feststellen, ob ein Handle ungültig geworden ist. Beispiel: ein Fenster wird gelöscht und ein anderes Fenster hat aber noch eine Referenz auf dieses Fenster. Bei einem Pointer gibt es keine (einfache und saubere) Möglichkeit, festzustellen, ob er noch gültig ist; der Zugriff führt zum Absturz. Bei einem WHDL läßt sich einfach nachprüfen, ob es noch gültig ist. Das Fenster hat die Möglichkeit, das selbst zu tun; wenn es ohne Überprüfung auf ein ungültiges Handle zugreift, passiert ein nachvollziehbares assert();
+
+
+\section children Physische und Logische Kinder
+
+Unter einem physischen Kind versteht man ein tatsächliches Kindfenster. Eventuell möchten bestimmte Fensterklassen die Kindbeziehung aber anders regeln. Beispiel: Eine FrameWindow besteht aus Rahmen, Titelleiste und einem (obendrein scrollbaren) Innenraum. Kindfenster werden nicht dem Framewindow selbst, sondern vielmehr dem Innenraum hinzugefügt. Dazu implementiert das FrameWindow einige Funktionen wie UILib::CWindow::AddChild() und NumChildWindows() neu.  
+Hier spricht man von logischen Kindfenstern. Der Benutzer des Framewindows muss somit nichts von der internen Struktur des Fensters wissen, das Fenster verhält sich nach außen normal. 
+Normalerweise muss man sich um diese Dinge keine Gedanken machen. Evtl. ist es für bestimmte Aufgaben jedoch notwendig, mit den physischen Kindfenstern statt den logischen zu arbeiten. Dazu gibt es Funktionen wie AddPhysicalChild() oder NumPhysicalChildren().
+
+\section focus Fokus
+
+Den Fokus kann immer nur ein Fenster haben. Es ist auch möglich, dass kein Fenster den Fokus hat. Das Fenster mit dem Fokus empfängt alle Tastaturnachrichten.  
+
+*/

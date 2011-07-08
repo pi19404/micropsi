@@ -1,0 +1,91 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3dview2", "3dview2.vcproj", "{4F88708E-2BAD-48FB-91F6-7315B0B859FB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1A0FA00A-212A-4927-A10B-44A68BF5E354} = {1A0FA00A-212A-4927-A10B-44A68BF5E354}
+		{0E34864A-25F1-4B88-A79E-149E4231B069} = {0E34864A-25F1-4B88-A79E-149E4231B069}
+		{7297AE6E-7963-4A2D-B6D9-C62448C9DEA5} = {7297AE6E-7963-4A2D-B6D9-C62448C9DEA5}
+		{663A3F9D-3465-49D9-AB7D-F75988BEE746} = {663A3F9D-3465-49D9-AB7D-F75988BEE746}
+		{CB55AAA0-2B84-4A0F-940A-E8A95F4E0C25} = {CB55AAA0-2B84-4A0F-940A-E8A95F4E0C25}
+		{72B066E2-87C6-4B7D-AAA0-5F6058BECE28} = {72B066E2-87C6-4B7D-AAA0-5F6058BECE28}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaseLib", "..\..\..\BaseLib\BaseLib.vcproj", "{72B066E2-87C6-4B7D-AAA0-5F6058BECE28}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SoundLib", "..\..\..\SoundLib\SoundLib.vcproj", "{0E34864A-25F1-4B88-A79E-149E4231B069}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "e42", "..\..\..\e42\e42.vcproj", "{7297AE6E-7963-4A2D-B6D9-C62448C9DEA5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UILib", "..\..\..\UILib\UILib.vcproj", "{1A0FA00A-212A-4927-A10B-44A68BF5E354}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HTTPLib", "..\..\..\HTTPLib\HTTPLib.vcproj", "{663A3F9D-3465-49D9-AB7D-F75988BEE746}"
+	ProjectSection(ProjectDependencies) = postProject
+		{72B066E2-87C6-4B7D-AAA0-5F6058BECE28} = {72B066E2-87C6-4B7D-AAA0-5F6058BECE28}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameLib", "..\..\..\GameLib\GameLib.vcproj", "{CB55AAA0-2B84-4A0F-940A-E8A95F4E0C25}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		Release DLL = Release DLL
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4F88708E-2BAD-48FB-91F6-7315B0B859FB}.Debug.ActiveCfg = Debug|Win32
+		{4F88708E-2BAD-48FB-91F6-7315B0B859FB}.Debug.Build.0 = Debug|Win32
+		{4F88708E-2BAD-48FB-91F6-7315B0B859FB}.Release.ActiveCfg = Release|Win32
+		{4F88708E-2BAD-48FB-91F6-7315B0B859FB}.Release.Build.0 = Release|Win32
+		{4F88708E-2BAD-48FB-91F6-7315B0B859FB}.Release DLL.ActiveCfg = Release DLL|Win32
+		{4F88708E-2BAD-48FB-91F6-7315B0B859FB}.Release DLL.Build.0 = Release DLL|Win32
+		{72B066E2-87C6-4B7D-AAA0-5F6058BECE28}.Debug.ActiveCfg = Debug|Win32
+		{72B066E2-87C6-4B7D-AAA0-5F6058BECE28}.Debug.Build.0 = Debug|Win32
+		{72B066E2-87C6-4B7D-AAA0-5F6058BECE28}.Release.ActiveCfg = Release|Win32
+		{72B066E2-87C6-4B7D-AAA0-5F6058BECE28}.Release.Build.0 = Release|Win32
+		{72B066E2-87C6-4B7D-AAA0-5F6058BECE28}.Release DLL.ActiveCfg = Release|Win32
+		{72B066E2-87C6-4B7D-AAA0-5F6058BECE28}.Release DLL.Build.0 = Release|Win32
+		{0E34864A-25F1-4B88-A79E-149E4231B069}.Debug.ActiveCfg = Debug|Win32
+		{0E34864A-25F1-4B88-A79E-149E4231B069}.Debug.Build.0 = Debug|Win32
+		{0E34864A-25F1-4B88-A79E-149E4231B069}.Release.ActiveCfg = Release|Win32
+		{0E34864A-25F1-4B88-A79E-149E4231B069}.Release.Build.0 = Release|Win32
+		{0E34864A-25F1-4B88-A79E-149E4231B069}.Release DLL.ActiveCfg = Release|Win32
+		{0E34864A-25F1-4B88-A79E-149E4231B069}.Release DLL.Build.0 = Release|Win32
+		{7297AE6E-7963-4A2D-B6D9-C62448C9DEA5}.Debug.ActiveCfg = Debug|Win32
+		{7297AE6E-7963-4A2D-B6D9-C62448C9DEA5}.Debug.Build.0 = Debug|Win32
+		{7297AE6E-7963-4A2D-B6D9-C62448C9DEA5}.Release.ActiveCfg = Release|Win32
+		{7297AE6E-7963-4A2D-B6D9-C62448C9DEA5}.Release.Build.0 = Release|Win32
+		{7297AE6E-7963-4A2D-B6D9-C62448C9DEA5}.Release DLL.ActiveCfg = Release|Win32
+		{7297AE6E-7963-4A2D-B6D9-C62448C9DEA5}.Release DLL.Build.0 = Release|Win32
+		{1A0FA00A-212A-4927-A10B-44A68BF5E354}.Debug.ActiveCfg = Debug|Win32
+		{1A0FA00A-212A-4927-A10B-44A68BF5E354}.Debug.Build.0 = Debug|Win32
+		{1A0FA00A-212A-4927-A10B-44A68BF5E354}.Release.ActiveCfg = Release|Win32
+		{1A0FA00A-212A-4927-A10B-44A68BF5E354}.Release.Build.0 = Release|Win32
+		{1A0FA00A-212A-4927-A10B-44A68BF5E354}.Release DLL.ActiveCfg = Release|Win32
+		{1A0FA00A-212A-4927-A10B-44A68BF5E354}.Release DLL.Build.0 = Release|Win32
+		{663A3F9D-3465-49D9-AB7D-F75988BEE746}.Debug.ActiveCfg = Debug|Win32
+		{663A3F9D-3465-49D9-AB7D-F75988BEE746}.Debug.Build.0 = Debug|Win32
+		{663A3F9D-3465-49D9-AB7D-F75988BEE746}.Release.ActiveCfg = Release|Win32
+		{663A3F9D-3465-49D9-AB7D-F75988BEE746}.Release.Build.0 = Release|Win32
+		{663A3F9D-3465-49D9-AB7D-F75988BEE746}.Release DLL.ActiveCfg = Release|Win32
+		{663A3F9D-3465-49D9-AB7D-F75988BEE746}.Release DLL.Build.0 = Release|Win32
+		{CB55AAA0-2B84-4A0F-940A-E8A95F4E0C25}.Debug.ActiveCfg = Debug|Win32
+		{CB55AAA0-2B84-4A0F-940A-E8A95F4E0C25}.Debug.Build.0 = Debug|Win32
+		{CB55AAA0-2B84-4A0F-940A-E8A95F4E0C25}.Release.ActiveCfg = Release|Win32
+		{CB55AAA0-2B84-4A0F-940A-E8A95F4E0C25}.Release.Build.0 = Release|Win32
+		{CB55AAA0-2B84-4A0F-940A-E8A95F4E0C25}.Release DLL.ActiveCfg = Release|Win32
+		{CB55AAA0-2B84-4A0F-940A-E8A95F4E0C25}.Release DLL.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

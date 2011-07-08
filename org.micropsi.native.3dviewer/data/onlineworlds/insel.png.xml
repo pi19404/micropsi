@@ -1,0 +1,30 @@
+<world>
+    <description>The default island if the server does not specify one.</description>
+    <defaultvisualization>standard.xml</defaultvisualization>
+    <terrainmap>
+        <heightmap>square_128.jpg</heightmap>
+        <materialmap>square_material_128.gif</materialmap>
+        <offset>
+            <x>-18.000000</x>
+            <y>-2.000000</y>
+            <z>-78.000000</z>
+        </offset>
+        <scaling>
+            <x>0.750000</x>
+            <y>0.040000</y>
+            <z>0.750000</z>
+        </scaling>
+        <observerstartpos>
+            <x>-11.000000</x>
+            <y>13.500000</y>
+            <z>1.200000</z>
+        </observerstartpos>
+        <observerlookat>
+            <x>14.000000</x>
+            <y>3.050000</y>
+            <z>-18.000000</z>
+        </observerlookat>
+        <wraparound>false</wraparound>
+    </terrainmap>
+    <objects />
+</world>

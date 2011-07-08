@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaseLib", "BaseLib.vcproj", "{72B066E2-87C6-4B7D-AAA0-5F6058BECE28}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaseLibTest", "BaseLibTest\BaseLibTest.vcproj", "{C8FF35EC-AD7E-40EA-9FE1-916BE5A55B7C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{72B066E2-87C6-4B7D-AAA0-5F6058BECE28} = {72B066E2-87C6-4B7D-AAA0-5F6058BECE28}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{72B066E2-87C6-4B7D-AAA0-5F6058BECE28}.Debug.ActiveCfg = Debug|Win32
+		{72B066E2-87C6-4B7D-AAA0-5F6058BECE28}.Debug.Build.0 = Debug|Win32
+		{72B066E2-87C6-4B7D-AAA0-5F6058BECE28}.Release.ActiveCfg = Release|Win32
+		{72B066E2-87C6-4B7D-AAA0-5F6058BECE28}.Release.Build.0 = Release|Win32
+		{C8FF35EC-AD7E-40EA-9FE1-916BE5A55B7C}.Debug.ActiveCfg = Debug|Win32
+		{C8FF35EC-AD7E-40EA-9FE1-916BE5A55B7C}.Debug.Build.0 = Debug|Win32
+		{C8FF35EC-AD7E-40EA-9FE1-916BE5A55B7C}.Release.ActiveCfg = Release|Win32
+		{C8FF35EC-AD7E-40EA-9FE1-916BE5A55B7C}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

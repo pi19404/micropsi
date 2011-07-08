@@ -1,0 +1,10 @@
+/.cvsignore/1.1/Fri Nov 18 10:12:09 2005//
+/GameLib.sln/1.1/Fri Nov 18 10:12:09 2005//
+/GameLib.vcproj/1.1/Fri Nov 18 10:12:09 2005//
+/stdafx.cpp/1.1/Fri Nov 18 10:12:09 2005//
+/stdafx.h/1.1/Fri Nov 18 10:12:09 2005//
+D/GameLibTests////
+D/doc////
+D/include////
+D/lib////
+D/src////

@@ -1,0 +1,9 @@
+#pragma once
+
+#ifndef BASELIB_CONSTANTS_H
+#define BASELIB_CONSTANTS_H
+
+#define PIf       3.1415926535897932384626433832795f
+
+#endif // BASELIB_CONSTANTS_H
+

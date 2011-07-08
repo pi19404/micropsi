@@ -1,0 +1,42 @@
+<world>
+    <description>ALife Simulation World, designed after Doerner's first "mice" experiment.</description>
+    <defaultvisualization>standard.xml</defaultvisualization>
+    <terrainmap>
+        <heightmap>island_emo_256.jpg</heightmap>
+        <materialmap>island_emo_material_256.gif</materialmap>
+        <offset>
+            <x>-2.000000</x>
+            <y>-1.500000</y>
+            <z>-204.000000</z>
+        </offset>
+        <scaling>
+            <x>1.000000</x>
+            <y>0.020000</y>
+            <z>1.000000</z>
+        </scaling>
+        <observerstartpos>
+            <x>142.000000</x>
+            <y>12.50000</y>
+            <z>-23.00000</z>
+        </observerstartpos>
+        <observerlookat>
+            <x>104.000000</x>
+            <y>6.050000</y>
+            <z>-34.000000</z>
+        </observerlookat>  
+        <wraparound>false</wraparound>
+    </terrainmap>
+    <objects>
+        <object>
+            <class>SteamVehicleAgent</class>
+            <pos>
+                <x>36.671936</x>
+                <y>-21.922501</y>
+                <z>0.000000</z>
+            </pos>
+            <height>1.000000</height>
+            <angle>3.813911</angle>
+            <variation>0</variation>
+        </object>
+    </objects>
+</world>

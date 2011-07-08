@@ -1,0 +1,30 @@
+<world>
+    <description>demo island, modeled after Doerners PSI-island.</description>
+    <defaultvisualization>standard.xml</defaultvisualization>
+    <terrainmap>
+        <heightmap>island_doerner_512.jpg</heightmap>
+        <materialmap>island_doerner_material_512.gif</materialmap>
+        <offset>
+            <x>-930.000000</x>
+            <y>-5.500000</y>
+            <z>-1080.000000</z>
+        </offset>
+        <scaling>
+            <x>2.500000</x>
+            <y>0.130000</y>
+            <z>2.500000</z>
+        </scaling>
+        <observerstartpos>
+            <x>11.000000</x>
+            <y>26.50000</y>
+            <z>13.00000</z>
+        </observerstartpos>
+        <observerlookat>
+            <x>60.000000</x>
+            <y>14.050000</y>
+            <z>-317.000000</z>
+        </observerlookat>        
+        <wraparound>false</wraparound>
+    </terrainmap>
+    <objects />
+</world>

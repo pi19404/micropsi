@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<fxselection>
+
+	<shader_default file="default.fx"/>
+	<shader_untextured file="default.fx"/>
+
+  <shader file="skybox.fx">
+			<texture>skybox_back</texture>
+			<texture>skybox_front</texture>
+			<texture>skybox_left</texture>
+			<texture>skybox_right</texture>
+			<texture>skybox_top</texture>
+	</shader>
+
+</fxselection>

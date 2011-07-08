@@ -1,0 +1,16 @@
+/Makefile.am/1.1/Fri Nov 18 10:43:09 2005//
+/Makefile.in/1.1/Fri Nov 18 10:43:09 2005//
+/auxpartition.pl/1.1/Fri Nov 18 10:43:09 2005//
+/bookutil.c/1.2/Fri Nov 18 11:00:17 2005//
+/bookutil.h/1.2/Fri Nov 18 11:00:17 2005//
+/distribution.c/1.2/Fri Nov 18 11:00:17 2005//
+/huffbuild.c/1.2/Fri Nov 18 11:00:17 2005//
+/latticebuild.c/1.2/Fri Nov 18 11:00:17 2005//
+/latticehint.c/1.2/Fri Nov 18 11:00:17 2005//
+/latticepare.c/1.2/Fri Nov 18 11:00:17 2005//
+/latticetune.c/1.2/Fri Nov 18 11:00:18 2005//
+/residue_entropy/1.1/Fri Nov 18 10:43:09 2005//
+/vqgen.c/1.2/Fri Nov 18 11:00:18 2005//
+/vqgen.h/1.2/Fri Nov 18 11:00:18 2005//
+/vqsplit.c/1.2/Fri Nov 18 11:00:18 2005//
+D
