@@ -1,0 +1,10 @@
+/CommunicationModule.cpp/1.1/Fri Nov 18 10:29:21 2005//
+/CommunicationModule.h/1.1/Fri Nov 18 10:29:21 2005//
+/RemoteAgentController.h/1.1/Fri Nov 18 10:29:21 2005//
+/RemoteAgentController.inl/1.1/Fri Nov 18 10:29:21 2005//
+/WorldController.h/1.1/Fri Nov 18 10:29:21 2005//
+D/HTTPCommunication////
+D/OfflineCommunication////
+D/TCPCommunication////
+D/XMLCommunication////
+D/XMLMessageFormat////

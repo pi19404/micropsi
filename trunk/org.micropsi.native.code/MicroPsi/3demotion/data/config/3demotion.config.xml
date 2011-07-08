@@ -1,0 +1,54 @@
+<configuration>
+    <application>
+        <!--Determines whether the application window should always be above all other windows-->
+        <!--Possible Values: true, false-->
+        <!--Default Value: false-->
+        <alwaysontop>false</alwaysontop>
+        <!--Determines whether the application should start in fullscreen mode (as opposed to windowed mode)-->
+        <!--Possible Values: true, false-->
+        <!--Default Value: false-->
+        <fullscreen>false</fullscreen>
+        <!--Screen or window resolution in pixels-->
+        <!--Possible Values: (10, 10) - (10000, 10000)-->
+        <!--Default Value: (800, 600)-->
+        <windowsize>
+            <cx>1024</cx>
+            <cy>768</cy>
+        </windowsize>
+    </application>
+    <debug>
+        <!--Determines whether special debugging keyboard shortcuts are enabled-->
+        <!--Possible Values: true, false-->
+        <!--Default Value: true-->
+        <debugkeysenabled>true</debugkeysenabled>
+        <!--Determines the shader version to use. dx9 requires at least pixel shader 2.0 support. dx8 requires pixel shader 1.4. dx7 uses the fixed function pipeline. detect will use the maximum version that is available.-->
+        <!--Possible Values: detect, dx7, dx8, dx9-->
+        <!--Default Value: detect-->
+        <shaderversion>detect</shaderversion>
+    </debug>
+    <face>
+        <!--The model file for the face-->
+        <!--Default Value: face.x-->
+        <model>face.x</model>
+    </face>
+    <general>
+        <!--Determines the default texture resolution. Reduce this value if your graphics card does not have enough video memory or the application runs too slow. This will reduce the visual quality.-->
+        <!--Possible Values: 32, 64, 128, 256, 512, 1024-->
+        <!--Default Value: 1024-->
+        <defaulttextureresolution>1024</defaulttextureresolution>
+        <!--Triple buffering reduces the negative impact of vsync on application speed - at the cost of video memory. Note that enabling triple buffering makes only sense if vsync is enabled as well.-->
+        <!--Possible Values: true, false-->
+        <!--Default Value: false-->
+        <triplebuffering>false</triplebuffering>
+        <!--Determines whether syncronization the screen update ("vertical retrace") is enabled. This can reduce flickering, but will slow the application down somewhat.-->
+        <!--Possible Values: true, false-->
+        <!--Default Value: false-->
+        <vsync>false</vsync>
+    </general>
+    <sound>
+        <!--Determines whether sound is enabled-->
+        <!--Possible Values: true, false-->
+        <!--Default Value: true-->
+        <soundenabled>true</soundenabled>
+    </sound>
+</configuration>

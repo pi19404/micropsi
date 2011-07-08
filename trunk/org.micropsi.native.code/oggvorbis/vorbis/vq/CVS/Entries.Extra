@@ -1,0 +1,15 @@
+/Makefile.am///1132310589/
+/Makefile.in///1132310589/
+/auxpartition.pl///1132310589/
+/bookutil.c///1132311617/
+/bookutil.h///1132311617/
+/distribution.c///1132311617/
+/huffbuild.c///1132311617/
+/latticebuild.c///1132311617/
+/latticehint.c///1132311617/
+/latticepare.c///1132311617/
+/latticetune.c///1132311618/
+/residue_entropy///1132310589/
+/vqgen.c///1132311618/
+/vqgen.h///1132311618/
+/vqsplit.c///1132311618/

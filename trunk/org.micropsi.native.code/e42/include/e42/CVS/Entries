@@ -1,0 +1,21 @@
+/AnimationCtrl.h/1.1/Fri Nov 18 10:11:10 2005//
+/AnimationCtrl.inl/1.1/Fri Nov 18 10:11:10 2005//
+/AnimationSoundCtrl.h/1.1/Fri Nov 18 10:11:10 2005//
+/AppSettings.h/1.1/Fri Nov 18 10:11:10 2005//
+/Camera.h/1.1/Fri Nov 18 10:11:10 2005//
+/Camera.inl/1.1/Fri Nov 18 10:11:10 2005//
+/E42Application.h/1.1/Fri Nov 18 10:11:10 2005//
+/E42Application.inl/1.1/Fri Nov 18 10:11:10 2005//
+/FramerateGraph.h/1.1/Fri Nov 18 10:11:10 2005//
+/LetterBoxCamera.h/1.1/Fri Nov 18 10:11:10 2005//
+/ParticleSource.h/1.1/Fri Nov 18 10:11:10 2005//
+/ParticleSystem.h/1.1/Fri Nov 18 10:11:10 2005//
+/RenderTargetTexture.h/1.1/Fri Nov 18 10:11:10 2005//
+/ShadowTexture.h/1.1/Fri Nov 18 10:11:10 2005//
+/TriangleCollector.h/1.1/Fri Nov 18 10:11:10 2005//
+/TriangleCollector.inl/1.1/Fri Nov 18 10:11:10 2005//
+/Vertices.h/1.1/Fri Nov 18 10:11:10 2005//
+/VidMemProfiler.h/1.1/Fri Nov 18 10:11:10 2005//
+/stdinc.h/1.1/Fri Nov 18 10:11:10 2005//
+D/core////
+D/utils////

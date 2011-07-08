@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OPCODE", "..\OPCODE\Opcode.vcproj", "{DD7EF09E-A9BA-4919-934F-F350CBE1FE61}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ode", "ode.vcproj", "{BA28F0C1-6CFC-4FCD-B81A-3CCE279C3313}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DD7EF09E-A9BA-4919-934F-F350CBE1FE61} = {DD7EF09E-A9BA-4919-934F-F350CBE1FE61}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{DD7EF09E-A9BA-4919-934F-F350CBE1FE61}.Debug.ActiveCfg = Debug|Win32
+		{DD7EF09E-A9BA-4919-934F-F350CBE1FE61}.Debug.Build.0 = Debug|Win32
+		{DD7EF09E-A9BA-4919-934F-F350CBE1FE61}.Release.ActiveCfg = Release|Win32
+		{DD7EF09E-A9BA-4919-934F-F350CBE1FE61}.Release.Build.0 = Release|Win32
+		{BA28F0C1-6CFC-4FCD-B81A-3CCE279C3313}.Debug.ActiveCfg = Debug|Win32
+		{BA28F0C1-6CFC-4FCD-B81A-3CCE279C3313}.Debug.Build.0 = Debug|Win32
+		{BA28F0C1-6CFC-4FCD-B81A-3CCE279C3313}.Release.ActiveCfg = Release|Win32
+		{BA28F0C1-6CFC-4FCD-B81A-3CCE279C3313}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

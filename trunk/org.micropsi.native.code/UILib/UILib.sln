@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UILib", "UILib.vcproj", "{1A0FA00A-212A-4927-A10B-44A68BF5E354}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UILibTest", "UILibTest\UILibTest.vcproj", "{2ED44CAC-99BC-40E3-8013-EA8095E58231}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1A0FA00A-212A-4927-A10B-44A68BF5E354} = {1A0FA00A-212A-4927-A10B-44A68BF5E354}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{1A0FA00A-212A-4927-A10B-44A68BF5E354}.Debug.ActiveCfg = Debug|Win32
+		{1A0FA00A-212A-4927-A10B-44A68BF5E354}.Debug.Build.0 = Debug|Win32
+		{1A0FA00A-212A-4927-A10B-44A68BF5E354}.Release.ActiveCfg = Release|Win32
+		{1A0FA00A-212A-4927-A10B-44A68BF5E354}.Release.Build.0 = Release|Win32
+		{2ED44CAC-99BC-40E3-8013-EA8095E58231}.Debug.ActiveCfg = Debug|Win32
+		{2ED44CAC-99BC-40E3-8013-EA8095E58231}.Debug.Build.0 = Debug|Win32
+		{2ED44CAC-99BC-40E3-8013-EA8095E58231}.Release.ActiveCfg = Release|Win32
+		{2ED44CAC-99BC-40E3-8013-EA8095E58231}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
